@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name= lpf spotify-client
+Version=1.0
+GenericName=Package Builder
+Comment= Use lpf system to build spotify-client
+Exec=/usr/bin/lpf update spotify-client
+Icon=lpf
+Type=Application
+Terminal=false
+Categories=GTK;System;
+X-Desktop-File-Install-Version=0.26
+
+NoDisplay=true

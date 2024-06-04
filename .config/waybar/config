@@ -1,0 +1,98 @@
+{
+    "layer": "top", // Waybar at top layer
+    
+    "position": "top", // Waybar position (top|bottom|left|right)
+    
+    //"height": 10, "width": 3440, // height and width (to be removed for auto)
+    
+    "spacing": 0, // Module spacing
+
+    "mode": "dock", //"overlay", "dock"
+    "passthrough": false,
+    //"start_hidden": true,
+    "exclusive": true,
+
+    "reload_style_on_change": true,
+    
+    "modules-left": ["hyprland/workspaces"], // "hyprland/mode", "hyprland/scratchpad", "custom/media"], // order of modules on left
+    "modules-center": ["hyprland/window"], // order of modules on center
+    "modules-right": ["custom/player", "custom/p", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "hyprland/language", "clock", "tray", "rofi/power"], // order of modules on right
+    
+    "hyprland/workspaces": {	// Modules configuration
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}{icon}",
+        "format-icons": {
+            "1": "", //"",
+            "2": "", //"",
+            "3": "", //"",
+            "4": "", //"",
+            "5": "", //"",
+            "urgent": "",
+            "focused": "",
+            "default": "" // ""
+        }
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+   // "custom/player": {
+   // "exec": "/usr/bin/python3 /home/Oren/.config/waybar/media_module.py --player spotify",
+   // "format": "{} ", //"",
+   // "return-type": "json",
+   // "on-click": "playerctl play-pause",
+   // //"on-middle-click": "playerctl play-pause",
+   // "on-scroll-up": "playerctl previous",
+   // "on-scroll-down": "playerctl next"
+   // },
+    "custom/p": {
+        "exec": "~/.config/waybar/player now_playing",
+        "return-type": "string",
+        "on-click": "~/.config/waybar/player play_pause",
+        //"on-middle-click": "~/.config/waybar/player play_pause",
+        "on-scroll-up": "~/.config/waybar/player previous",
+        "on-scroll-down": "~/.config/waybar/player next"
+        },
+    "rofi/power": {
+        "return-type": "string",
+	"exec": "echo POWER",
+	"on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Asia/Jerusalem", 
+        "tooltip-format": "<big>{:%H:%M | %A, %d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        //"format-alt": "{:%A, %-d %m %Y}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    }
+}
+

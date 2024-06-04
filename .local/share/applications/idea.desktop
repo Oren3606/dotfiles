@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/usr/local/bin/idea-IC-241.15989.150/bin/idea.sh
+GenericName=Capable and Ergonomic Java IDE
+Icon=com.jetbrains.IntelliJ-IDEA-Community
+Name=IntelliJ IDEA
+Terminal=false
+Type=Application
+
