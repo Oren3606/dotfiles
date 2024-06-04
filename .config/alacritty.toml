@@ -1,0 +1,13 @@
+[font]
+normal.family = "MesloLGS NF"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Shift"
+action = "ScrollLineUp"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Shift"
+action = "ScrollLineDown"
+

@@ -1,0 +1,4 @@
+alias cls="clear"
+alias :q="exit"
+alias update="sudo dnf upgrade --refresh"
+alias mnt gl="sudo mount /dev/sda3 /mnt/Game\ Library"

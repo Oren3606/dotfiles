@@ -1,0 +1,8 @@
+# Beam
+cursor() {
+    echo -ne '\e[6 q'
+}
+
+# Execute after each command
+precmd_functions+=(cursor)
+

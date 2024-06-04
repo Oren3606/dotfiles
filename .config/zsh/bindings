@@ -1,0 +1,31 @@
+# Home
+bindkey "^[[H" beginning-of-line
+bindkey "^[[1~" beginning-of-line
+
+# End
+bindkey "^[[F" end-of-line
+bindkey "^[[4~" end-of-line
+
+# Ctrl+Left Arrow
+bindkey "^[[1;5D" backward-word
+bindkey "^[[5D" backward-word
+
+# Ctrl+Right Arrow
+bindkey "^[[1;5C" forward-word
+bindkey "^[[5C" forward-word
+
+# Delete
+bindkey "^[[3~" delete-char
+
+# Backspace (redundant)
+bindkey "^?" backward-delete-char
+
+# Ctrl+Delete
+bindkey "^[[3;5~" kill-word
+
+# Ctrl+Backspace
+bindkey "^H" backward-kill-word
+
+# Up Arrow
+bindkey '^[[A' fzf-history-widget
+

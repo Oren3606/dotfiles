@@ -1,0 +1,1414 @@
+ECHO
+dnf install fzf
+eval "$(fzf --zsh)"
+fzf -v
+dnf show fzf
+where fzf
+/usr/bin/fzf
+cd /usr/bin/fzf
+cd /usr/bin/
+who fzf
+nvim com
+nvim /usr/share/fzf/shell/key-bindings.zsh
+CD /USfr/bin/
+builtin cd -- Downloads/Secure.MSG
+builtin cd -- venv/lib/python3.12/site-packages/pip-23.2.1.dist-info
+/user/bin/
+cd .....
+cd ....
+cd zsh-plugins
+git clone https://github.com/Aloxaf/fzf-tab
+ls fzf-tab
+fzf-tab-complete
+echo "$(zoxide init zsh)"
+echo source zoxide init zsH)"
+echo source zoxide init zsH
+echo source zoxide init zsh
+zoxide config
+zoxide .config
+zoxide /.config
+z config
+cd confighypr
+cd config hypr
+z config hypr
+t
+zshexit_functions
+owefh
+\:
+docker
+dnf search docker-desktop
+EtgN
+zle 
+zle -la
+zle -la >./zlecommands.d
+mv zlecommands.d Downloads
+ls Downloads
+man zle
+man zsh
+wev
+git -c
+git -C
+echo $(source zoxide init zsh\
+)
+echo $PS1
+echo $RPS1
+su
+sudo cd /run/host/user-fonts/
+sudo cd /run/host/
+sudo ls -a
+fc-list | grep meslo
+fc-list | grep Meslo
+sudo fc-cache -v
+fc-list
+~gerf~\
+
+cl\s
+c++
+cd ./desktop
+cd ./Desktop
+cd ../Downloads
+rm Meslo MesloLGS\ NF\ Regular.ttf
+rm -r MesloLGS NF\\
+
+rm -r MesloLGS\ NF\\
+
+rm -r MesloLGS\ NF
+rm -r MesloLGS\ NF\ Regular.ttf
+rm MesloLGS NF Regular.ttf
+rm MesloLGS\ NF\ Regular.ttf
+echo $ZSH
+pejyeym~~
+cd .config
+z zsh
+z ..
+cd ..
+pgj \
+
+dh
+wrohg
+ewgegr~w~~
+erwgerg ewrg;5D;5Dewg
+;5D;5D;5D;5D;5D;5D;5D;5D;5D;5D;5D;5D;5C;5C;5C;5C;5C;5C;5A;5B
+echo ${termi;5Dnfo[khome]}"\
+\
+"
+echo ${termi;5Dnfo[khome]}"\
+\
+":
+echo ${termi;5Dnfo[khome]}"\
+\
+"::
+echo "${terminfo[khome]}"
+tpohm H
+H
+rtohjk trwjg
+what Desktop
+where --
+where \[
+echo "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+echo "${XDG_CACHE_HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+echo "$XDG_CACHE_HOME/.cache/p10k-instant-prompt-${(%):-%n}.zsh"
+.vonfig
+upgrade
+pwd
+nvim .zs
+echo -ne '\e[6 q''\e[6 q'
+echo -ne '\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q'
+echo $precmd_functions
+nvim cursor
+dnf search instant-zsh.zsh
+dnf search instant-zsh
+dnf search instant
+echo "Last command: $(fc -ln -1)"
+in my zshrc. i want auto-cd` meaning i wont need to type "cd" before a path in order to go there\
+ChatGPT\
+\
+To enable the "auto-cd" feature in your Zsh configuration, where you can navigate to directories without needing to type cd, you can add the following line to your .zshrc file:\
+\
+sh\
+\
+setopt AUTO_CD\
+\
+Hereâ€ƒ¹s how you can do it:\
+\
+    Open your terminal.\
+    Open your .zshrc file in a text editor. You can use nano, vim, or any other text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following line to your .zshrc file:\
+\
+sh\
+\
+setopt AUTO_CD\
+\
+Save the file and exit the text editor. In nano, you can do this by pressing Ctrl+X, then Y, and then Enter.\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+With this option set, you can simply type the name of a directory and Zsh will automatically change to that directory. For example:\
+\
+sh\
+\
+~/Documents\
+\
+This will switch to the Documents directory in your home directory without needing to prepend cd.\
+\
+If you encounter any issues or want to ensure it's working, you can test it by navigating to a directory after adding the setopt AUTO_CD line.\
+i also ahave a question: why are there so many options for not saving duplicates in the history? look-\
+setopt hist_ignore_all_dups\
+setopt hist_save_no_dups\
+setopt hist_ignore_dups\
+setopt hist_find_no_dups\
+ChatGPT\
+\
+In Zsh, there are several options to control how duplicate commands are handled in the history. Each option serves a slightly different purpose, giving you fine-grained control over your history behavior. Here's a breakdown of what each option does:\
+\
+    hist_ignore_all_dups:\
+        This option removes all previous occurrences of a command from the history list before saving a new command. So, if you execute ls multiple times, only the most recent execution of ls will be kept in the history.\
+\
+    hist_save_no_dups:\
+        This option prevents the addition of new commands to the history list if they are duplicates of the previous command. If you execute ls and then execute ls again, the second execution of ls won't be added to the history.\
+\
+    hist_ignore_dups:\
+        This option prevents duplicate entries from being added to the history list if the same command is entered consecutively. If you execute ls and then ls again right after, the second ls won't be added to the history. However, if you execute ls, then pwd, and then ls again, both ls commands will be in the history.\
+\
+    hist_find_no_dups:\
+        This option prevents duplicate commands from being found during history searches. For instance, if you're searching through your history with Ctrl+R and you have multiple instances of ls, you'll only find the most recent one, and subsequent searches will skip over duplicates.\
+\
+To set any of these options, add the corresponding setopt line to your .zshrc file. For example:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_save_no_dups\
+setopt hist_ignore_dups\
+setopt hist_find_no_dups\
+\
+You can combine these options to customize the history behavior to your preference. For example, you might want to prevent consecutive duplicates and also avoid saving duplicates:\
+\
+sh\
+\
+setopt hist_ignore_dups\
+setopt hist_save_no_dups\
+\
+This setup ensures that consecutive duplicates are not saved and no new duplicates are added to the history list.\
+\
+Remember to reload your .zshrc after making changes:\
+\
+sh\
+\
+source ~/.zshrc\
+\
+This will apply the new settings immediately.\
+if i have all f these at the moment' which ones are redundant?\
+ChatGPT\
+\
+If you currently have all these history options set in your .zshrc file, some of them might be redundant because their functionalities overlap. Hereâ€ƒ¹s a brief review of each option to identify redundancy:\
+\
+    hist_ignore_all_dups:\
+        Removes all previous occurrences of a command before saving it.\
+\
+    hist_save_no_dups:\
+        Prevents adding a new command if it's a duplicate of the previous one.\
+\
+    hist_ignore_dups:\
+        Prevents consecutive duplicates.\
+\
+    hist_find_no_dups:\
+        Prevents duplicate commands from being found during history searches.\
+\
+Redundancies:\
+\
+    hist_ignore_all_dups vs. hist_ignore_dups and hist_save_no_dups:\
+        hist_ignore_all_dups makes both hist_ignore_dups and hist_save_no_dups redundant because it already ensures that no duplicates exist in the history by removing all previous occurrences before saving a new one.\
+\
+    hist_ignore_dups vs. hist_save_no_dups:\
+        If you have both hist_ignore_dups and hist_save_no_dups, you might find them somewhat overlapping. hist_ignore_dups prevents consecutive duplicates, while hist_save_no_dups prevents saving a new command if it is a duplicate of the last command. Together, they ensure that you wonâ€ƒ¹t have consecutive duplicates, but hist_ignore_all_dups already covers this scenario more broadly.\
+\
+Effective Combination:\
+\
+Given that hist_ignore_all_dups is the most comprehensive in removing all duplicates, you might only need it along with hist_find_no_dups if you want to prevent duplicates during searches.\
+\
+Hereâ€ƒ¹s an optimized setup:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_find_no_dups\
+\
+This configuration will:\
+\
+    Remove all previous occurrences of a command before saving a new one, ensuring no duplicates exist.\
+    Prevent duplicates from being found during history searches.\
+\
+Remove the other options if you have hist_ignore_all_dups set, as they become redundant:\
+\
+sh\
+\
+unsetopt hist_save_no_dups\
+unsetopt hist_ignore_dups\
+\
+Final .zshrc snippet:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_find_no_dups\
+\
+This setup should cover your needs efficiently.\
+i have echo '\e[6 q''\e[6 q' in my zshrc to make the cursor a beam but i want it to set to beam after each command\
+ChatGPT\
+\
+To ensure that your cursor stays as a beam after each command in Zsh, you can modify your .zshrc to set the cursor style to a beam both initially and after every command execution. This can be achieved by using the precmd function, which runs a command before each prompt is displayed.\
+\
+Here's how you can set it up:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code to set the cursor to a beam initially and after each command:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Set the cursor to a beam initially\
+set_cursor_beam\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+This setup defines a function set_cursor_beam that sets the cursor style to a beam and then uses the precmd hook to call this function before each prompt is displayed. As a result, the cursor will be reset to a beam after every command execution.\
+cant i just do\
+precmd_functions+=(echo -ne '\e[6 q')\
+ChatGPT\
+\
+Unfortunately, you can't directly add a command to precmd_functions like that because precmd_functions expects a list of function names, not direct commands. Instead, you should define a function and then add that function to precmd_functions.\
+\
+Here's the correct way to do it:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Set the cursor to a beam initially\
+set_cursor_beam\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+By defining the set_cursor_beam function and adding it to precmd_functions, you ensure that the cursor is set to a beam after each command. This method adheres to how precmd_functions is designed to work in Zsh.\
+is it needed to use the function before adding it to precmd given that zsh starts with a prompt?\
+2/2\
+ChatGPT\
+\
+You're right that Zsh starts with a prompt, so explicitly calling the function before adding it to precmd_functions might not be necessary for most use cases. You can directly add the function to precmd_functions and it will run before each prompt, including the first one.\
+\
+Here's the revised setup without the initial call to the function:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+This configuration will ensure that the cursor is set to a beam before each prompt is displayed, starting from the first prompt when a new terminal session is initiated.\
+how can ui display the last command? i mean literally the command. if i have an alias e='git help' i want to see 'git help'\
+ChatGPT\
+\
+To display the last command literally as it was entered, including alias expansions, you can use the precmd hook along with the history command to capture the last command and display it.\
+\
+Here's how you can set it up in your .zshrc:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code to display the last command literally:\
+\
+sh\
+\
+# Function to display the last command entered\
+display_last_command() {\
+    # Get the last command from the history\
+    local last_command=$(fc -ln -1)\
+    # Print the last command\
+    echo "Last command: $last_command"\
+}\
+\
+# Ensure the last command is displayed after each prompt\
+precmd_functions+=(display_last_command)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+With this setup, the display_last_command function will be called before each prompt, displaying the last command that was entered, including any alias expansions.\
+\
+Here's a breakdown of what the code does:\
+\
+    The fc -ln -1 command retrieves the last command from the history.\
+    The display_last_command function captures this command and prints it prefixed with "Last command:".\
+    The precmd_functions+=(display_last_command) line ensures that display_last_command is executed before each prompt.\
+\
+i only want to see ot once manually, not set it in my zshrc\
+ChatGPT\
+\
+If you want to manually display the last command you entered, including alias expansions, without setting it up in your .zshrc, you can use a one-liner in your terminal. This can be done using the fc (fix command) built-in utility of Zsh, which allows you to list and edit commands from your history.\
+\
+Here's a simple way to print the last command you entered:\
+\
+sh\
+\
+echo "Last command: $(fc -ln -1)"\
+\
+You can run this command in your terminal whenever you want to see the last command.\
+\
+If you prefer to define a temporary function to make this easier, you can do so in your current terminal session:\
+\
+    Define the function:\
+\
+sh\
+\
+last_command() {\
+    echo "Last command: $(fc -ln -1)"\
+}\
+\
+    Use the function whenever you need:\
+\
+sh\
+\
+last_command\
+\
+This function will print the last command you entered each time you run last_command. This approach does not require changes to your .zshrc and can be used ad-hoc in your terminal sessions.\
+but i have AUTO_CD on and it didnt add cd to my command showm\
+ChatGPT\
+\
+If you have AUTO_CD enabled and it didn't add cd to your command, fc -ln -1 will show the path directly. If you want to ensure that the output always shows cd when AUTO_CD is used, you'll need a more elaborate way to detect when a directory change has occurred and format the output accordingly.\
+\
+Here is a function you can use to manually display the last command with special handling for AUTO_CD paths:\
+\
+sh\
+\
+show_last_command() {\
+    last_command=$(fc -ln -1)\
+    # Check if the last command is a directory\
+    if [[ -d $last_command ]]; then\
+        echo "Last command: cd $last_command"\
+    else\
+        echo "Last command: $last_command"\
+    fi\
+}\
+\
+# Run the function to show the last command\
+show_last_command\
+\
+\
+
+show_last_command
+z zlecommands.d
+source .zshrc
+show_last_command() {\
+    last_command=$(fc -ln -1)\
+    # Check if the last command is a directory\
+    if [[ -d $last_command ]]; then\
+        echo "Last command: cd $last_command"\
+    else\
+        echo "Last command: $last_command"\
+    fi\
+}\
+\
+# Run the function to show the last command\
+show_last_command
+z alacritty.toml
+cd alacritty.toml
+nv
+fzf -h
+man fzf
+KEY/EVENT BINDINGS
+echo $**
+complete | grep _fzf
+_fzf_setup_completion
+fzf _fzf_setup_completion
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf\
+
+rm -r ~/.fzf\
+
+y
+git clone --depth 1 https://github.com/junegunn/fzf.git\
+
+dnf remove fzf
+sudo dnf remove fzf
+cd zsh
+cd fzf
+nvim install
+echo $fzf
+.config zsh
+install
+fzf --zsh
+echo $PATH
+git clone --depth 1 https://github.com/junegunn/fzf.git
+fzf
+nvim ./install
+./install
+echo "Last command: $(fc -ln)"
+z zsh conf
+z zsh config
+cd zsh config
+dnf check-update\
+
+git clone https://github.com/Aloxaf/fzf-tab.git
+hello
+cd 
+cd config zsh
+nvim powerlevel10k/powerlevel10k.zsh-theme
+nvim powerlevel10k/p10k.zsh
+nvim hyprland.conf
+ls -l --color=never
+man ls
+ls -l --color never
+ls -l --color
+nvim /etc/fstab
+sudo mkdir /mnt/Game\ Library
+lsm /mnt
+ls /mnt
+lsblk -a
+lsblk --list
+lsblk -f
+mount
+mount -l
+cat mount
+mount -h
+umount
+sudo nvim /etc/fstab
+flatpak kill
+flatpak kill list
+flatpak run com.valvesoftware.Steam
+flatpak kill com.valvesoftware.Steam
+steam -h
+LD_PRELOAD=/usr/lib/libc.so.6:/usr/lib32/libc.so.6
+echo $LD_PRELOAD
+cd $LD_PRELOAD
+nvim $LD_PRELOAD
+wine
+sudo flatpak uninstall steam
+sudo mount /dev/sda3 /mnt/Game\ Library
+cd hypr
+nvim hyprland_desktop.config
+config
+mount game library
+mngl
+nvim aliases
+dnf search glibc.i686 libstdc++.i686
+dnf search glibc.i686 libstdc++
+dnf search glibc libstdc++
+dnf search glibc
+sudo dnf install glibc
+sudo dnf install glibc++
+dnf search  libstdc++
+sudo dnf install libstdc++
+LD_PRELOAD="$LD_PRELOAD:/home/oren/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so" %command%
+sudo dnf search vulkan
+sudo dnf install vulkan
+sudo dnf install vulkan-loader
+sudo dnf install vulkan-tools
+sudo chown -R $(whoami) '/mnt/Game Library'\
+
+sudo steam
+sudo chown -R $(whoami) '/mnt/Game Library/SteamLibrary/steamapps/compatdata/271590'\
+
+sudo chown -R $(whoami) '/mnt/Game Library/SteamLibrary/steamapps/compatdata/271590/pfx'
+sudo chown -R oren '/mnt/Game Library'\
+
+whoami
+echo $whoami
+echo $(whoami)
+sudo gnome-disks
+pkexec gnome-disks\
+
+parted /dev/sdb
+sudo parted /dev/sdb
+sudo fdisk /dev/sdb
+sudo mount /dev/sdb1
+sudo mkdir /mnt/tmpfs && sudo mount /dev/sdb1 /mnt/tmpfs
+sudo mkdir /mnt/tmpfs
+man dmesg
+man mount
+steam
+vulkaninfo
+lspci -k | grep -EA3 'VGA|3D|Display'
+lspci -k | grep -A 2 -E "(VGA|3D)"
+lspci -k | grep -A 2 -E "(VGA|3D|Display)"
+lspci -k | grep -A 2 -E "(VGA|3D|Displaysfdg)"
+sudo dnf install mesa
+sudo dnf search mesa
+sudo dnf install mesa-dri-drivers.x86_64
+        rise, particularly with new kernel versions or after system updates.\
+\
+Recent Developments:\
+\
+    NVIDIA: NVIDIA has started to take ste
+echo "Hold onto your hats, folks! You're about to discover the identity of the one and only, the absolutely incredible, the user who is currently logged in"\
+echo "Drumroll, please..."\
+sleep 2\
+echo "ðƒ¿ƒ¬ƒ¿âƒ¼¨ðƒ¿ƒ®ƒ© The current logged-in user is: $USER ðƒ¿ƒ®ƒ©âƒ¼¨ðƒ¿ƒ¬ƒ¿"\
+echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!"\
+\
+\
+"\
+"
+echo "Hold onto your hats, folks! You're about to discover the identity of the one and only, the absolutely incredible, the user who is currently logged in"\
+echo "Drumroll, please..."\
+sleep 2\
+echo "ðƒ¿ƒ¬ƒ¿âƒ¼¨ðƒ¿ƒ®ƒ© The current logged-in user is: $USER ðƒ¿ƒ®ƒ©âƒ¼¨ðƒ¿ƒ¬ƒ¿"\
+echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!"
+echo "Brace yourself for the earth-shattering revelation of your own username."\
+sleep 1\
+echo "Hold on, this is going to be big..."\
+sleep 1\
+echo "Seriously, do you even remember who you are? Okay, here goes nothing."\
+sleep 1\
+echo "ðƒ¿ƒ¬ƒ¿âƒ¼¨ðƒ¿ƒ®ƒ© It's you, genius: $USER ðƒ¿ƒ®ƒ©âƒ¼¨ðƒ¿ƒ¬ƒ¿"\
+echo "There you have it. Don't forget it this time."
+echo "Let's find out how long this poor machine has been suffering under your 'expert' care."sleep 2# Output the system uptime with maximum snarkuptime_output=$(uptime)echo "Wow, look at that! The system has been up for: $uptime_output"echo "Impressive, isn't it? Just like your procrastination skills."# Just in case you need it spelled outecho "In case you were wondering, this is the system uptime. It's not like you could've just typed 'uptime' in the terminal yourself."# And a final sarcastic send-offecho "Congratulations on wasting more time running this script. Have a fantastic day\
+"
+echo "Let's find out how long this poor machine has been suffering under your 'expert' care." && sleep 2 && uptime_output=$(uptime) && echo "Wow, look at that! The system has been up for: $uptime_output" && echo "Impressive, isn't it? Just like your procrastination skills." && echo "In case you were wondering, this is the system uptime. It's not like you could've just typed 'uptime' in the terminal yourself." && echo "Congratulations on wasting more time running this script. Have a fantastic day\
+"
+Downloads
+chmod +x tr.d
+./tr.d
+nvim tr.d
+nvim Downloads/tr.d
+dnf search nvidia
+dnf search rpmfusion-nonfree-nvidia-driver
+dnf info nvidia
+dnf info akmod-nvidia.x86_64
+sudo dnf repository-packages rpmfusion-nonfree-nvidia-driver list
+dnf info xorg-x11-drv-nvidia
+dnf search hello
+ip link
+nvim lpf-spotify-client.desktop
+sudo nvim lpf-spotify-client.desktop
+nvim .z
+./Downloads
+echo "\
+\
+\
+v" > newfile.d
+ndis="\
+\
+NoDisplay=true"
+echo $ndis
+echo ndis > newfile.d
+echo $ndis > newfile.d
+echo $ndis >> newfile.d
+nvim newfile.d
+rm newfile.d
+cp /usr/share/applications/nwg-panel-config.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/nwg-panel-config.desktop /usr/local/share/applications
+sudo nvim .
+sudo echo $ndis >> /usr/share/applications/nwg-panel-config.desktop
+sudo echo ($ndis) >> /usr/share/applications/nwg-panel-config.desktop
+sudo cp /usr/share/applications/nwg-panel-settings.desktop /usr/local/share/applications
+sudo nvim /usr/share/applications/nwg-panel-config.desktop
+sudo nvim /usr/local/share/applications/nwg-panel-config.desktop
+in my zshrc. i want auto-cd` meaning i wont need to type "cd" before a path in order to go there\
+ChatGPT\
+\
+To enable the "auto-cd" feature in your Zsh configuration, where you can navigate to directories without needing to type cd, you can add the following line to your .zshrc file:\
+\
+sh\
+\
+setopt AUTO_CD\
+\
+Hereâ€ƒ¹s how you can do it:\
+\
+    Open your terminal.\
+    Open your .zshrc file in a text editor. You can use nano, vim, or any other text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following line to your .zshrc file:\
+\
+sh\
+\
+setopt AUTO_CD\
+\
+Save the file and exit the text editor. In nano, you can do this by pressing Ctrl+X, then Y, and then Enter.\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+With this option set, you can simply type the name of a directory and Zsh will automatically change to that directory. For example:\
+\
+sh\
+\
+~/Documents\
+\
+This will switch to the Documents directory in your home directory without needing to prepend cd.\
+\
+If you encounter any issues or want to ensure it's working, you can test it by navigating to a directory after adding the setopt AUTO_CD line.\
+i also ahave a question: why are there so many options for not saving duplicates in the history? look-\
+setopt hist_ignore_all_dups\
+setopt hist_save_no_dups\
+setopt hist_ignore_dups\
+setopt hist_find_no_dups\
+ChatGPT\
+\
+In Zsh, there are several options to control how duplicate commands are handled in the history. Each option serves a slightly different purpose, giving you fine-grained control over your history behavior. Here's a breakdown of what each option does:\
+\
+    hist_ignore_all_dups:\
+        This option removes all previous occurrences of a command from the history list before saving a new command. So, if you execute ls multiple times, only the most recent execution of ls will be kept in the history.\
+\
+    hist_save_no_dups:\
+        This option prevents the addition of new commands to the history list if they are duplicates of the previous command. If you execute ls and then execute ls again, the second execution of ls won't be added to the history.\
+\
+    hist_ignore_dups:\
+        This option prevents duplicate entries from being added to the history list if the same command is entered consecutively. If you execute ls and then ls again right after, the second ls won't be added to the history. However, if you execute ls, then pwd, and then ls again, both ls commands will be in the history.\
+\
+    hist_find_no_dups:\
+        This option prevents duplicate commands from being found during history searches. For instance, if you're searching through your history with Ctrl+R and you have multiple instances of ls, you'll only find the most recent one, and subsequent searches will skip over duplicates.\
+\
+To set any of these options, add the corresponding setopt line to your .zshrc file. For example:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_save_no_dups\
+setopt hist_ignore_dups\
+setopt hist_find_no_dups\
+\
+You can combine these options to customize the history behavior to your preference. For example, you might want to prevent consecutive duplicates and also avoid saving duplicates:\
+\
+sh\
+\
+setopt hist_ignore_dups\
+setopt hist_save_no_dups\
+\
+This setup ensures that consecutive duplicates are not saved and no new duplicates are added to the history list.\
+\
+Remember to reload your .zshrc after making changes:\
+\
+sh\
+\
+source ~/.zshrc\
+\
+This will apply the new settings immediately.\
+if i have all f these at the moment' which ones are redundant?\
+ChatGPT\
+\
+If you currently have all these history options set in your .zshrc file, some of them might be redundant because their functionalities overlap. Hereâ€ƒ¹s a brief review of each option to identify redundancy:\
+\
+    hist_ignore_all_dups:\
+        Removes all previous occurrences of a command before saving it.\
+\
+    hist_save_no_dups:\
+        Prevents adding a new command if it's a duplicate of the previous one.\
+\
+    hist_ignore_dups:\
+        Prevents consecutive duplicates.\
+\
+    hist_find_no_dups:\
+        Prevents duplicate commands from being found during history searches.\
+\
+Redundancies:\
+\
+    hist_ignore_all_dups vs. hist_ignore_dups and hist_save_no_dups:\
+        hist_ignore_all_dups makes both hist_ignore_dups and hist_save_no_dups redundant because it already ensures that no duplicates exist in the history by removing all previous occurrences before saving a new one.\
+\
+    hist_ignore_dups vs. hist_save_no_dups:\
+        If you have both hist_ignore_dups and hist_save_no_dups, you might find them somewhat overlapping. hist_ignore_dups prevents consecutive duplicates, while hist_save_no_dups prevents saving a new command if it is a duplicate of the last command. Together, they ensure that you wonâ€ƒ¹t have consecutive duplicates, but hist_ignore_all_dups already covers this scenario more broadly.\
+\
+Effective Combination:\
+\
+Given that hist_ignore_all_dups is the most comprehensive in removing all duplicates, you might only need it along with hist_find_no_dups if you want to prevent duplicates during searches.\
+\
+Hereâ€ƒ¹s an optimized setup:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_find_no_dups\
+\
+This configuration will:\
+\
+    Remove all previous occurrences of a command before saving a new one, ensuring no duplicates exist.\
+    Prevent duplicates from being found during history searches.\
+\
+Remove the other options if you have hist_ignore_all_dups set, as they become redundant:\
+\
+sh\
+\
+unsetopt hist_save_no_dups\
+unsetopt hist_ignore_dups\
+\
+Final .zshrc snippet:\
+\
+sh\
+\
+setopt hist_ignore_all_dups\
+setopt hist_find_no_dups\
+\
+This setup should cover your needs efficiently.\
+i have echo '\e[6 q''\e[6 q' in my zshrc to make the cursor a beam but i want it to set to beam after each command\
+ChatGPT\
+\
+To ensure that your cursor stays as a beam after each command in Zsh, you can modify your .zshrc to set the cursor style to a beam both initially and after every command execution. This can be achieved by using the precmd function, which runs a command before each prompt is displayed.\
+\
+Here's how you can set it up:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code to set the cursor to a beam initially and after each command:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Set the cursor to a beam initially\
+set_cursor_beam\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+This setup defines a function set_cursor_beam that sets the cursor style to a beam and then uses the precmd hook to call this function before each prompt is displayed. As a result, the cursor will be reset to a beam after every command execution.\
+cant i just do\
+precmd_functions+=(echo -ne '\e[6 q')\
+ChatGPT\
+\
+Unfortunately, you can't directly add a command to precmd_functions like that because precmd_functions expects a list of function names, not direct commands. Instead, you should define a function and then add that function to precmd_functions.\
+\
+Here's the correct way to do it:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Set the cursor to a beam initially\
+set_cursor_beam\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+By defining the set_cursor_beam function and adding it to precmd_functions, you ensure that the cursor is set to a beam after each command. This method adheres to how precmd_functions is designed to work in Zsh.\
+is it needed to use the function before adding it to precmd given that zsh starts with a prompt?\
+2/2\
+ChatGPT\
+\
+You're right that Zsh starts with a prompt, so explicitly calling the function before adding it to precmd_functions might not be necessary for most use cases. You can directly add the function to precmd_functions and it will run before each prompt, including the first one.\
+\
+Here's the revised setup without the initial call to the function:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code:\
+\
+sh\
+\
+# Function to set the cursor to a beam\
+set_cursor_beam() {\
+    echo -ne '\e[6 q'\
+}\
+\
+# Ensure the cursor is set to a beam after each command\
+precmd_functions+=(set_cursor_beam)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+This configuration will ensure that the cursor is set to a beam before each prompt is displayed, starting from the first prompt when a new terminal session is initiated.\
+how can ui display the last command? i mean literally the command. if i have an alias e='git help' i want to see 'git help'\
+ChatGPT\
+\
+To display the last command literally as it was entered, including alias expansions, you can use the precmd hook along with the history command to capture the last command and display it.\
+\
+Here's how you can set it up in your .zshrc:\
+\
+    Open your .zshrc file in a text editor. For example:\
+\
+    sh\
+\
+nano ~/.zshrc\
+\
+Add the following code to display the last command literally:\
+\
+sh\
+\
+# Function to display the last command entered\
+display_last_command() {\
+    # Get the last command from the history\
+    local last_command=$(fc -ln -1)\
+    # Print the last command\
+    echo "Last command: $last_command"\
+}\
+\
+# Ensure the last command is displayed after each prompt\
+precmd_functions+=(display_last_command)\
+\
+Save the file and exit the text editor.\
+\
+Reload your .zshrc file to apply the changes:\
+\
+sh\
+\
+    source ~/.zshrc\
+\
+With this setup, the display_last_command function will be called before each prompt, displaying the last command that was entered, including any alias expansions.\
+\
+Here's a breakdown of what the code does:\
+\
+    The fc -ln -1 command retrieves the last command from the history.\
+    The display_last_command function captures this command and prints it prefixed with "Last command:".\
+    The precmd_functions+=(display_last_command) line ensures that display_last_command is executed before each prompt.\
+\
+i only want to see ot once manually, not set it in my zshrc\
+ChatGPT\
+\
+If you want to manually display the last command you entered, including alias expansions, without setting it up in your .zshrc, you can use a one-liner in your terminal. This can be done using the fc (fix command) built-in utility of Zsh, which allows you to list and edit commands from your history.\
+\
+Here's a simple way to print the last command you entered:\
+\
+sh\
+\
+echo "Last command: $(fc -ln -1)"\
+\
+You can run this command in your terminal whenever you want to see the last command.\
+\
+If you prefer to define a temporary function to make this easier, you can do so in your current terminal session:\
+\
+    Define the function:\
+\
+sh\
+\
+last_command() {\
+    echo "Last command: $(fc -ln -1)"\
+}\
+\
+    Use the function whenever you need:\
+\
+sh\
+\
+last_command\
+\
+This function will print the last command you entered each time you run last_command. This approach does not require changes to your .zshrc and can be used ad-hoc in your terminal sessions.\
+but i have AUTO_CD on and it didnt add cd to my command showm\
+ChatGPT\
+\
+If you have AUTO_CD enabled and it didn't add cd to your command, fc -ln -1 will show the path directly. If you want to ensure that the output always shows cd when AUTO_CD is used, you'll need a more elaborate way to detect when a directory change has occurred and format the output accordingly.\
+\
+Here is a function you can use to manually display the last command with special handling for AUTO_CD paths:\
+\
+sh\
+\
+show_last_command() {\
+    last_command=$(fc -ln -1)\
+    # Check if the last command is a directory\
+    if [[ -d $last_command ]]; then\
+        echo "Last command: cd $last_command"\
+    else\
+        echo "Last command: $last_command"\
+    fi\
+}\
+\
+# Run the function to show the last command\
+show_last_command\
+\
+\
+:q\
+\
+"\
+`
+"sudo nvim /usr/local/share/applications\
+"
+sudo cp /usr/share/applications/lpf.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/lpf-gui.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/lpf-notify.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/lpf-spotify-client.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/rofi.desktop /usr/local/share/applications
+sudo cp /usr/share/applications/rofi /usr/local/share/applications
+sudo nvim /usr/local/share/applications
+systemMonitor
+sysmon
+gnome-system-monitor
+bluetooth
+bluetoothctl
+rm /home/oren/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2024.1/.lock
+cls]
+flatpak list
+cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
+sudo cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
+firefox -h
+sudo nvim /usr/local/share/applications/org.mozilla.firefox.desktop
+sudo nvim /usr/local/share/applications/
+pip install configparser -t /home/oren/Downloads/Secure.MSG/venv/lib/python3.12/site-packages
+pip install ed25519 -t /home/oren/Downloads/Secure.MSG/venv/lib/python3.12/site-packages
+pip uninstall configparser -t /home/oren/Downloads/Secure.MSG/venv/lib/python3.12/site-packages
+/home/oren/Downloads/Secure.MSG/venv/lib/python3.12/site-packages
+pip uninstall configparser
+rm configparser-7.0.0.dist-info
+rm -r configparser-7.0.0.dist-info
+ls /usr/bin/
+ls /usr/lib64
+ls /home/oren/.local
+ls /home/oren/.local/lib
+ls /home/oren/.local/lib/python3.12/site-packages/
+python -m site\
+
+py
+python
+.
+./
+Downloads/Secure.MSG
+git log
+python -c "import platform; print(platform.architecture())"
+echo 
+echo
+showkey -a
+echo Downloads
+man alacritty
+man alacritty-bindings
+nvim alacritty.toml
+nvim .config/alacritty.toml
+nvim ~/.zshrc
+/home/oren/.config/zsh
+./fzf
+./fzf-tab
+./powerlevel10k
+pull
+zsh-autocomplete
+nvim Downloads
+nvim "Downloads/Pull All Changes In Directory"
+Downloads/Pull All Changes In Directory
+"Downloads/Pull All Changes In Directory"
+./"Downloads/Pull All Changes In Directory"
+chmod +x Pull\ All\ Changes\ In\ Directory
+./Pull\  
+./Pull\ Changes\ In\ Directory
+rm -r./Pull\ Changes\ In\ Directory
+rm -r ./Pull\ Changes\ In\ Directory
+./Pull\ All\ Changes\ In\ Directory
+./Pull\ All\ Changes\ In\ Directory abc
+./Pull\ All\ Changes\ In\ Directory ./
+./oren/Downloads/Pull\ All\ Changes\ In\ Directory ./
+Downloads/
+"./Pull\ All\ Changes\ In\ Directory ../.config/zsh"
+./Pull\ All\ Changes\ In\ Directory ../.config/zsh
+./Pull\ All\ Changes\ In\ Directory ../.config/zsh > ./e.d
+nvim ./e.d
+nvim alacritty.toml:q
+nvim ./Pull\ All\ Changes\ In\ Directory
+Downloads/Pull\ All\ Changes\ In\ Directory .config/zsh > ./e.d
+"Downloads/Pull All Changes In Directory" .config/zsh
+git help pull
+git pull Downloads/Secure.MSG
+.config/zsh
+git pull ./*/
+git pull ./fzf
+git pull ./fzf/
+git pull ./powerlevel10k
+"Downloads/Pull All Changes In Directory" .config/zsh/
+nvim Downloads/Pull\ All\ Changes\ In\ Directory
+cp  Downloads/Pull\ All\ Changes\ In\ Directory Downloads/Pull\ All\ Changes\ In\ Directoryeee
+Downloads/Pull\ All\ Changes\ In\ Directoryeee
+nvim Downloads/Pull\ All\ Changes\ In\ Directoryeee
+git diff ./Downloads/
+git diff ./Downloads/Pull\ All\ Changes\ In\ Directory ./Downloads/Pull\ All\ Changes\ In\ Directoryeee
+git diff
+nvim Downloads\ All\ Changes\ In\ Directoryeee
+Downloads/ Pull\ All\ Changes\ In\ Directoryeee
+chmod +x Downloads/ Pull\ All\ Changes\ In\ Directoryeee
+Downloads/Pull\ All\ Changes\ In\ Directory
+Downloads/Pull\ All\ Changes\ In\ Directoryeee .config/zsh
+nvim Downloads/ All\ Changes\ In\ Directoryeee
+Downloads/Pull\ All\ Changes\ In\ Directory .config/zsh
+mv Downloads/Pull\ All\ Changes\ In\ Directory Downloads/pull_changes
+mv Downloads/
+nvim Downloads/
+mv Downloads/pull_changes Downloads/pull_git_changes
+nvim Downloads/pull_git_changes
+Downloads/pull_git_changes .config/zsh
+nvim
+nvim ./nvim/init.lua
+sudo dnf upgrade --refresh
+sudo mount /dev/sdb1 /mnt/tmpfs
+tail .zshrc
+zsh:q
+zsh
+echo TODO
+echo $TODO
+python main.py 
+secmmsghf
+clear
+for
+for i in 1 .. 10\
+echo "Hi"
+for i in 1 ... 10\
+echo "Hi"
+for i in 1 ... 10\
+echo -e "Hi\n"
+for i in 1 ... 10\
+echo "Hi\n"
+for i in $(1 .. 10)\
+echo -e "Hi\n"
+/usr/share/wayland-sessions
+sudo mv ./hyprland-laptop.desktop ./hyprland.desktop
+sudo nvim ./hyprland.desktop
+sudo rm hyprland.desktop hyprland-desktop.desktop
+sudo cp /home/oren/.local/share/wayland-sessions /usr/share/wayland-sessions
+sudo cp /home/oren/.local/share/wayland-sessions/hyprland.desktop /usr/share/wayland-sessions
+sudo cp /home/oren/.local/share/wayland-sessions/hyprland-desktop.desktop /usr/share/wayland-sessions
+ls -lc
+sudo mkdir ./tmp
+sudo mv ./hyprland-laptop.desktop ./tmp
+sudo mv ./hyprland.desktop ./tmp
+sudo mv ./hyprland-desktop.desktop ./tmp
+reboot
+cp hyprland.desktop /usr/share/wayland-sessions/
+sudo cp hyprland.desktop /usr/share/wayland-sessions/
+sudo cp hyprland-desktop.desktop /usr/share/wayland-sessions/
+/etc/gdm
+gnome
+gnome-session
+q
+echo $langinfo
+echo $ALACRITTY_LOG
+echo $-
+echo $@
+echo $\!
+echo $_
+echo $aliases
+zegrep
+# Super-duper, extra-special, fantastically amazing script to reveal the mystifying identity of the logged-in user\
+echo "Hold onto your hats, folks! You're about to discover the identity of the one and only, the absolutely incredible, the user who is currently logged in\
+echo "Drumroll, please..."\
+sleep 2\
+echo "ðƒ¿ƒ¬ƒ¿âƒ¼¨ðƒ¿ƒ®ƒ© The current logged-in user is: $USER ðƒ¿ƒ®ƒ©âƒ¼¨ðƒ¿ƒ¬ƒ¿"\
+echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!"\
+\
+\
+"
+bluetoothctl connect
+bluetoothctl scan
+bluetoothctl list -a
+exit
+nvim ~
+echo $(dnf list)
+dnf list
+dnf list > ~/Downloads/pkgs.d
+dnf help list
+dnf help list --installed
+dnf list --installed
+flatpak search vscode
+flatpak install com.visualstudio.code
+vscode
+code
+dnf repoquery --userinstalled
+dnf repoquery --userinstalled > ~/Downloads/pkgs.d
+nvim ~/Downloads/pkgs.d
+bluemoon help
+man bluemoon
+help bluemoon
+bluemoon
+dnf history 3
+echo "$(dnf history 3)"
+dnf history 3 > ~/Downloads/er
+nvim ~/Downloads/er
+rm ~/Downloads/er
+dnf history
+nvim ~/setup.sh
+chsh -h
+chsh zsh
+chsh -l
+chsh --shell /bin/zsh
+echo $USER
+echo $SHELL
+dnf search spotify
+dnf search spotify-client
+dnf install spotify-client
+sudo dnf install spotify-client
+gnome-control-center
+dnf search python
+dnf install python
+sudo dnf install python
+dnf search docker
+bluetoothctl connect 
+bluetoothctl list
+bluetoothctl devices
+flatpak search docker
+cat ~/Downloads/pkgs.d
+dnf search hyprpaper
+dnf install hyprpaper
+sudo dnf install hyprland
+sudo dnf deplist hyprland
+sudo dnf info hyprland
+sudo dnf install hyprpaper
+systemctl status hyprpaper
+cd /sys/class/thermal/\
+
+cat thermal_zone0/temp
+ for zone in /sys/class/thermal/thermal_zone*/temp; do\
+    zone_name=$(basename $(dirname $zone))\
+    temp=$(cat $zone)\
+    echo "$zone_name: $(echo "scale=1; $temp / 1000" | bc)Â°C"\
+done\
+
+journalctl
+sudo journalctl -b -1\
+
+cat "/sys/class/power_supply/BAT0"
+cat /sys/class/power_supply/BAT0
+cat /sys/class/power_supply/BAT0/energy_now
+cat /sys/class/power_supply/BAT0/status
+mkdir /usr/local/share/wayland-sessions
+sudo mkdir /usr/local/share/wayland-sessions
+cp /usr/share/wayland-sessions /usr/local/share/wayland-sessions
+cp -r /usr/share/wayland-sessions /usr/local/share/wayland-sessions
+sudo cp -r /usr/share/wayland-sessions /usr/local/share/wayland-sessions
+sudo mv /usr/share/wayland-sessions ~/Downloads/t
+/usr/local/share/wayland-sessions/wayland-sessions
+cp ./wayland-sessions/* .
+sudo cp ./wayland-sessions/* .
+sudo cp -r ./wayland-sessions/* .
+ls -l
+rm ./tmp
+sudo rm -r ./tmp
+sudo rm -r ./wayland-sessions
+echo $XDG_DATA_DIRS
+nvim setup.sh
+echo \\
+hi
+echo $EUID
+echo $EUID -ne
+echo "$EUID" -ne
+echo ~HOME
+echo $HOME
+echo ~SHELL
+bluetoothctl connect B8:81:FA:7F:25:53
+cat /sys/class/power_supply/BAT0/capacity
+waybar
+cd ~/Dow
+~
+~/Do:q
+dnf search fzf
+sudo dnf install~ fzf
+sudo dnf install fzf
+./zsh
+ls
+nvim bindings
+echo ~apache
+hrasv
+git help clone
+/home/oren/.config/zsh/powerlevel10k/.p10k.zsh
+p10k configure
+cls
+alsamixer
+cat ~/Downloads/Secure.MSG/main.py
+dkpg
+nvim /etc/grub2.cfg
+nvim /etc/grub2-efi.cfg
+nvim /boot/grub2
+grub
+nvim .zshrc
+update && echo "×§×ƒµ×¨×ƒµ×ª ×ƒ·×ƒ¹×ƒ¹×ƒ½"
+×ƒ²×ƒ¾×ƒ» ×ƒ³×§×©×¨×ƒ±×ƒ¹ ×©×¨×ƒ¿×©×ƒº
+dnf search arial
+dnf search roboto
+dnf install google-roboto-fonts-2.138-17.fc40.noarch
+sudo dnf install google-roboto-fonts-2.138-17.fc40.noarch
+dnf search aleph
+ dnf search heebo
+"mount /dev/\
+:\
+"
+#mount /dev/
+# mount /dev/
+lsblk
+mount /dev/sda3 /mnt/Game\ Library/
+sudo mount /dev/sda3 /mnt/Game\ Library/
+cat /proc/cpuinfo | grep "MHz"\
+
+cat /proc/cpuinfo
+echo -e "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+echo -e "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b" &
+echo "" && echo -e "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+cat /proc/cpuinfo | grep "MHz"~
+cat /proc/cpuinfo | grep "MHz"
+steam -no-browser~
+env -u WAYLAND_DISPLAY steam
+update
+sudo mount /dev/sdb1 /mnt/Game\ Library/
+nvim .
+sudo mv /usr/local/share/applications/org.mozilla.firefox.private.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/idea.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/rofi.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/lpf.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/lpf-gui.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/lpf-notify.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/lpf-spotify-client.desktop /home/oren/.local/share/applications
+sudo mv /usr/local/share/applications/nwg-panel-config.desktop /home/oren/.local/share/applications
+git  status'\
+'
+
+git add .local/share/applications/
+git add .config/zsh
+git init
+git add alacritty.toml
+..
+.config
+git add hypr/ nvim/ rofi/ waybar/ zsh/
+git add zsh/history zsh/fzf zsh/powerlevel10k
+git status
+../fzf
+git pull
+\:q
+: 1717534586:0;git add zsh/history zsh/fzf zsh/powerlevel10k
+: 1717534588:0;git status
+: 1717534613:0;git help submodule
+: 1717534625:0;git-sub
+: 1717534638:0;git git-submodule
+: 1717534643:0;git-submodule
+: 1717534647:0;git help submodule
+: 1717534717:0;git submodule add zsh/fzf
+: 1717534728:0;git submodule add ./zsh/fzf
+: 1717534754:0;git submodule add .config/zsh/fzf
+: 1717534763:0;..
+: 1717534767:0;git submodule add .config/zsh/fzf
+: 1717534772:0;git submodule add ./.config/zsh/fzf
+: 1717534794:0;.config
+: 1717534802:0;./zsh
+: 1717534825:0;git submodule add /home/oren/.config/zsh/fzf
+: 1717534861:0;git submodule add /home/oren/.config/zsh/powerlevel10k
+: 1717534867:0;..
+: 1717534872:0;git submodule add /home/oren/.config/zsh/powerlevel10k
+: 1717534876:0;git submodule add /home/oren/.config/zsh/fzf
+: 1717534892:0;git help submodule add
+: 1717535639:0;git add zsh/history zsh/fzf zsh/powerlevel10k
+: 1717535659:0;git status
+: 1717535681:0;git add zsh/history
+: 1717535807:0;git add zsh/zsh_history
+: 1717535809:0;git status
+: 1717535820:0;git add zsh/history
+: 1717535822:0;git status
+: 1717535841:0;git add zsh/history
+: 1717536119:0;git add -v zsh/history
+: 1717536129:0;git add -vvvv zsh/history
+: 1717536256:0;grep -i 'history' .gitignore
+: 1717536258:0;..
+: 1717536260:0;grep -i 'history' .gitignore
+: 1717536276:0;grep -i 'history' .git/info/exclude
+: 1717536320:0;git config --get core.excludesFile
+: 1717536368:0;git add -f zsh/history
+: 1717536376:0;.config
+: 1717536380:0;git add -f zsh/history
