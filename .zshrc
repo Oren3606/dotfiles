@@ -21,6 +21,8 @@ source ~/.config/zsh/bindings
 autoload -U compinit && compinit
 setopt AUTO_CD
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+export EDITOR="/usr/bin/nvim"
+export VISUAL="/usr/bin/nvim"
 
 # Plugins
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
