@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/usr/local/bin/idea-IC-241.15989.150/bin/idea.sh
+Exec=/home/oren/.local/bin/ideaIC-2024.1.2/idea-IC-241.17011.79/bin/idea.sh
 GenericName=Capable and Ergonomic Java IDE
 Icon=com.jetbrains.IntelliJ-IDEA-Community
 Name=IntelliJ IDEA

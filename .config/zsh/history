@@ -563,7 +563,6 @@ nvim hyprland_desktop.config
 config
 mount game library
 mngl
-nvim aliases
 dnf search glibc.i686 libstdc++.i686
 dnf search glibc.i686 libstdc++
 dnf search glibc libstdc++
@@ -1113,7 +1112,6 @@ Downloads/Pull\ All\ Changes\ In\ Directory .config/zsh > ./e.d
 "Downloads/Pull All Changes In Directory" .config/zsh
 git help pull
 git pull Downloads/Secure.MSG
-.config/zsh
 git pull ./*/
 git pull ./fzf
 git pull ./fzf/
@@ -1145,12 +1143,10 @@ sudo dnf upgrade --refresh
 sudo mount /dev/sdb1 /mnt/tmpfs
 tail .zshrc
 zsh:q
-zsh
 echo TODO
 echo $TODO
 python main.py 
 secmmsghf
-clear
 for
 for i in 1 .. 10\
 echo "Hi"
@@ -1174,7 +1170,6 @@ sudo mkdir ./tmp
 sudo mv ./hyprland-laptop.desktop ./tmp
 sudo mv ./hyprland.desktop ./tmp
 sudo mv ./hyprland-desktop.desktop ./tmp
-reboot
 cp hyprland.desktop /usr/share/wayland-sessions/
 sudo cp hyprland.desktop /usr/share/wayland-sessions/
 sudo cp hyprland-desktop.desktop /usr/share/wayland-sessions/
@@ -1226,7 +1221,6 @@ echo "$(dnf history 3)"
 dnf history 3 > ~/Downloads/er
 nvim ~/Downloads/er
 rm ~/Downloads/er
-dnf history
 nvim ~/setup.sh
 chsh -h
 chsh zsh
@@ -1304,15 +1298,12 @@ cd ~/Dow
 dnf search fzf
 sudo dnf install~ fzf
 sudo dnf install fzf
-./zsh
-ls
 nvim bindings
 echo ~apache
 hrasv
 git help clone
 /home/oren/.config/zsh/powerlevel10k/.p10k.zsh
 p10k configure
-cls
 alsamixer
 cat ~/Downloads/Secure.MSG/main.py
 dkpg
@@ -1320,7 +1311,6 @@ nvim /etc/grub2.cfg
 nvim /etc/grub2-efi.cfg
 nvim /boot/grub2
 grub
-nvim .zshrc
 update && echo "×§×ƒµ×¨×ƒµ×ª ×ƒ·×ƒ¹×ƒ¹×ƒ½"
 ×ƒ²×ƒ¾×ƒ» ×ƒ³×§×©×¨×ƒ±×ƒ¹ ×©×¨×ƒ¿×©×ƒº
 dnf search arial
@@ -1334,7 +1324,6 @@ dnf search aleph
 "
 #mount /dev/
 # mount /dev/
-lsblk
 mount /dev/sda3 /mnt/Game\ Library/
 sudo mount /dev/sda3 /mnt/Game\ Library/
 cat /proc/cpuinfo | grep "MHz"\
@@ -1347,9 +1336,6 @@ cat /proc/cpuinfo | grep "MHz"~
 cat /proc/cpuinfo | grep "MHz"
 steam -no-browser~
 env -u WAYLAND_DISPLAY steam
-update
-sudo mount /dev/sdb1 /mnt/Game\ Library/
-nvim .
 sudo mv /usr/local/share/applications/org.mozilla.firefox.private.desktop /home/oren/.local/share/applications
 sudo mv /usr/local/share/applications/idea.desktop /home/oren/.local/share/applications
 sudo mv /usr/local/share/applications/rofi.desktop /home/oren/.local/share/applications
@@ -1365,50 +1351,114 @@ git add .local/share/applications/
 git add .config/zsh
 git init
 git add alacritty.toml
-..
-.config
 git add hypr/ nvim/ rofi/ waybar/ zsh/
-git add zsh/history zsh/fzf zsh/powerlevel10k
-git status
 ../fzf
 git pull
+git-sub
+git git-submodule
+git-submodule
+git help submodule
+git submodule add zsh/fzf
+git submodule add ./zsh/fzf
+git submodule add .config/zsh/fzf
+git submodule add ./.config/zsh/fzf
+git submodule add /home/oren/.config/zsh/powerlevel10k
+git submodule add /home/oren/.config/zsh/fzf
+git help submodule add
+git add zsh/history zsh/fzf zsh/powerlevel10k
+git add zsh/zsh_history
+git add zsh/history
+git add -v zsh/history
+git add -vvvv zsh/history
+grep -i 'history' .gitignore
+grep -i 'history' .git/info/exclude
+git config --get core.excludesFile
+.config
+git add -f zsh/history
+git help status
+./zsh
+git add .zshrc
+./rofi-power-menu
+git add bin 
+git add applications/
+.local/
+./share
+git add ./wayland-sessions
+git add -v ./wayland-sessions
+git status
+..
+nvim .zshrc
+echo $EDITOR
+ls /usr/bin/nvim
+/usr/bin/nvim
+git commit
+git remote add git@github.com:Oren3606/dotfiles.git
+git remote add origin git@github.com:Oren3606/dotfiles.git
+git branch
+git push -u origin master
+mnt gl
+zsh
+mntgl
+sudo umount /dev/sda3 /mnt/Game\ Library/
+sudo umount /dev/sda3
+.config/zsh
+nvim alias
+nvim aliases
+echo $XDG_SESSION_TYPE
+.config/hy
+.config/hypr
+update
+sudo dnf install akmod-nvidia
+nvim /etc/modprobe.d/blacklst-nouveau
+nvim /etc/modprobe.d/blacklist-nouveau.conf
+sudo dnf upgrade -y
+clear
+sudo dnf install xorg-x11-drv-nvidia-cuda
+/sbin/lspci | grep -e VGA
+lsblk
+sudo mount /dev/sdb1 /mnt/Game\ Library/
+sudo nvim /etc/modprobe.d/blacklist-nouveau.conf
+sudo rm /etc/modprobe.d/blacklist-nouveau.conf
+dnf search nouveau
+dnf install nouveau
+sudo dnf install nouveau
+dnf list installed xorg-x11-drv-nouveau
+sudo dnf install xorg-x11-drv-nouveau
+dnf history
+dnf history info 62
+dnf history info 64
+dnf history info 63
+nvim /etc/default/grub
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg\
+
+sudo nvim /etc/default/grub
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg\
+
+sudo dracut --force
+reboot
+nvidia-smi
+cls
+dnf search toolbox
+dnf search toolbox | grep jetbrains
+sudo rm /usr/local/bin/idea-IC-241.15989.150 -r
+./share/applications
+ls
+nvim idea.desktop
+.local
+cd .local
+cd config
+hypr
+nvim .
+hyprctl dispatch movetoworkspacetospecial "master"\
+
 \:q
-: 1717534586:0;git add zsh/history zsh/fzf zsh/powerlevel10k
-: 1717534588:0;git status
-: 1717534613:0;git help submodule
-: 1717534625:0;git-sub
-: 1717534638:0;git git-submodule
-: 1717534643:0;git-submodule
-: 1717534647:0;git help submodule
-: 1717534717:0;git submodule add zsh/fzf
-: 1717534728:0;git submodule add ./zsh/fzf
-: 1717534754:0;git submodule add .config/zsh/fzf
-: 1717534763:0;..
-: 1717534767:0;git submodule add .config/zsh/fzf
-: 1717534772:0;git submodule add ./.config/zsh/fzf
-: 1717534794:0;.config
-: 1717534802:0;./zsh
-: 1717534825:0;git submodule add /home/oren/.config/zsh/fzf
-: 1717534861:0;git submodule add /home/oren/.config/zsh/powerlevel10k
-: 1717534867:0;..
-: 1717534872:0;git submodule add /home/oren/.config/zsh/powerlevel10k
-: 1717534876:0;git submodule add /home/oren/.config/zsh/fzf
-: 1717534892:0;git help submodule add
-: 1717535639:0;git add zsh/history zsh/fzf zsh/powerlevel10k
-: 1717535659:0;git status
-: 1717535681:0;git add zsh/history
-: 1717535807:0;git add zsh/zsh_history
-: 1717535809:0;git status
-: 1717535820:0;git add zsh/history
-: 1717535822:0;git status
-: 1717535841:0;git add zsh/history
-: 1717536119:0;git add -v zsh/history
-: 1717536129:0;git add -vvvv zsh/history
-: 1717536256:0;grep -i 'history' .gitignore
-: 1717536258:0;..
-: 1717536260:0;grep -i 'history' .gitignore
-: 1717536276:0;grep -i 'history' .git/info/exclude
-: 1717536320:0;git config --get core.excludesFile
-: 1717536368:0;git add -f zsh/history
-: 1717536376:0;.config
-: 1717536380:0;git add -f zsh/history
+: 1717607547:0;hyprctl dispatch swapactive
+: 1717607554:0;hyprctl dispatch list
+: 1717607572:0;hyprctl --batch
+: 1717607616:0;hyprctl layouts
+: 1717607786:0;nvim .
+: 1717607795:0;cls
+: 1717608080:0;nvim .zshrc
+: 1717608279:0;echo $VISUAL
+: 1717609149:0;git status
+: 1717609173:0;git commit -a
