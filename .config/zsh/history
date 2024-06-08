@@ -638,7 +638,6 @@ echo "Let's find out how long this poor machine has been suffering under your 'e
 "
 echo "Let's find out how long this poor machine has been suffering under your 'expert' care." && sleep 2 && uptime_output=$(uptime) && echo "Wow, look at that! The system has been up for: $uptime_output" && echo "Impressive, isn't it? Just like your procrastination skills." && echo "In case you were wondering, this is the system uptime. It's not like you could've just typed 'uptime' in the terminal yourself." && echo "Congratulations on wasting more time running this script. Have a fantastic day\
 "
-Downloads
 chmod +x tr.d
 ./tr.d
 nvim tr.d
@@ -1137,14 +1136,12 @@ nvim Downloads/
 mv Downloads/pull_changes Downloads/pull_git_changes
 nvim Downloads/pull_git_changes
 Downloads/pull_git_changes .config/zsh
-nvim
 nvim ./nvim/init.lua
 sudo dnf upgrade --refresh
 sudo mount /dev/sdb1 /mnt/tmpfs
 tail .zshrc
 zsh:q
 echo TODO
-echo $TODO
 python main.py 
 secmmsghf
 for
@@ -1293,7 +1290,6 @@ bluetoothctl connect B8:81:FA:7F:25:53
 cat /sys/class/power_supply/BAT0/capacity
 waybar
 cd ~/Dow
-~
 ~/Do:q
 dnf search fzf
 sudo dnf install~ fzf
@@ -1304,7 +1300,6 @@ hrasv
 git help clone
 /home/oren/.config/zsh/powerlevel10k/.p10k.zsh
 p10k configure
-alsamixer
 cat ~/Downloads/Secure.MSG/main.py
 dkpg
 nvim /etc/grub2.cfg
@@ -1385,16 +1380,12 @@ git add applications/
 ./share
 git add ./wayland-sessions
 git add -v ./wayland-sessions
-git status
-..
-nvim .zshrc
 echo $EDITOR
 ls /usr/bin/nvim
 /usr/bin/nvim
 git commit
 git remote add git@github.com:Oren3606/dotfiles.git
 git remote add origin git@github.com:Oren3606/dotfiles.git
-git branch
 git push -u origin master
 mnt gl
 zsh
@@ -1407,12 +1398,10 @@ nvim aliases
 echo $XDG_SESSION_TYPE
 .config/hy
 .config/hypr
-update
 sudo dnf install akmod-nvidia
 nvim /etc/modprobe.d/blacklst-nouveau
 nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo dnf upgrade -y
-clear
 sudo dnf install xorg-x11-drv-nvidia-cuda
 /sbin/lspci | grep -e VGA
 lsblk
@@ -1428,37 +1417,111 @@ dnf history
 dnf history info 62
 dnf history info 64
 dnf history info 63
-nvim /etc/default/grub
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg\
-
-sudo nvim /etc/default/grub
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg\
 
 sudo dracut --force
-reboot
 nvidia-smi
-cls
 dnf search toolbox
 dnf search toolbox | grep jetbrains
 sudo rm /usr/local/bin/idea-IC-241.15989.150 -r
 ./share/applications
-ls
 nvim idea.desktop
 .local
 cd .local
 cd config
 hypr
-nvim .
 hyprctl dispatch movetoworkspacetospecial "master"\
 
+hyprctl dispatch swapactive
+hyprctl dispatch list
+hyprctl --batch
+hyprctl layouts
+nvim .
+echo $VISUAL
+git status
+git commit -a
+git push
+git branch
+downloads
+cd downloads
+Downloads
+nvim tdl.scmsg
+cla
+cd config nvim
+nvim init.lua
+nvim
+clear
+echo $TODO
+sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg
+/etc/grub.d
+sudo cd /etc/grub.d
+sudo /etc/grub.d
+sudo cd /etc/grub.d/
+sudo ls /etc/grub.d/
+sudo cat /etc/grub.d/README
+/etc/default/grub
+ls /etc/default/grub
+nvim /etc/default/grub
+sudo nvim /etc/default/grub
+echo $COLORTERM
+-
+true
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg\
+
+sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg\
+
+sudo awk -F\' '/^menuentry / {print $2}' /boot/efi/EFI/fedora/grub.cfg\
+
+sudo awk -F\' '/^menuentry / {print $2}' /boot/efi/EFI/fedora/grub.cfg
+sudo find / -name grub.cfg\
+
+cat /boot/efi/EFI/fedora/grub.cfg
+sudo cat /boot/efi/EFI/fedora/grub.cfg
+c;s
+awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
+sudo awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
+sudo awk -F\' '/menuentry / {print $2}' /etc/default/grub.d
+sudo awk -F\' '/menuentry / {print $2}' /etc/default/grub
+sudo nvim /boot/efi/EFI/fedora/grub.cfg
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+reboot
+dnf search neovide
+dnf search neov
+dnf search nvim
+echo $VIMRUNTIME
+/usr/local/share/
+ls
+ls applications
+ls info
+ls man
+..
+~
+cls
+.local/share/nvim
+ls -a
+7z
+alsamixer
+nvim .zshrc
+update
+dnf search hyprlock
+cmake
 \:q
-: 1717607547:0;hyprctl dispatch swapactive
-: 1717607554:0;hyprctl dispatch list
-: 1717607572:0;hyprctl --batch
-: 1717607616:0;hyprctl layouts
-: 1717607786:0;nvim .
-: 1717607795:0;cls
-: 1717608080:0;nvim .zshrc
-: 1717608279:0;echo $VISUAL
-: 1717609149:0;git status
-: 1717609173:0;git commit -a
+: 1717843609:0;cd local bin
+: 1717843613:0;cd .local bin
+: 1717843619:0;.local/bin
+: 1717843630:0;ls
+: 1717843637:0;./grimblast
+: 1717843645:0;sudo ./grimblast
+: 1717843668:0;chmod +x grimblast
+: 1717843675:0;./grimblast
+: 1717843696:0;./grimblast copy
+: 1717843740:0;./grimblast copy area
+: 1717843771:0;git add grimblast
+: 1717843780:0;cd hypr
+: 1717843787:0;nvim .
+: 1717843845:0;grim
+: 1717843855:0;grimblast
+: 1717844043:0;git commit .local/bin/grimblast
+: 1717844103:0;nvim .config/hypr
+: 1717844179:0;git commit --amend .config/hypr/
+: 1717844204:0;git commit -a

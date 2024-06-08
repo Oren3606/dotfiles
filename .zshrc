@@ -43,9 +43,6 @@ setopt hist_find_no_dups
 
 export TODO="
 	1. customize prompt
-	2. move pl10k to .config/zsh
-	3. update should also check for shell plugin updates
 	4. nvim setup
-	5. grub entries
 	"
 
