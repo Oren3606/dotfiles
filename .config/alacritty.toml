@@ -1,13 +1,11 @@
 [font]
-normal.family = "MesloLGS NF"
+# normal.family will automatically be applied to all styles
+normal = { family = "Fira Mono", style = "Regular" }
+size = 12
 
-[[keyboard.bindings]]
-key = "Up"
-mods = "Shift"
-action = "ScrollLineUp"
-
-[[keyboard.bindings]]
-key = "Down"
-mods = "Shift"
-action = "ScrollLineDown"
+[keyboard]
+bindings = [ 
+{ key = "Up", mods = "Shift", action = "ScrollLineUp" },
+{ key = "Down", mods = "Shift", action = "ScrollLineDown" }
+]
 

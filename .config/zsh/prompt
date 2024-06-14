@@ -1,0 +1,29 @@
+# Enable colors
+autoload -U colors && colors
+
+# Define prompt components
+username_prompt="%F{green}%n${%f%k}"
+at_prompt="%F{242}@${%f%k}"
+hostname_prompt="%F{106}%m${%f%k}"
+time_prompt="%F{red}%D{%I:%M%p}${%f%k}"
+directory_prompt="%F{blue}%~${%f%k}"
+privileges_prompt="%F{white}"
+
+# Check if user is root or not
+if [[ $EUID -eq 0 ]]; then
+    # If root
+    privileges_prompt+="%F{red}#${%f%k}"
+else
+    # If not root
+    privileges_prompt+="%F{white}\$${%f%k}"
+fi
+
+# Make \n work
+NEWLINE=$'\n'
+
+# Combine prompt components
+PS1="${username_prompt}${at_prompt}${hostname_prompt} ${time_prompt} ${directory_prompt}${NEWLINE}${privileges_prompt} ${%f%k}"
+
+# Export the PS1 variable
+export PS1
+
