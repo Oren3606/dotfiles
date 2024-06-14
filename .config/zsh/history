@@ -34,7 +34,6 @@ z config hypr
 t
 zshexit_functions
 owefh
-\:
 docker
 dnf search docker-desktop
 EtgN
@@ -50,9 +49,7 @@ git -c
 git -C
 echo $(source zoxide init zsh\
 )
-echo $PS1
 echo $RPS1
-su
 sudo cd /run/host/user-fonts/
 sudo cd /run/host/
 sudo ls -a
@@ -110,7 +107,6 @@ echo "${XDG_CACHE_HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 echo "$XDG_CACHE_HOME/.cache/p10k-instant-prompt-${(%):-%n}.zsh"
 .vonfig
 upgrade
-pwd
 nvim .zs
 echo -ne '\e[6 q''\e[6 q'
 echo -ne '\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q''\e[6 q'
@@ -499,7 +495,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf\
 
 rm -r ~/.fzf\
 
-y
 git clone --depth 1 https://github.com/junegunn/fzf.git\
 
 dnf remove fzf
@@ -519,7 +514,6 @@ nvim ./install
 echo "Last command: $(fc -ln)"
 z zsh conf
 z zsh config
-cd zsh config
 dnf check-update\
 
 git clone https://github.com/Aloxaf/fzf-tab.git
@@ -558,7 +552,6 @@ nvim $LD_PRELOAD
 wine
 sudo flatpak uninstall steam
 sudo mount /dev/sda3 /mnt/Game\ Library
-cd hypr
 nvim hyprland_desktop.config
 config
 mount game library
@@ -1044,7 +1037,6 @@ bluetooth
 bluetoothctl
 rm /home/oren/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2024.1/.lock
 cls]
-flatpak list
 cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
 sudo cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
 firefox -h
@@ -1069,7 +1061,6 @@ python
 .
 ./
 Downloads/Secure.MSG
-git log
 python -c "import platform; print(platform.architecture())"
 echo 
 echo
@@ -1077,8 +1068,6 @@ showkey -a
 echo Downloads
 man alacritty
 man alacritty-bindings
-nvim alacritty.toml
-nvim .config/alacritty.toml
 nvim ~/.zshrc
 /home/oren/.config/zsh
 ./fzf
@@ -1153,8 +1142,6 @@ for i in 1 ... 10\
 echo -e "Hi\n"
 for i in 1 ... 10\
 echo "Hi\n"
-for i in $(1 .. 10)\
-echo -e "Hi\n"
 /usr/share/wayland-sessions
 sudo mv ./hyprland-laptop.desktop ./hyprland.desktop
 sudo nvim ./hyprland.desktop
@@ -1173,7 +1160,6 @@ sudo cp hyprland-desktop.desktop /usr/share/wayland-sessions/
 /etc/gdm
 gnome
 gnome-session
-q
 echo $langinfo
 echo $ALACRITTY_LOG
 echo $-
@@ -1194,7 +1180,6 @@ echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!
 bluetoothctl connect
 bluetoothctl scan
 bluetoothctl list -a
-exit
 nvim ~
 echo $(dnf list)
 dnf list
@@ -1286,8 +1271,6 @@ echo "$EUID" -ne
 echo ~HOME
 echo $HOME
 echo ~SHELL
-bluetoothctl connect B8:81:FA:7F:25:53
-cat /sys/class/power_supply/BAT0/capacity
 waybar
 cd ~/Dow
 ~/Do:q
@@ -1368,7 +1351,6 @@ git add -vvvv zsh/history
 grep -i 'history' .gitignore
 grep -i 'history' .git/info/exclude
 git config --get core.excludesFile
-.config
 git add -f zsh/history
 git help status
 ./zsh
@@ -1383,19 +1365,16 @@ git add -v ./wayland-sessions
 echo $EDITOR
 ls /usr/bin/nvim
 /usr/bin/nvim
-git commit
 git remote add git@github.com:Oren3606/dotfiles.git
 git remote add origin git@github.com:Oren3606/dotfiles.git
 git push -u origin master
 mnt gl
-zsh
 mntgl
 sudo umount /dev/sda3 /mnt/Game\ Library/
 sudo umount /dev/sda3
 .config/zsh
 nvim alias
 nvim aliases
-echo $XDG_SESSION_TYPE
 .config/hy
 .config/hypr
 sudo dnf install akmod-nvidia
@@ -1404,7 +1383,6 @@ nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo dnf upgrade -y
 sudo dnf install xorg-x11-drv-nvidia-cuda
 /sbin/lspci | grep -e VGA
-lsblk
 sudo mount /dev/sdb1 /mnt/Game\ Library/
 sudo nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf
@@ -1428,7 +1406,6 @@ sudo rm /usr/local/bin/idea-IC-241.15989.150 -r
 nvim idea.desktop
 .local
 cd .local
-cd config
 hypr
 hyprctl dispatch movetoworkspacetospecial "master"\
 
@@ -1436,22 +1413,14 @@ hyprctl dispatch swapactive
 hyprctl dispatch list
 hyprctl --batch
 hyprctl layouts
-nvim .
 echo $VISUAL
-git status
-git commit -a
-git push
-git branch
 downloads
 cd downloads
 Downloads
 nvim tdl.scmsg
-cla
 cd config nvim
 nvim init.lua
 nvim
-clear
-echo $TODO
 sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg
 /etc/grub.d
 sudo cd /etc/grub.d
@@ -1475,8 +1444,6 @@ sudo awk -F\' '/^menuentry / {print $2}' /boot/efi/EFI/fedora/grub.cfg\
 sudo awk -F\' '/^menuentry / {print $2}' /boot/efi/EFI/fedora/grub.cfg
 sudo find / -name grub.cfg\
 
-cat /boot/efi/EFI/fedora/grub.cfg
-sudo cat /boot/efi/EFI/fedora/grub.cfg
 c;s
 awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
 sudo awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
@@ -1490,38 +1457,454 @@ dnf search neov
 dnf search nvim
 echo $VIMRUNTIME
 /usr/local/share/
-ls
 ls applications
 ls info
 ls man
-..
 ~
-cls
 .local/share/nvim
-ls -a
 7z
-alsamixer
-nvim .zshrc
-update
 dnf search hyprlock
 cmake
+cd local bin
+cd .local bin
+.local/bin
+sudo ./grimblast
+chmod +x grimblast
+./grimblast
+./grimblast copy
+./grimblast copy area
+git add grimblast
+cd hypr
+nvim .
+grimblast
+git commit .local/bin/grimblast
+nvim .config/hypr
+git commit --amend .config/hypr/
+git log
+grim help
+help grim 
+grim
+slurp
+grim slurp
+alacritty -h
+alacritty echo "e"
+alacritty -e echo "e"
+alacritty -e echo
+alacritty -e "echo"
+for i in $(1 .. 10)\
+echo -e "Hi\n"
+for i in $(1 .. 10)\
+\
+\
+done
+for i in 10\
+\
+\
+echo 'hi'
+for i in 10:\
+\
+echo 'hi'
+for i in 1 2 3 4 5 6 7 8 9 0:\
+\
+echo 'hi'
+$time
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	alacritty\
+	echo time
+for i in 1 2 3 4 5 6 7 8 9 0:\
+echo $i\\
+Alacritty
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	echo $i\\
+	Alacritty\\
+done
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	echo $i\\
+	exec Alacritty\\
+done
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	echo "$i"\\
+	Alacritty\\
+done
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	echo "$i"\
+	Alacritty\\
+done
+for i in 1 2 3 4 5 6 7 8 9 0:\
+	echo "$i"\
+	Alacritty
+for i in 1 2 3 4 5 6 7 8 9 0:{\
+	echo "$i"\
+	Alacritty}
+for i in 1 2 3 4 5 6 7 8 9 0\
+do\
+echo "$i"\
+Alacritty\
+done
+for i in 1 2 3 4 5 6 7 8 9 0\
+do\
+echo "$i"\
+alacritty\
+done
+times
+bluetoothctl connect B8:81:FA:7F:25:53
+/usr/bin/time zsh -i -c exit
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+
+for i in 1 .. 10:\ /usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+
+for i in 1 .. 10:/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+
+for i in 1 .. 10:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in 1 ... 10:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in /etc:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in /etc/:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in /etc/*:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in /etc/*.*:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in *:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in $(/etc/):\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in 1 2 3 4 5 6 7 8 9 0:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in {1 .. 10):\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in {1 .. 10}:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in {1..10}:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+for i in {1..100}:\
+do\
+/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}'\
+done
+total_time=0\
+\
+for i in {1..100}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / 100" | bc)\
+\
+echo "Average startup time over 100 runs: $average_time seconds"\
+
+total_time=0\
+runs=10\
+for i in {1..$(runs)}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / 100" | bc)\
+\
+echo "Average startup time over $runs runs: $average_time seconds"\
+
+total_time=0\
+runs=1000\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / 100" | bc)\
+\
+echo "Average startup time over $runs runs: $average_time seconds"\
+
+total_time=0\
+runs=10\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / 100" | bc)\
+\
+echo "Average startup time over $runs runs: $average_time seconds"\
+
+total_time=0\
+runs=10\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / $runs" | bc)\
+\
+echo "Average startup time over $runs runs: $average_time seconds"\
+
+total_time=0\
+runs=@1\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo "$total_time + $elapsed_time" | bc)\
+done\
+\
+average_time=$(echo "scale=3; $total_time / $runs" | bc)\
+\
+echo "Average startup time over $runs runs: $average_time seconds"\
+\
+
+echo \\
+"total_time=0\
+runs=@1\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo \"$total_time + $elapsed_time\" | bc)\
+done\
+\
+average_time=$(echo \"scale=3; $total_time / $runs\" | bc)\
+\
+echo \"Average startup time over $runs runs: $average_time seconds\" " > ~/Downloads/a.tmpsh
+chmod +x ~/Downloads/a.tmpsh
+echo \\
+"total_time=0\
+runs=@1\
+for i in {1..$runs}\
+do\
+  elapsed_time=$(/usr/bin/time -p zsh -i -c exit 2>&1 | grep real | awk '{print $2}')\
+  total_time=$(echo \"$total_time + $elapsed_time\" | bc)\
+done\
+\
+average_time=$(echo \"scale=3; $total_time / $runs\" | bc)\
+\
+echo \"Average startup time over $runs runs: $average_time seconds\" "
+~/Downloads/a.tmpsh 12
+Downloads/zsh_startuptime
+Downloads/zsh_startuptime 10
+Downloads/zsh_startuptime 100
+Downloads/zsh_startuptime 10000
+rm -r Downloads/t
+sudo rm -r Downloads/t
+git add .local/share/fonts/SF-Pro.ttf
+cd config
+nvim alacritty.toml
+zypper
+dnf search zypper
+flatpak search ffmpeg
+flatpak search org.freedesktop.Platform.ffmpeg-full\
+
+flatpak install org.freedesktop.Platform.ffmpeg-full\
+
+flatpak search flatpak
+flatpak search jetbrains
+cd zsh config
+cd config zsh 
+touch prompt
+echo -e $PS1
+echo %F{red}%n%f@%F{blue}%m%f:%F{yellow}%~%f%#
+PS1=%F{red}%n%f@%F{blue}%m%f:%F{yellow}%~%f%#
+PS1="Hello %n, welcome to %m! Your current directory is %~%# "
+export PS1=%F{red}%n%f@%F{blue}%m%f:%F{yellow}%~%f%#
+export PS1=export PS1="Hello %n, welcome to %m! Your current directory is %~%# "\
+
+echo $PS1
+./oren
+btrfs help
+zsh
+clear
+\:
+q
+TODO=o
+btrfs subvolume list
+btrfs subvolume list /
+btrfs subvolume list /home
+btrfs subvolume list /home -a
+sudo btrfs subvolume list /
+sudo btrfs subvolume list 
+man btrfs
+git switch feature/IP
+git branch feature/connect-over-IP
+git branch
+git switch feature/connect-over-IP
+git commit
+git commit -a
+git status
+git push
+git push -u
+git push -u origin feature/connect-over-IP
+man PS1
+nvim .config/zsh/aliases
+python -V
+dnf info python
+dnf info python3.10-3.10.14-2.fc40.x86_64 python3.10-debug-3.10.14-2.fc40.i686 python3.10-debug-3.10.14-2.fc40.x86_64 python3.10-devel-3.10.13-6.fc40.i686 python3.10-devel-3.10.13-6.fc40.x86_64 python3.10-devel-3.10.14-2.fc40.i686 python3.10-devel-3.10.14-2.fc40.x86_64 python3.10-idle-3.10.13-6.fc40.i686 python3.10-idle-3.10.13-6.fc40.x86_64 python3.10-idle-3.10.14-2.fc40.i686 python3.10-idle-3.10.14-2.fc40.x86_64 python3.10-libs-3.10.13-6.fc40.i686 python3.10-libs-3.10.13-6.fc40.x86_64 python3.10-libs-3.10.14-2.fc40.i686 python3.10-libs-3.10.14-2.fc40.x86_64 python3.10-test-3.10.13-6.fc40.i686 python3.10-test-3.10.13-6.fc40.x86_64 python3.10-test-3.10.14-2.fc40.i686 python3.10-test-3.10.14-2.fc40.x86_64 python3.10-tkinter-3.10.13-6.fc40.i686 python3.10-tkinter-3.10.13-6.fc40.x86_64 python3.10-tkinter-3.10.14-2.fc40.i686 python3.10-tkinter-3.10.14-2.fc40.x86_64 python3.11-3.11.8-2.fc40.i686 python3.11-3.11.8-2.fc40.x86_64 python3.11-3.11.9-2.fc40.i686 python3.11-3.11.9-2.fc40.x86_64 python3.11-debug-3.11.8-2.fc40.i686 python3.11-debug-3.11.8-2.fc40.x86_64 python3.11-debug-3.11.9-2.fc40.i686 python3.11-debug-3.11.9-2.fc40.x86_64 python3.11-devel-3.11.8-2.fc40.i686 python3.11-devel-3.11.8-2.fc40.x86_64 python3.11-devel-3.11.9-2.fc40.i686 python3.11-devel-3.11.9-2.fc40.x86_64 python3.11-idle-3.11.8-2.fc40.i686 python3.11-idle-3.11.8-2.fc40.x86_64 python3.11-idle-3.11.9-2.fc40.i686 python3.11-idle-3.11.9-2.fc40.x86_64 python3.11-libs-3.11.8-2.fc40.i686 python3.11-libs-3.11.8-2.fc40.x86_64 python3.11-libs-3.11.9-2.fc40.i686 python3.11-libs-3.11.9-2.fc40.x86_64 python3.11-test-3.11.8-2.fc40.i686 python3.11-test-3.11.8-2.fc40.x86_64 python3.11-test-3.11.9-2.fc40.i686 python3.11-test-3.11.9-2.fc40.x86_64 python3.11-tkinter-3.11.8-2.fc40.i686 python3.11-tkinter-3.11.8-2.fc40.x86_64 python3.11-tkinter-3.11.9-2.fc40.i686 python3.11-tkinter-3.11.9-2.fc40.x86_64 python3.13-3.13.0\~a5-2.fc40.i686 python3.13-3.13.0\~a5-2.fc40.x86_64 python3.13-3.13.0\~b1-1.fc40.i686 python3.13-3.13.0\~b1-1.fc40.x86_64 python3.13-debug-3.13.0\~a5-2.fc40.i686 python3.13-debug-3.13.0\~a5-2.fc40.x86_64 python3.13-debug-3.13.0\~b1-1.fc40.i686 python3.13-debug-3.13.0\~b1-1.fc40.x86_64 python3.13-devel-3.13.0\~a5-2.fc40.i686 python3.13-devel-3.13.0\~a5-2.fc40.x86_64 python3.13-devel-3.13.0\~b1-1.fc40.i686 python3.13-devel-3.13.0\~b1-1.fc40.x86_64 python3.13-freethreading-3.13.0\~a5-2.fc40.i686 python3.13-freethreading-3.13.0\~a5-2.fc40.x86_64 python3.13-freethreading-3.13.0\~b1-1.fc40.i686 python3.13-freethreading-3.13.0\~b1-1.fc40.x86_64 python3.13-freethreading-debug-3.13.0\~a5-2.fc40.i686 python3.13-freethreading-debug-3.13.0\~a5-2.fc40.x86_64 python3.13-freethreading-debug-3.13.0\~b1-1.fc40.i686 python3.13-freethreading-debug-3.13.0\~b1-1.fc40.x86_64 python3.13-idle-3.13.0\~a5-2.fc40.i686 python3.13-idle-3.13.0\~a5-2.fc40.x86_64 python3.13-idle-3.13.0\~b1-1.fc40.i686 python3.13-idle-3.13.0\~b1-1.fc40.x86_64 python3.13-libs-3.13.0\~a5-2.fc40.i686 python3.13-libs-3.13.0\~a5-2.fc40.x86_64 python3.13-libs-3.13.0\~b1-1.fc40.i686 python3.13-libs-3.13.0\~b1-1.fc40.x86_64 python3.13-test-3.13.0\~a5-2.fc40.i686 python3.13-test-3.13.0\~a5-2.fc40.x86_64 p
+dnf info python3.12.3
+dnf info python3-3.12.3-2.fc40.x86_64
+pip search tcp
 \:q
-: 1717843609:0;cd local bin
-: 1717843613:0;cd .local bin
-: 1717843619:0;.local/bin
-: 1717843630:0;ls
-: 1717843637:0;./grimblast
-: 1717843645:0;sudo ./grimblast
-: 1717843668:0;chmod +x grimblast
-: 1717843675:0;./grimblast
-: 1717843696:0;./grimblast copy
-: 1717843740:0;./grimblast copy area
-: 1717843771:0;git add grimblast
-: 1717843780:0;cd hypr
-: 1717843787:0;nvim .
-: 1717843845:0;grim
-: 1717843855:0;grimblast
-: 1717844043:0;git commit .local/bin/grimblast
-: 1717844103:0;nvim .config/hypr
-: 1717844179:0;git commit --amend .config/hypr/
-: 1717844204:0;git commit -a
+echo $PWD
+pwd
+PWD
+lsblk
+cla
+×ƒº×ƒ³ .
+ls /
+cat /boot/efi/EFI/fedora/grub.cfg
+sudo cat /boot/efi/EFI/fedora/grub.cfg
+emacs
+y
+flatpak search emacs
+hostnamectl hostname
+nvim .config/zsh/prompt
+echo $PROMPT
+$green
+echo $green
+echo "$fg[red]   "
+echo "$fg[red]   eg"
+echo "$fg[red]   egerwgerwgwerg"
+su
+$dir
+echo f
+gw
+prompt -l
+prompt bart
+prompt adam1
+prompt adam2
+.config
+prompt bigfade
+prompt clint
+prompt default
+prompt elite
+prompt elite2
+prompt fade
+prompt fire
+prompt off
+prompt oliver
+prompt pws
+prompt redhat
+prompt restore
+prompt suse
+autoload -U promptinit && promptinit
+prompt -p
+prompt fire gray blue black red green cyan
+prompt fire black black black red green cyan
+bluetoothctl connect B8:81:FA:7F:25:53 && exit
+×§×¨×ƒ·×ƒ¿×ƒ€×ƒ¿×§×¨~×ƒ€×ƒ‚×ƒ¿×§×ƒ€×ƒ¹×¨×§×¤×ƒ¼×ƒ‚×ƒ½×§×¨×ƒ¾×ƒ‚×ƒ½trh
+f
+xdg-open
+xdg-dbus-proxy
+XDG_CURRENT_DESKTOP
+XDG_RUNTIME_DIR
+r
+echo $XDG_CURRENT_DESKTOP
+e
+alacritty-msg
+alacritty-bindings
+nvim .config/alacritty.toml
+fc-list : family
+fc-list : family | grep "Fira"
+fc-list : Fira\ Mono
+fc-list Fira\ Mono
+fc-cache -f -v\
+
+fc-list Hack
+fc-list Source\ Code\ Pro
+fc-list Noto\ Sans
+nvim .zshrc
+flatpak update
+dnf search gnome-shell
+dnf search gnome-shell-extension-manager
+dnf search gnome-shell-extension
+dnf search gnome-shell-extensions-manager
+flatpak  search gnome-shell-extensions-manager
+flatpak  search gnome-shell-extension
+flatpak  search gnome-shell-extension-manager
+flatpak list
+dnf search gnome-extensions-app 
+flatpak search gnome-extensions-app 
+flatpak search gnome-extensions
+flatpak search extensions
+flatpak search gnome
+echo $XDG_SESSION_TYPE
+update
+quit
+echo $TODO
+echo hello world
+dnf search gnome-bluetooth
+dnf search blueman
+flatpak search blueman
+dnf install blueman
+suudo dnf install blueman
+sudo dnf install blueman
+flatpak search overstrike
+flatpak search overst
+flatpak search org.gnome.Platform//45
+flatpak search blueberry
+dnf search blueberry
+sudo dnf revome blueman
+sudo dnf remove blueman
+git clone git@github.com:ClydeDroid/rofi-bluetooth.git
+cd rofi-bluetooth
+./rofi-bluetooth
+rofi-bluetooth
+rofi -show
+rofi 
+rofi -drun
+rofi -show drun
+/home/oren/.local/share/applications/Bluetooth Menu.desktop~
+/home/oren/.local/share/applications/Bluetooth\ Menu.desktop
+exec /home/oren/.local/share/applications/Bluetooth\ Menu.desktop
+/home/oren/.local/bin/rofi-bluetooth/rofi-bluetooth
+cls
+.local/bin/rofi-bluetooth
+..
+../share/applications/
+ls
+nvim Bluetooth\ Menu.desktop
+chmod +x rofi-bluetooth
+ls -a
+ls -al
+alsamixer
+/sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/control
+cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/control
+cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_active_time
+cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_status
+cat /sys/class/power_supply/BAT0/capacity
+exit
+: 1718397503:0;git status
+: 1718397551:0;git add .local/share/applications/Bluetooth Menu.desktop
+: 1718397557:0;git add .local/share/applications/Bluetooth\ Menu.desktop
+: 1718397581:0;git add .config/hypr/slurp
+: 1718397640:0;git add .config/nautilus/
+: 1718397677:0;git add .config/zsh/prompt
+: 1718397699:0;cat .gitconfig
+: 1718397755:0;git add .local/share/applications/Bluetooth\ Menu.desktop
+: 1718397813:0;git commit -a
+: 1718398040:0;git add .local/share/fonts/
+: 1718398044:0;git commit -a

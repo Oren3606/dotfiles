@@ -1,12 +1,15 @@
 # Powerlevel10k instant prompt
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+ # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # Powerlevel10k Prompt
-source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
+#source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.config/zsh/powerlevel10k/.p10k.zsh
+#source ~/.config/zsh/powerlevel10k/.p10k.zsh
+
+# Prompt
+source ~/.config/zsh/prompt
 
 # Cursor
 source ~/.config/zsh/cursor
@@ -40,6 +43,7 @@ setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_all_dups
 setopt hist_find_no_dups
+setopt hist_ignore_space
 
 export TODO="
 	1. customize prompt
