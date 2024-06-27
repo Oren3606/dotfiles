@@ -549,7 +549,6 @@ LD_PRELOAD=/usr/lib/libc.so.6:/usr/lib32/libc.so.6
 echo $LD_PRELOAD
 cd $LD_PRELOAD
 nvim $LD_PRELOAD
-wine
 sudo flatpak uninstall steam
 sudo mount /dev/sda3 /mnt/Game\ Library
 nvim hyprland_desktop.config
@@ -591,7 +590,6 @@ sudo mkdir /mnt/tmpfs && sudo mount /dev/sdb1 /mnt/tmpfs
 sudo mkdir /mnt/tmpfs
 man dmesg
 man mount
-steam
 vulkaninfo
 lspci -k | grep -EA3 'VGA|3D|Display'
 lspci -k | grep -A 2 -E "(VGA|3D)"
@@ -1034,9 +1032,7 @@ systemMonitor
 sysmon
 gnome-system-monitor
 bluetooth
-bluetoothctl
 rm /home/oren/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2024.1/.lock
-cls]
 cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
 sudo cp /usr/share/applications/org.mozilla.firefox.desktop /usr/local/share/applications/org.mozilla.firefox.desktop
 firefox -h
@@ -1057,10 +1053,8 @@ ls /home/oren/.local/lib/python3.12/site-packages/
 python -m site\
 
 py
-python
 .
 ./
-Downloads/Secure.MSG
 python -c "import platform; print(platform.architecture())"
 echo 
 echo
@@ -1178,7 +1172,6 @@ echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!
 \
 "
 bluetoothctl connect
-bluetoothctl scan
 bluetoothctl list -a
 nvim ~
 echo $(dnf list)
@@ -1210,18 +1203,12 @@ chsh -l
 chsh --shell /bin/zsh
 echo $USER
 echo $SHELL
-dnf search spotify
-dnf search spotify-client
-dnf install spotify-client
-sudo dnf install spotify-client
 gnome-control-center
 dnf search python
 dnf install python
 sudo dnf install python
 dnf search docker
 bluetoothctl connect 
-bluetoothctl list
-bluetoothctl devices
 flatpak search docker
 cat ~/Downloads/pkgs.d
 dnf search hyprpaper
@@ -1271,7 +1258,6 @@ echo "$EUID" -ne
 echo ~HOME
 echo $HOME
 echo ~SHELL
-waybar
 cd ~/Dow
 ~/Do:q
 dnf search fzf
@@ -1383,7 +1369,6 @@ nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo dnf upgrade -y
 sudo dnf install xorg-x11-drv-nvidia-cuda
 /sbin/lspci | grep -e VGA
-sudo mount /dev/sdb1 /mnt/Game\ Library/
 sudo nvim /etc/modprobe.d/blacklist-nouveau.conf
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf
 dnf search nouveau
@@ -1398,7 +1383,6 @@ dnf history info 63
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg\
 
 sudo dracut --force
-nvidia-smi
 dnf search toolbox
 dnf search toolbox | grep jetbrains
 sudo rm /usr/local/bin/idea-IC-241.15989.150 -r
@@ -1414,24 +1398,18 @@ hyprctl dispatch list
 hyprctl --batch
 hyprctl layouts
 echo $VISUAL
-downloads
 cd downloads
-Downloads
 nvim tdl.scmsg
 cd config nvim
 nvim init.lua
 nvim
 sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg
-/etc/grub.d
-sudo cd /etc/grub.d
-sudo /etc/grub.d
 sudo cd /etc/grub.d/
 sudo ls /etc/grub.d/
 sudo cat /etc/grub.d/README
 /etc/default/grub
 ls /etc/default/grub
 nvim /etc/default/grub
-sudo nvim /etc/default/grub
 echo $COLORTERM
 -
 true
@@ -1450,8 +1428,6 @@ sudo awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
 sudo awk -F\' '/menuentry / {print $2}' /etc/default/grub.d
 sudo awk -F\' '/menuentry / {print $2}' /etc/default/grub
 sudo nvim /boot/efi/EFI/fedora/grub.cfg
-sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
-reboot
 dnf search neovide
 dnf search neov
 dnf search nvim
@@ -1460,7 +1436,6 @@ echo $VIMRUNTIME
 ls applications
 ls info
 ls man
-~
 .local/share/nvim
 7z
 dnf search hyprlock
@@ -1478,9 +1453,7 @@ cd hypr
 nvim .
 grimblast
 git commit .local/bin/grimblast
-nvim .config/hypr
 git commit --amend .config/hypr/
-git log
 grim help
 help grim 
 grim
@@ -1751,12 +1724,8 @@ sudo btrfs subvolume list
 man btrfs
 git switch feature/IP
 git branch feature/connect-over-IP
-git branch
 git switch feature/connect-over-IP
 git commit
-git commit -a
-git status
-git push
 git push -u
 git push -u origin feature/connect-over-IP
 man PS1
@@ -1769,9 +1738,7 @@ dnf info python3-3.12.3-2.fc40.x86_64
 pip search tcp
 \:q
 echo $PWD
-pwd
 PWD
-lsblk
 cla
 ×ƒº×ƒ³ .
 ls /
@@ -1788,7 +1755,6 @@ echo $green
 echo "$fg[red]   "
 echo "$fg[red]   eg"
 echo "$fg[red]   egerwgerwgwerg"
-su
 $dir
 echo f
 gw
@@ -1814,7 +1780,6 @@ autoload -U promptinit && promptinit
 prompt -p
 prompt fire gray blue black red green cyan
 prompt fire black black black red green cyan
-bluetoothctl connect B8:81:FA:7F:25:53 && exit
 ×§×¨×ƒ·×ƒ¿×ƒ€×ƒ¿×§×¨~×ƒ€×ƒ‚×ƒ¿×§×ƒ€×ƒ¹×¨×§×¤×ƒ¼×ƒ‚×ƒ½×§×¨×ƒ¾×ƒ‚×ƒ½trh
 f
 xdg-open
@@ -1836,7 +1801,6 @@ fc-cache -f -v\
 fc-list Hack
 fc-list Source\ Code\ Pro
 fc-list Noto\ Sans
-nvim .zshrc
 flatpak update
 dnf search gnome-shell
 dnf search gnome-shell-extension-manager
@@ -1851,10 +1815,7 @@ flatpak search gnome-extensions-app
 flatpak search gnome-extensions
 flatpak search extensions
 flatpak search gnome
-echo $XDG_SESSION_TYPE
-update
 quit
-echo $TODO
 echo hello world
 dnf search gnome-bluetooth
 dnf search blueman
@@ -1876,35 +1837,174 @@ rofi-bluetooth
 rofi -show
 rofi 
 rofi -drun
-rofi -show drun
 /home/oren/.local/share/applications/Bluetooth Menu.desktop~
 /home/oren/.local/share/applications/Bluetooth\ Menu.desktop
 exec /home/oren/.local/share/applications/Bluetooth\ Menu.desktop
 /home/oren/.local/bin/rofi-bluetooth/rofi-bluetooth
-cls
 .local/bin/rofi-bluetooth
-..
 ../share/applications/
-ls
 nvim Bluetooth\ Menu.desktop
 chmod +x rofi-bluetooth
 ls -a
 ls -al
-alsamixer
 /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/control
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/control
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_active_time
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_status
 cat /sys/class/power_supply/BAT0/capacity
+git add .local/share/applications/Bluetooth Menu.desktop
+git add .config/hypr/slurp
+git add .config/nautilus/
+git add .config/zsh/prompt
+cat .gitconfig
+git add .local/share/applications/Bluetooth\ Menu.desktop
+git add .local/share/fonts/
+git commit -a
+git push
+./Secure.MSG
+git branch
+ip
+ip addr
+sudo lsof -iTCP -sTCP:LISTEN -P | grep ":<port_number>"\
+
+sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5003"\
+
+sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5007"
+sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5050"
+sudo lsof -iTCP -sTCP:LISTEN -P
+bluetoothctl devices
+bluetoothctl list
+bluetoothctl quit
+top -i
+kill waybar
+pid
+btop
+pgrep waybar\
+
+kill 4172
+kill $(pgrep waybar)
+su
+cd config waybar
+cd config/waybar
+.config/waybar
+nvim config
+nvim ../../.zshconfig
+..
+dow
+Downloads/networksockets
+python server.py
+python client.py
+python
+poweroff
+bluetoothctl scan on
+bluetoothctl scan
+bluetoothctl scan le
+dnf search spotify
+dnf search spotify-clent
+dnf install spotify-client
+sudo dnf install spotify-client
+kill $(pgrep firefox)
+Downloads/Secure.MSG
+git log
+git log origin
+echo $XDG_SESSION_TYPE
+/etc/grub.d
+sudo /etc/grub.d
+sudo cd /etc/grub.d
+sudo ls /etc/grub.d
+sudo update-grub
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+lsmod | grep -iE
+lsmod
+lsmod | grep -iE 'nouveau|nvidia'
+sudo nvim /etc/default/grub
+htop
+/usr
+ls
+~
+pip update
+pip help
+cls]
+waybar
+dnf search spotify-client
+echo $TODO
+nvim .zshrc
+cp .zshrc ~/Downloads
+downloads
+Downloads
+mv .zshrc bkp
+nvim bkp
+rm bkp
+wine
+mount /dev/sdb1 /mnt/Game\ Library/
+flatpak search lutris
+flatpak install net.lutris.Lutris\\
+
+steam
+nvidia-smi
+sudo dnf install remove-retired-packages 
+sudo dnf repoquery --unsatisfied
+sudo dnf repoquery --duplicates
+sudo dnf remove --duplicates
+sudo dnf autoremove
+kill $(pgrep steam)
+mount /dev/sda3 /mnt/tmpfs
+sudo umount
+sudo umount devpts /dev/sda3
+sudo umount devpts /dev/sda3 -f
+reboot
+sudo mount /dev/sda3 /mnt/tmpfs
+bluetoothctl
+bluetoothctl connect B8:81:FA:7F:25:53 && exit
+pwd
+update 
+dnf search efiboot
+dnf search efibootmgr
+kill
+kill $(pgrep idea)
+kill $(pgrep idea-ce)
+cls
+kill $(pgrep java)
+top
+kill 6511
+lpf-gui
+lsblk
+sudo mount /dev/sdb1 /mnt/Game\ Library/
+dnf info hyprland
+dnf deplist hyprland
+update
+rofi -show drun -show-icons
+rofi -show combi -modes combi -combi-modes "window,drun,run"
+rofi -show drun
+rofi -e "eigwuh"
+git commit .config/hypr
+git status
+git diff .zshrc
+git commit .config/hypr --amend
+dnf install qt6ct
+sudo dnf install qt6ct
+sudo dnf install qt5ct
+nvim .config/hypr/animations
+nvim .config/hypr/startup
+nvim .config/hypr/binds
+echo $XDG_BACKEND
+echo $GDM_LANG
+nvim .config/hypr
+dnf install meson libva-devel gstreamer1-plugins-bad-freeworld nv-codec-headers gstreamer1-plugins-bad-free-devel
+sudo dnf install meson libva-devel gstreamer1-plugins-bad-freeworld nv-codec-headers gstreamer1-plugins-bad-free-devel
+meson
+meson help
+meson setup build
+alsamixer
+nvim .config/hypr/
 exit
-: 1718397503:0;git status
-: 1718397551:0;git add .local/share/applications/Bluetooth Menu.desktop
-: 1718397557:0;git add .local/share/applications/Bluetooth\ Menu.desktop
-: 1718397581:0;git add .config/hypr/slurp
-: 1718397640:0;git add .config/nautilus/
-: 1718397677:0;git add .config/zsh/prompt
-: 1718397699:0;cat .gitconfig
-: 1718397755:0;git add .local/share/applications/Bluetooth\ Menu.desktop
-: 1718397813:0;git commit -a
-: 1718398040:0;git add .local/share/fonts/
-: 1718398044:0;git commit -a
+: 1719518078:0;where firefox
+: 1719518534:0;git status
+: 1719518592:0;git add .config/hypr/binds
+: 1719518603:0;git add .config/hypr/startup
+: 1719518613:0;git status
+: 1719518810:0;git commit .config/hypr
+: 1719518857:0;git status
+: 1719518871:0;nvim .zshrc
+: 1719518918:0;git commit
+: 1719518932:0;git commit -a

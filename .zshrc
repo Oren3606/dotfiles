@@ -46,7 +46,8 @@ setopt hist_find_no_dups
 setopt hist_ignore_space
 
 export TODO="
-	1. customize prompt
-	4. nvim setup
+	1. transient zsh prompt
+	2. waybar setup
+	3. nvim setup
 	"
 
