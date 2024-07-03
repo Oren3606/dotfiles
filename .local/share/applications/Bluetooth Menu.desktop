@@ -5,4 +5,4 @@ Type=Application
 Terminal=false
 Exec=/home/oren/.local/bin/rofi-bluetooth/rofi-bluetooth
 Name=Bluetooth Menu
-
+Icon=/home/oren/.local/bin/rofi-bluetooth/bluetooth.png
