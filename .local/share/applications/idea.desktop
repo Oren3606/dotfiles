@@ -1,7 +1,7 @@
 [Desktop Entry]
 Exec=/home/oren/.local/bin/ideaIC-2024.1.2/idea-IC-241.17011.79/bin/idea.sh
 GenericName=Capable and Ergonomic Java IDE
-Icon=com.jetbrains.IntelliJ-IDEA-Community
+Icon=/home/oren/.local/bin/ideaIC-2024.1.2/idea-IC-241.17011.79/bin/idea.svg
 Name=IntelliJ IDEA
 Terminal=false
 Type=Application
