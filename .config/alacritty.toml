@@ -1,6 +1,6 @@
 [font]
 # normal.family will automatically be applied to all styles
-normal = { family = "Fira Mono", style = "Regular" }
+normal = { family = "Jetbrains Mono", style = "Regular" }
 size = 12
 
 [keyboard]
