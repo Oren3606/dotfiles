@@ -49,5 +49,6 @@ export TODO="
 	1. transient zsh prompt
 	2. waybar setup
 	3. nvim setup
+	4. a script which converts selected text between key layouts
 	"
 
