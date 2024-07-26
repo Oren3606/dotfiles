@@ -1,5 +1,4 @@
 ECHO
-dnf install fzf
 eval "$(fzf --zsh)"
 fzf -v
 dnf show fzf
@@ -44,7 +43,6 @@ mv zlecommands.d Downloads
 ls Downloads
 man zle
 man zsh
-wev
 git -c
 git -C
 echo $(source zoxide init zsh\
@@ -484,12 +482,9 @@ show_last_command
 z alacritty.toml
 cd alacritty.toml
 nv
-fzf -h
-man fzf
 KEY/EVENT BINDINGS
 echo $**
 complete | grep _fzf
-_fzf_setup_completion
 fzf _fzf_setup_completion
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf\
 
@@ -505,10 +500,8 @@ nvim install
 echo $fzf
 .config zsh
 install
-fzf --zsh
 echo $PATH
 git clone --depth 1 https://github.com/junegunn/fzf.git
-fzf
 nvim ./install
 ./install
 echo "Last command: $(fc -ln)"
@@ -519,7 +512,6 @@ dnf check-update\
 git clone https://github.com/Aloxaf/fzf-tab.git
 hello
 cd 
-cd config zsh
 nvim powerlevel10k/powerlevel10k.zsh-theme
 nvim powerlevel10k/p10k.zsh
 nvim hyprland.conf
@@ -570,7 +562,6 @@ sudo dnf install vulkan-loader
 sudo dnf install vulkan-tools
 sudo chown -R $(whoami) '/mnt/Game Library'\
 
-sudo steam
 sudo chown -R $(whoami) '/mnt/Game Library/SteamLibrary/steamapps/compatdata/271590'\
 
 sudo chown -R $(whoami) '/mnt/Game Library/SteamLibrary/steamapps/compatdata/271590/pfx'
@@ -640,7 +631,6 @@ dnf info akmod-nvidia.x86_64
 sudo dnf repository-packages rpmfusion-nonfree-nvidia-driver list
 dnf info xorg-x11-drv-nvidia
 dnf search hello
-ip link
 nvim lpf-spotify-client.desktop
 sudo nvim lpf-spotify-client.desktop
 nvim .z
@@ -1053,7 +1043,6 @@ ls /home/oren/.local/lib/python3.12/site-packages/
 python -m site\
 
 py
-.
 ./
 python -c "import platform; print(platform.architecture())"
 echo 
@@ -1062,9 +1051,7 @@ showkey -a
 echo Downloads
 man alacritty
 man alacritty-bindings
-nvim ~/.zshrc
 /home/oren/.config/zsh
-./fzf
 ./fzf-tab
 ./powerlevel10k
 pull
@@ -1201,13 +1188,10 @@ chsh zsh
 chsh -l
 chsh --shell /bin/zsh
 echo $USER
-echo $SHELL
 dnf search python
 dnf install python
 sudo dnf install python
-dnf search docker
 bluetoothctl connect 
-flatpak search docker
 cat ~/Downloads/pkgs.d
 dnf search hyprpaper
 dnf install hyprpaper
@@ -1258,10 +1242,7 @@ echo $HOME
 echo ~SHELL
 cd ~/Dow
 ~/Do:q
-dnf search fzf
 sudo dnf install~ fzf
-sudo dnf install fzf
-nvim bindings
 echo ~apache
 hrasv
 git help clone
@@ -1308,9 +1289,6 @@ sudo mv /usr/local/share/applications/lpf-spotify-client.desktop /home/oren/.loc
 sudo mv /usr/local/share/applications/nwg-panel-config.desktop /home/oren/.local/share/applications
 git  status'\
 '
-
-git add .local/share/applications/
-git add .config/zsh
 git init
 git add alacritty.toml
 git add hypr/ nvim/ rofi/ waybar/ zsh/
@@ -1355,7 +1333,6 @@ mnt gl
 mntgl
 sudo umount /dev/sda3 /mnt/Game\ Library/
 sudo umount /dev/sda3
-.config/zsh
 nvim alias
 nvim aliases
 .config/hy
@@ -1446,7 +1423,6 @@ chmod +x grimblast
 ./grimblast copy
 ./grimblast copy area
 git add grimblast
-cd hypr
 grimblast
 git commit .local/bin/grimblast
 git commit --amend .config/hypr/
@@ -1706,7 +1682,6 @@ export PS1=export PS1="Hello %n, welcome to %m! Your current directory is %~%# "
 echo $PS1
 ./oren
 btrfs help
-clear
 \:
 q
 TODO=o
@@ -1723,14 +1698,12 @@ git switch feature/connect-over-IP
 git push -u
 git push -u origin feature/connect-over-IP
 man PS1
-nvim .config/zsh/aliases
 python -V
 dnf info python
 dnf info python3.10-3.10.14-2.fc40.x86_64 python3.10-debug-3.10.14-2.fc40.i686 python3.10-debug-3.10.14-2.fc40.x86_64 python3.10-devel-3.10.13-6.fc40.i686 python3.10-devel-3.10.13-6.fc40.x86_64 python3.10-devel-3.10.14-2.fc40.i686 python3.10-devel-3.10.14-2.fc40.x86_64 python3.10-idle-3.10.13-6.fc40.i686 python3.10-idle-3.10.13-6.fc40.x86_64 python3.10-idle-3.10.14-2.fc40.i686 python3.10-idle-3.10.14-2.fc40.x86_64 python3.10-libs-3.10.13-6.fc40.i686 python3.10-libs-3.10.13-6.fc40.x86_64 python3.10-libs-3.10.14-2.fc40.i686 python3.10-libs-3.10.14-2.fc40.x86_64 python3.10-test-3.10.13-6.fc40.i686 python3.10-test-3.10.13-6.fc40.x86_64 python3.10-test-3.10.14-2.fc40.i686 python3.10-test-3.10.14-2.fc40.x86_64 python3.10-tkinter-3.10.13-6.fc40.i686 python3.10-tkinter-3.10.13-6.fc40.x86_64 python3.10-tkinter-3.10.14-2.fc40.i686 python3.10-tkinter-3.10.14-2.fc40.x86_64 python3.11-3.11.8-2.fc40.i686 python3.11-3.11.8-2.fc40.x86_64 python3.11-3.11.9-2.fc40.i686 python3.11-3.11.9-2.fc40.x86_64 python3.11-debug-3.11.8-2.fc40.i686 python3.11-debug-3.11.8-2.fc40.x86_64 python3.11-debug-3.11.9-2.fc40.i686 python3.11-debug-3.11.9-2.fc40.x86_64 python3.11-devel-3.11.8-2.fc40.i686 python3.11-devel-3.11.8-2.fc40.x86_64 python3.11-devel-3.11.9-2.fc40.i686 python3.11-devel-3.11.9-2.fc40.x86_64 python3.11-idle-3.11.8-2.fc40.i686 python3.11-idle-3.11.8-2.fc40.x86_64 python3.11-idle-3.11.9-2.fc40.i686 python3.11-idle-3.11.9-2.fc40.x86_64 python3.11-libs-3.11.8-2.fc40.i686 python3.11-libs-3.11.8-2.fc40.x86_64 python3.11-libs-3.11.9-2.fc40.i686 python3.11-libs-3.11.9-2.fc40.x86_64 python3.11-test-3.11.8-2.fc40.i686 python3.11-test-3.11.8-2.fc40.x86_64 python3.11-test-3.11.9-2.fc40.i686 python3.11-test-3.11.9-2.fc40.x86_64 python3.11-tkinter-3.11.8-2.fc40.i686 python3.11-tkinter-3.11.8-2.fc40.x86_64 python3.11-tkinter-3.11.9-2.fc40.i686 python3.11-tkinter-3.11.9-2.fc40.x86_64 python3.13-3.13.0\~a5-2.fc40.i686 python3.13-3.13.0\~a5-2.fc40.x86_64 python3.13-3.13.0\~b1-1.fc40.i686 python3.13-3.13.0\~b1-1.fc40.x86_64 python3.13-debug-3.13.0\~a5-2.fc40.i686 python3.13-debug-3.13.0\~a5-2.fc40.x86_64 python3.13-debug-3.13.0\~b1-1.fc40.i686 python3.13-debug-3.13.0\~b1-1.fc40.x86_64 python3.13-devel-3.13.0\~a5-2.fc40.i686 python3.13-devel-3.13.0\~a5-2.fc40.x86_64 python3.13-devel-3.13.0\~b1-1.fc40.i686 python3.13-devel-3.13.0\~b1-1.fc40.x86_64 python3.13-freethreading-3.13.0\~a5-2.fc40.i686 python3.13-freethreading-3.13.0\~a5-2.fc40.x86_64 python3.13-freethreading-3.13.0\~b1-1.fc40.i686 python3.13-freethreading-3.13.0\~b1-1.fc40.x86_64 python3.13-freethreading-debug-3.13.0\~a5-2.fc40.i686 python3.13-freethreading-debug-3.13.0\~a5-2.fc40.x86_64 python3.13-freethreading-debug-3.13.0\~b1-1.fc40.i686 python3.13-freethreading-debug-3.13.0\~b1-1.fc40.x86_64 python3.13-idle-3.13.0\~a5-2.fc40.i686 python3.13-idle-3.13.0\~a5-2.fc40.x86_64 python3.13-idle-3.13.0\~b1-1.fc40.i686 python3.13-idle-3.13.0\~b1-1.fc40.x86_64 python3.13-libs-3.13.0\~a5-2.fc40.i686 python3.13-libs-3.13.0\~a5-2.fc40.x86_64 python3.13-libs-3.13.0\~b1-1.fc40.i686 python3.13-libs-3.13.0\~b1-1.fc40.x86_64 python3.13-test-3.13.0\~a5-2.fc40.i686 python3.13-test-3.13.0\~a5-2.fc40.x86_64 p
 dnf info python3.12.3
 dnf info python3-3.12.3-2.fc40.x86_64
 pip search tcp
-\:q
 echo $PWD
 PWD
 cla
@@ -1784,7 +1757,6 @@ r
 e
 alacritty-msg
 alacritty-bindings
-nvim .config/alacritty.toml
 fc-list : family
 fc-list : family | grep "Fira"
 fc-list : Fira\ Mono
@@ -1823,7 +1795,6 @@ sudo dnf revome blueman
 sudo dnf remove blueman
 git clone git@github.com:ClydeDroid/rofi-bluetooth.git
 cd rofi-bluetooth
-./rofi-bluetooth
 rofi-bluetooth
 rofi -show
 rofi 
@@ -1842,7 +1813,6 @@ ls -al
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/control
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_active_time
 cat /sys/class/bluetooth/hci0:256/device/device/bluetooth/hci0/power/runtime_status
-cat /sys/class/power_supply/BAT0/capacity
 git add .local/share/applications/Bluetooth Menu.desktop
 git add .config/hypr/slurp
 git add .config/nautilus/
@@ -1851,7 +1821,6 @@ cat .gitconfig
 git add .local/share/applications/Bluetooth\ Menu.desktop
 git add .local/share/fonts/
 ip
-ip addr
 sudo lsof -iTCP -sTCP:LISTEN -P | grep ":<port_number>"\
 
 sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5003"\
@@ -1872,17 +1841,13 @@ kill 4172
 kill $(pgrep waybar)
 su
 cd config waybar
-cd config/waybar
-.config/waybar
 nvim config
 nvim ../../.zshconfig
-..
 dow
 Downloads/networksockets
 python server.py
 python client.py
 python
-poweroff
 bluetoothctl scan on
 bluetoothctl scan
 bluetoothctl scan le
@@ -1892,7 +1857,6 @@ dnf install spotify-client
 sudo dnf install spotify-client
 kill $(pgrep firefox)
 Downloads/Secure.MSG
-git log
 git log origin
 echo $XDG_SESSION_TYPE
 /etc/grub.d
@@ -1907,13 +1871,10 @@ lsmod | grep -iE 'nouveau|nvidia'
 sudo nvim /etc/default/grub
 htop
 /usr
-~
 pip update
 pip help
 cls]
-waybar
 dnf search spotify-client
-echo $TODO
 cp .zshrc ~/Downloads
 downloads
 mv .zshrc bkp
@@ -1924,18 +1885,14 @@ mount /dev/sdb1 /mnt/Game\ Library/
 flatpak search lutris
 flatpak install net.lutris.Lutris\\
 
-steam
 nvidia-smi
 sudo dnf install remove-retired-packages 
 sudo dnf repoquery --unsatisfied
-sudo dnf repoquery --duplicates
 sudo dnf remove --duplicates
-kill $(pgrep steam)
 mount /dev/sda3 /mnt/tmpfs
 sudo umount
 sudo umount devpts /dev/sda3
 sudo umount devpts /dev/sda3 -f
-reboot
 sudo mount /dev/sda3 /mnt/tmpfs
 bluetoothctl
 bluetoothctl connect B8:81:FA:7F:25:53 && exit
@@ -1944,11 +1901,7 @@ update
 dnf search efiboot
 dnf search efibootmgr
 kill
-kill $(pgrep idea)
 kill $(pgrep idea-ce)
-cls
-kill $(pgrep java)
-top
 kill 6511
 lsblk
 sudo mount /dev/sdb1 /mnt/Game\ Library/
@@ -1958,7 +1911,6 @@ rofi -show drun -show-icons
 rofi -show combi -modes combi -combi-modes "window,drun,run"
 rofi -show drun
 rofi -e "eigwuh"
-git diff .zshrc
 git commit .config/hypr --amend
 dnf install qt6ct
 sudo dnf install qt6ct
@@ -1978,15 +1930,8 @@ where firefox
 git add .config/hypr/binds
 git add .config/hypr/startup
 git commit .config/hypr
-nvim .zshrc
-git commit
-git commit -a
-git status
-git push
 nviim .
-nvim .
 nvim .config/hypr/
-zsh
 for
 for:
 man gnome-control-center
@@ -1995,16 +1940,11 @@ man gsettings
 echo $XDG_CURRENT_DESKTOP
 git config --list
 git config --list | grep credential.helper
-Downloads
 ./Secure.MSG
-ls
 python main.py -t 1.1.1.1:4 -n Test
 python main.py -t "" -n Test
 git gui
-git branch
 update && alsamixer
-dnf autoremove
-sudo dnf autoremove
 alsa
 python main.py -t ":" -n Test
 python main.py -t fg -n Test
@@ -2013,11 +1953,7 @@ flatpak uninstall com.jetbrains.IntelliJ-IDEA-Community
 flatpak uninstall com.sublimetext.three
 flatpak uninstall org.gnome.Platfor
 flatpak uninstall org.gnome.Platform
-flatpak list
-flatpak update
 exiy
-alsamixer
-update
 sudo update-alternatives --config x-terminal-emulator\
 
 sudo update-alternatives
@@ -2042,20 +1978,349 @@ echo $termcap
 Downloads/ReWord
 git clone git@github.com:Oren3606/ReWord
 git pull
+commit
+git commit .gitignore
+git commit main.py
+git commit --amend .gitignore
+git log
+git commit --amend main.py
+git add .local/share/applications/
+gnome-shell
+git switch dev
+git merge master
+git commit -a
+git commit -a --amend
+git switch master
+git merge dev
+git branch -D dev
+git push
+git push -d
+git push -d dev
+git push dev -d
+git push -d origin dev
+software
+gnome-software
+zoxide
+sudo dnf system-upgrade download
+sudo dnf repoquery --duplicates
+old_kernels=($(dnf repoquery --installonly --latest-limit=-1 -q))
+$old_kernels
+echo $old_kernels
+if [ "${#old_kernels[@]}" -eq 0 ]; then\
+    echo "No old kernels found"\
+    exit 0\
+fi
+git branch
+git branch -a
+flatpak list
+flatpak search discord
+flatpak install com.discordapp.Discord
+wev
+git commit .config/hypr/binds
+git commit --amend .config/hypr/binds
+nvim Downloads/TDL_KUBE.txt
+nvim Downloads/TDL_KUBE.md
+flatpak search docker
+dnf -y
+sudo dnf search plugins-core
+dnf search plugins-core
+sudo dnf install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+dnf search docker
+dnf search containerd.io
+dnf search docker-buildx-plugin
+reboot
+echo $TODO
+cd config/waybar
+mkdir modules
+git diff 
+git clone git@gitlab.com:jbauernberger/dotfiles.git
+git clone https://gitlab.com/jbauernberger/dotfiles.git
+git clone https://github.com/kamlendras/waybar-config.git
+waybar -c ~/Downloads/waybar\ confs/dotfiles
+waybar -c ~/Downloads/waybar\ confs/dotfiles/.config
+waybar -c ~/Downloads/waybar\ confs/waybar-config
+waybar -c ~/Downloads/waybar\ confs/waybar-config/style.css
+sudo ls /root
+sudo cat /root/anaconda-ks.cfg
+git clone https://github.com/jakehamilton/dotfiles/tree/master/waybar
+git clone https://github.com/jakehamilton/dotfiles.git
+waybar -c ~/Downloads/waybar\ confs/waybar/config
+systemctl
+sudo steam
+flatpak update
+syeam
+steam --reset
+export GDK_BACKEND=x11
+export CLUTTER_BACKEND=x11
+export SDL_VIDEODRIVER=x11
+export GDK_BACKEND=wayland
+export CLUTTER_BACKEND=wayland
+STEAM_RUNTIME=1
+STEAM_RUNTIME=1 steam
+steam -no-cef-sandbox
+export SDL_VIDEODRIVER=wayland
+echo $SDL_VIDEODRIVER=wayland
+export QT_QPA_PLATFORM=wayland
+echo $SDL_VIDEODRIVER
+waybar -c ~/Downloads/waybar\ confs/waybar-config/.config
+waybar -h
+waybar -c ~/Downloads/waybar\ confs/waybar/config -s ~/Downloads/waybar\ confs/waybar/style.css
+waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style-dracula.css
+waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style-joachim.css
+Oren
+oren
+curl -s 'https://wttr.in/Pordenone?format=1' |jq --unbuffered --compact-output -M -R '{text:.}'
+https://wttr.in/Pordenone?format=1
+dnf search font-awesome
+dnf search awesome
+dnf search font awesome
+sudo dnf install fontawesome-6-brands-fonts
+sudo dnf install fontawesome-6-free-fonts-1:6.5.1-3.fc40.noarch
+waybar -c ~/Downloads/waybar\ confs/waybar-config/.config -s ~/Downloads/waybar\ confs/waybar-config/style.css
+~/.config/waybar
+ls modules
+cls
+rm media_module.py
+rm player
+mv config config.json
+waybar
+nvim ../hypr/startup
+[200~waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
+waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
+.config/wayba
+nmcli radio wifi on
+nmcli device wifi rescan
+nmcli device wifi connect Oren's iPhone password Oren3606
+nmcli device wifi connect Oren\'s iPhone password Oren3606
+nmcli device wifi connect "Oren\'s iPhone" password "Oren3606"
+nmcli device wifi connect "Oren's iPhone" password "Oren3606"
+nmcli device wifi connect "AA:52:1A:F5:4C:C8" password "Oren3606"
+nvim ~/Downloads/waybar\ confs/waybar-config/.config
+nvim ~/Downloads/waybar\ confs/wb/config
+mpd
+dm
+nmcli device wifi list
+nmcli device wifi connect "Orenâ€ƒ¹s iPhone" password "Oren3606"
+waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style.css
+cat /sys/class/power_supply/BAT0/capacity
+.config/waybar
+nvim TDL.txt
+ip addr
+dnf autoremove
+sudo dnf autoremove
+nvim .config/waybar/config.json
+zenity
+zenity --help
+zenity --help-all
+man zenity
+dracut
+man dracut
+dnf search zed
+dnf search zed-pre
+dnf search zed-nig
+/home/oren/Downloads/zed-linux-x86_64/zed.app/bin/zed
+touch ./Downloads/waybar\ confs/cgpt.cfg
+"[200~{\
+    "layer": "top",\
+    "position": "top",\
+    "height": 30,\
+    "modules-left": ["workspaces"],\
+    "modules-center": ["clock", "custom/weather"],\
+    "modules-right": ["battery", "tray", "custom/powermenu", "custom/status", "pulseaudio", "keyboard_state"],\
+\
+    "workspaces": {\
+        "format": "{icon} {name}"\
+    },\
+    "clock": {\
+        "format": "{:%Y-%m-%d %H:%M:%S}",\
+        "tooltip-format": "{:%A, %d %B %Y}",\
+        "on-click": "gnome-calendar"\
+    },\
+    "custom/weather": {\
+        "exec": "curl -s 'wttr.in/?format=1'",\
+        "interval": 600\
+    },\
+    "battery": {\
+        "format": "{capacity}% {icon}",\
+        "format-full": "{capacity}% {icon} (plugged in)"\
+    },\
+    "custom/powermenu": {\
+        "exec": "~/.config/waybar/scripts/powermenu.sh",\
+        "tooltip": false,\
+        "on-click": "~/.config/waybar/scripts/powermenu.sh"\
+    },\
+    "custom/status": {\
+        "exec": "~/.config/waybar/scripts/status.sh",\
+        "interval": 10\
+    },\
+    "pulseaudio": {\
+        "format": "{volume}% {icon}",\
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",\
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",\
+        "on-click": "pavucontrol"\
+    },\
+    "keyboard_state": {\
+        "format": "{layout}"\
+    }\
+}
+touch ~/.config/waybar/scripts/
+mkdir ~/.config/waybar/scripts/
+chmod +x ~/.config/waybar/scripts/status.sh
+touch ./Downloads/waybar\ confs/cgpt.css
+chmod +x ~/.config/waybar/scripts/powermenu.sh
+nvim ~/.config/waybar/scripts/powermenu.sh
+nvim ./Downloads/waybar\ confs/cgpt.cfg
+nvim ~/.config/waybar/scripts/status.sh
+nvim ~/.config/waybar/scripts/alsa.sh
+chmod +x ~/.config/waybar/scripts/alsa.sh
+nvim ./Downloads/waybar\ confs/cgpt.css
+waybar -c ~/Downloads/waybar\ confs/cgpt.cfg -s ~/Downloads/waybar\ confs/cgpt.css
+nvim ~/.config/hypr/
+git diff .zshrc
+git diff /hypr
+git diff .config/hypr/startup
+fc-list 
+fc-list | grep apple
+fc-list | grep sf
+fc-list | grep s
+git commit ~/.local/share/fonts
+git add ~/.config/zed
+git commit ~/.config/zed
+nvim .config/zsh/aliases
+nvim .config/alacritty.toml
+git commit ~/.config/alacritty
+git commit ~/.config/alacritty.toml
+git commit .zshrc
+git commit .config/zsh/* --amend
+.config/zsh
+.
+find ./ -name '.git'
+.config/zsh/fzf
+git rm --cached angulartest -f
+~
+git add .config/zsh --amend
+git add .config/zsh
+git commit .config/zsh --amend
+git add .config/waybar/
+git commit .config/waybar/
+git commit .config/hypr/startup --amend
+brightnessctl
+"#kill $(pgrep nwg-panel)"
+simple-scan
+flatpak search zed
+kill $(pgrep steam)
+pkill
+man pkill
+pkill spotify
+pkill-f-64 nwg-panel
+pkill -f -64 nwg-panel
+pkill nwg-panel
+pkill -h
+dnf repolist
+bash
+echo $SHELL
+sudo dnf install python3-pip
+sudo dnf install python3-wheel
+python3 -m pip install --upgrade pip setuptools wheel
+nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
+sudo nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
+dnf log
+sha256sum shitty\ auto\ settings
+nvim .config/hypr/hyprland_desktop.config
+ip link
+poweroff
 lpf-gui
+cat .zshrc
+./fzf
+../fzf-tab
+git add .
+git commit
+dnf search fzf
+dnf install fzf
+sudo dnf install fzf
+zsh
+git commit .zshrc .config/zsh
+fzf -zsh
+fzf --zsh
+fzf -bind
+fzf --bind
+fzf --bind=tab:-ftb-generate-complist
+fzf --bind=tab:-fzf-generate-complist
+fzf --bind=tab:complete
+fzf --bind=tab:fzf-complete
+fzf --bind=tab:_fzf_complete
+.config/zsh/
+nvim bindings
+nautilus
+steam
+man fzf
+fzf-complete
+fzf fzf-complete
+fzf-complete | fzf
+ojeng | fzf]
+ojeng | fzf
+fzf -h
+fzf
+wget
+man wget
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+eval echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo $ZDOTDIR
+dnf search zsh-autos
+sudo dnf install zsh-autosuggestions
+git clone https://github.com/marlonrichert/zsh-autocomplete.git
+"ec" menu-complete | fzf
+"ec" | menu-complete | fzf
+cat fzf --zsh
+cat (fzf --zsh)
+cat $(fzf --zsh)
+cd config zsh
+nvim functions
+dnf search zsh-autoco
+cd hypr
+echo 'hi'
+/etc
+bindkey
+..
+nvim .zshrc
+clear
+man gencat
+_fzf_setup_completion
+git | grep _fzf
+echo git | grep _fzf
+update
+Downloads
+ls -lac
+cat .zshrc | grep "auto"
+cat ~/.zshrc | grep "auto"
+cat ~/.zshrc | grep "source"
+nvim .config/zsh/bindings
+nvim ~/.config/zsh/bindings
+../.config/zsh/
+git clone https://github.com/aloxaf/fzf-tab
+ls
+alsamixer
+
+pkill idea
+kill $(pgrep idea)
+kill idea
+kill $(pgrep jetbrains-idea-ce)
+top
+kill $(pgrep java)
+git
+nvim ~/.zshrc
+ezit
+\:q
+nwg-panel
+nwg-panel-config
+rofi -v
+git add .local/share/rofi/
+git add .config/rofi/
+git status
+./rofi-bluetooth
+exirt
+nvim .
 exit
-: 1720038103:0;git status
-: 1720039292:0;commit
-: 1720039300:0;git commit
-: 1720039309:0;git commit .gitignore
-: 1720039339:0;git commit main.py
-: 1720039400:0;git commit --amend .gitignore
-: 1720039413:0;git log
-: 1720039438:0;git commit --amend main.py
-: 1720039461:0;git log
-: 1720039606:0;git commit --amend main.py
-: 1720039630:0;..
-: 1720039637:0;git status
-: 1720039691:0;git add .local/share/applications/
-: 1720039693:0;git status
-: 1720039714:0;git commit -a
+: 1722022883:0;git add .local/share/wayland-sessions
+: 1722023064:0;git commit .zshrc .config/zsh
