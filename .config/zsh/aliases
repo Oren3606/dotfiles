@@ -1,4 +1,2 @@
-alias cls="clear"
-#alias :q="exit"
 alias update="sudo dnf upgrade --refresh"
 

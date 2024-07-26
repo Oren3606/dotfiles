@@ -27,5 +27,5 @@ bindkey "^[[3;5~" kill-word
 bindkey "^H" backward-kill-word
 
 # Up Arrow
-bindkey '^[[A' fzf-history-widget
+bindkey "^[[A" fzf-history-widget
 

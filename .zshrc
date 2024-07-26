@@ -1,13 +1,3 @@
-# Powerlevel10k instant prompt
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
- # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
-# Powerlevel10k Prompt
-#source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#source ~/.config/zsh/powerlevel10k/.p10k.zsh
-
 # Prompt
 source ~/.config/zsh/prompt
 
@@ -28,9 +18,9 @@ export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 
 # Plugins
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source ~/.config/zsh/fzf/fzf.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(fzf --zsh)
 source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -46,9 +36,12 @@ setopt hist_find_no_dups
 setopt hist_ignore_space
 
 export TODO="
-	1. transient zsh prompt
-	2. waybar setup
-	3. nvim setup
-	4. a script which converts selected text between key layouts
+	1. try nwg-panel
+	2. transient zsh prompt
+	3. waybar setup
+	4. nvim setup
+	5. a script which converts selected text between key layouts
+	6. builtin fzf complete: FZF_COMPLETION_TRIGGER=''
+	7. switch git to dnf package when exists
 	"
 
