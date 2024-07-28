@@ -33,7 +33,6 @@ z config hypr
 t
 zshexit_functions
 owefh
-docker
 dnf search docker-desktop
 EtgN
 zle 
@@ -1993,14 +1992,12 @@ git commit -a --amend
 git switch master
 git merge dev
 git branch -D dev
-git push
 git push -d
 git push -d dev
 git push dev -d
 git push -d origin dev
 software
 gnome-software
-zoxide
 sudo dnf system-upgrade download
 sudo dnf repoquery --duplicates
 old_kernels=($(dnf repoquery --installonly --latest-limit=-1 -q))
@@ -2012,7 +2009,6 @@ if [ "${#old_kernels[@]}" -eq 0 ]; then\
 fi
 git branch
 git branch -a
-flatpak list
 flatpak search discord
 flatpak install com.discordapp.Discord
 wev
@@ -2026,7 +2022,6 @@ sudo dnf search plugins-core
 dnf search plugins-core
 sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-dnf search docker
 dnf search containerd.io
 dnf search docker-buildx-plugin
 reboot
@@ -2227,7 +2222,6 @@ nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-pref
 sudo nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
 dnf log
 sha256sum shitty\ auto\ settings
-nvim .config/hypr/hyprland_desktop.config
 ip link
 poweroff
 lpf-gui
@@ -2235,12 +2229,10 @@ cat .zshrc
 ./fzf
 ../fzf-tab
 git add .
-git commit
 dnf search fzf
 dnf install fzf
 sudo dnf install fzf
 zsh
-git commit .zshrc .config/zsh
 fzf -zsh
 fzf --zsh
 fzf -bind
@@ -2254,7 +2246,6 @@ fzf --bind=tab:_fzf_complete
 nvim bindings
 nautilus
 steam
-man fzf
 fzf-complete
 fzf fzf-complete
 fzf-complete | fzf
@@ -2275,7 +2266,6 @@ git clone https://github.com/marlonrichert/zsh-autocomplete.git
 cat fzf --zsh
 cat (fzf --zsh)
 cat $(fzf --zsh)
-cd config zsh
 nvim functions
 dnf search zsh-autoco
 cd hypr
@@ -2283,13 +2273,10 @@ echo 'hi'
 /etc
 bindkey
 ..
-nvim .zshrc
-clear
 man gencat
 _fzf_setup_completion
 git | grep _fzf
 echo git | grep _fzf
-update
 Downloads
 ls -lac
 cat .zshrc | grep "auto"
@@ -2299,8 +2286,6 @@ nvim .config/zsh/bindings
 nvim ~/.config/zsh/bindings
 ../.config/zsh/
 git clone https://github.com/aloxaf/fzf-tab
-ls
-alsamixer
 
 pkill idea
 kill $(pgrep idea)
@@ -2309,7 +2294,6 @@ kill $(pgrep jetbrains-idea-ce)
 top
 kill $(pgrep java)
 git
-nvim ~/.zshrc
 ezit
 \:q
 nwg-panel
@@ -2317,10 +2301,51 @@ nwg-panel-config
 rofi -v
 git add .local/share/rofi/
 git add .config/rofi/
-git status
 ./rofi-bluetooth
-exirt
 nvim .
+git add .local/share/wayland-sessions
+git commit .zshrc .config/zsh
+git commit .config/rofi/ .local/share/rofi/
+git commit .local/share/fonts/ -m "Add fonts"
+git add .config/hypr/
+git diff .config/hypr/
+git diff .config/hypr/hyprland_desktop.config
+git commit .config/hypr/
+nvim .config/hypr/hyprland_desktop.config
+git commit .config/zed/
+git push
+flatpak list
+zinit light Aloxaf/fzf-tab
+alsamixer
+source "/home/oren/Downloads/networksockets/venv/bin/activate"
+git add .config/zed/
+git commit
+update
+nvim ~/.zshrc
+exirt
+git status
+dnf search docker
+docker
+v
+fzf | nvim {}
+fzf {} | nvim
+nvim {} | fzf
+nvim {} fzf
+nvim | "{} fzf"
+nvim | ${} fzf
+nvim fzf
+nvim $fzf
+fzf > nvim
+rm nvim
+ls
+fzf | nvim
+clear
+man fzf
+nvim .zshrc
+zoxide
+cd config zsh
+nvim .local/share/wayland-sessions
+nvim .config/hypr/hyprpaper.conf
 exit
-: 1722022883:0;git add .local/share/wayland-sessions
-: 1722023064:0;git commit .zshrc .config/zsh
+: 1722185388:0;git status
+: 1722185436:0;git commit .config/ -m "better configurability"
