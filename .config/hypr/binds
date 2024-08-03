@@ -1,5 +1,6 @@
 # Shortcuts
 bind = SUPER, ESCAPE, exec, rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu
+bind = SUPER, L, exec, gdmflexiserver
 bind = SUPER, W, killactive
 bind = CONTROL, ESCAPE, killactive
 bind = SUPER, F, fullscreen
@@ -7,8 +8,8 @@ bind = SUPER, A, togglefloating
 bind = SUPER, S, exec, $HOME/.local/bin/grimblast copy area
 
 # Apps
-bindr = SUPER, SUPER_L, exec, rofi -show drun -show-icons
-bindr = SUPER, SUPER_R, exec, rofi -show drun -show-icons
+bindr = SUPER, SUPER_L, exec, rofi -show drun
+bindr = SUPER, SUPER_R, exec, rofi -show drun
 bind = SUPER, T, exec, alacritty
 bind = SUPER, Q, exec, firefox
 bind = SUPER SHIFT, Q, exec, firefox --private-window
