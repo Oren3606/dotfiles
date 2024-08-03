@@ -53,7 +53,6 @@ sudo ls -a
 fc-list | grep meslo
 fc-list | grep Meslo
 sudo fc-cache -v
-fc-list
 ~gerf~\
 
 cl\s
@@ -1106,7 +1105,6 @@ mv Downloads/pull_changes Downloads/pull_git_changes
 nvim Downloads/pull_git_changes
 Downloads/pull_git_changes .config/zsh
 nvim ./nvim/init.lua
-sudo dnf upgrade --refresh
 sudo mount /dev/sdb1 /mnt/tmpfs
 tail .zshrc
 zsh:q
@@ -1908,7 +1906,6 @@ dnf info hyprland
 dnf deplist hyprland
 rofi -show drun -show-icons
 rofi -show combi -modes combi -combi-modes "window,drun,run"
-rofi -show drun
 rofi -e "eigwuh"
 git commit .config/hypr --amend
 dnf install qt6ct
@@ -1916,7 +1913,6 @@ sudo dnf install qt6ct
 sudo dnf install qt5ct
 nvim .config/hypr/animations
 nvim .config/hypr/startup
-nvim .config/hypr/binds
 echo $XDG_BACKEND
 echo $GDM_LANG
 nvim .config/hypr
@@ -2016,7 +2012,6 @@ git commit .config/hypr/binds
 git commit --amend .config/hypr/binds
 nvim Downloads/TDL_KUBE.txt
 nvim Downloads/TDL_KUBE.md
-flatpak search docker
 dnf -y
 sudo dnf search plugins-core
 dnf search plugins-core
@@ -2043,7 +2038,6 @@ git clone https://github.com/jakehamilton/dotfiles.git
 waybar -c ~/Downloads/waybar\ confs/waybar/config
 systemctl
 sudo steam
-flatpak update
 syeam
 steam --reset
 export GDK_BACKEND=x11
@@ -2098,7 +2092,6 @@ dm
 nmcli device wifi list
 nmcli device wifi connect "Orenâ€ƒ¹s iPhone" password "Oren3606"
 waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style.css
-cat /sys/class/power_supply/BAT0/capacity
 .config/waybar
 nvim TDL.txt
 ip addr
@@ -2172,17 +2165,13 @@ chmod +x ~/.config/waybar/scripts/alsa.sh
 nvim ./Downloads/waybar\ confs/cgpt.css
 waybar -c ~/Downloads/waybar\ confs/cgpt.cfg -s ~/Downloads/waybar\ confs/cgpt.css
 nvim ~/.config/hypr/
-git diff .zshrc
 git diff /hypr
 git diff .config/hypr/startup
 fc-list 
-fc-list | grep apple
-fc-list | grep sf
 fc-list | grep s
 git commit ~/.local/share/fonts
 git add ~/.config/zed
 git commit ~/.config/zed
-nvim .config/zsh/aliases
 nvim .config/alacritty.toml
 git commit ~/.config/alacritty
 git commit ~/.config/alacritty.toml
@@ -2203,7 +2192,6 @@ git commit .config/hypr/startup --amend
 brightnessctl
 "#kill $(pgrep nwg-panel)"
 simple-scan
-flatpak search zed
 kill $(pgrep steam)
 pkill
 man pkill
@@ -2232,7 +2220,6 @@ git add .
 dnf search fzf
 dnf install fzf
 sudo dnf install fzf
-zsh
 fzf -zsh
 fzf --zsh
 fzf -bind
@@ -2252,7 +2239,6 @@ fzf-complete | fzf
 ojeng | fzf]
 ojeng | fzf
 fzf -h
-fzf
 wget
 man wget
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
@@ -2278,7 +2264,6 @@ _fzf_setup_completion
 git | grep _fzf
 echo git | grep _fzf
 Downloads
-ls -lac
 cat .zshrc | grep "auto"
 cat ~/.zshrc | grep "auto"
 cat ~/.zshrc | grep "source"
@@ -2313,23 +2298,15 @@ git diff .config/hypr/hyprland_desktop.config
 git commit .config/hypr/
 nvim .config/hypr/hyprland_desktop.config
 git commit .config/zed/
-git push
-flatpak list
 zinit light Aloxaf/fzf-tab
-alsamixer
 source "/home/oren/Downloads/networksockets/venv/bin/activate"
 git add .config/zed/
 git commit
-update
 nvim ~/.zshrc
 exirt
-git status
 dnf search docker
-docker
 v
-fzf | nvim {}
 fzf {} | nvim
-nvim {} | fzf
 nvim {} fzf
 nvim | "{} fzf"
 nvim | ${} fzf
@@ -2337,15 +2314,163 @@ nvim fzf
 nvim $fzf
 fzf > nvim
 rm nvim
-ls
 fzf | nvim
-clear
 man fzf
-nvim .zshrc
 zoxide
 cd config zsh
 nvim .local/share/wayland-sessions
 nvim .config/hypr/hyprpaper.conf
+git commit .config/ -m "better configurability"
+git push
+nvim {} | fzf
+ds
+fzf | nvim {}
+fzf | nvim {@0}
+rofi -dump-config
+rofi -h
+rofi -config ~/.config/rofi/config.rasi -drun
+rofi -config ~/.config/rofi/config.rasi -show drun
+nvim .config/hypr/hyprland.config
+nvim .config/hypr/hyprland.conf
+rofi -show ssh
+rofi -show drun
+fc-list | grep sf
+fc-list
+fc-list | grep apple
+fc-list | grep Pro
+fc-list | grep Pro D
+fc-list | grep "Pro D"
+fc-list | grep "Comic"
+fc-list | grep "dav"
+fc-list | grep "bra"
+fc-list | grep "jetb"
+fc-list | grep "mono"
+nvim .config/rofi
+dnf config-manager --disable docker-ce-stable
+sudo dnf config-manager --disable docker-ce-stable
+sudo dnf config-manager --disable Docker CE Stable - x86_64
+sudo dnf config-manager --disable "Docker CE Stable - x86_64"
+dnf disable Docker CE Stable - x86_64
+sudo dnf config-manager --remove-repo https://download.docker.com/linux/fedora/docker-ce.repDDo
+grep -E "^\[.*]" /etc/yum.repos.d/*
+sudo nautilus
+nautilus admin
+nautilus admin:/
+sudo nautilus admin:/
+nautilus admin:///usr/
+sudo nautilus admin:///usr/
+cat docker-ce.repo
+rm docker-ce.repo
+yum remove $(yum list installed | grep rpmforge | awk '{ print $1 }')
+dnf remove $(dnf list installed | grep rpmforge | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep rpmforge | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep docker | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep docker-ce-stable | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep Fedora 40 - x86_64 | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep fedora | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep rpmfusion-free | awk '{ print $1 }')
+sudo dnf remove $(dnf list installed | grep rpmfusion-nonfree-updates | awk '{ print $1 }')D
+sudo dnf remove $(dnf list installed | grep google-chrome | awk '{ print $1 }')D
+sudo dnf remove $(dnf list installed | grep google-chrome | awk '{ print $1 }')
+sudo rm docker-ce.repo
+sudo rm google-chrome.repo
+sudo dnf remove $(dnf list installed | grep fedora-cisco-openh264 | awk '{ print $1 }')
+cat fedora-cisco-openh264.repo
+sudo dnf remove $(dnf list installed | grep fedora-source | awk '{ print $1 }')
+ls
+cat fedora.repo
+/etc/yum.repos.d/
+ls -lac
+dnf repolist --all
+echo $XDG_SESSION_ID
+loginctl lock-session self
+xdg-screensaver
+xdg-screensaver { lock }
+xdg-screensaver {lock}
+xdg-screensaver -h
+man xdg-screensaver
+xdg-screensaver { lock
+xdg-screensaver resume
+xdg-screensaver lock 2
+loginctl lock-session 2
+loginctl -o lock-session 2
+loginctl -o lock-session
+loginctl lock-session
+loginctl lock-session -o
+loginctl lock-session 2 self
+xdg-screensaver -lock
+xdg-screensaver --lock
+flatpak search steam
+flatpak install com.valvesoftware.Steam
+dnf remove Steam
+sudo dnf remove Steam
+sudo dnf remove steam
+cleare
+flatpak install com.belmoussaoui.snowglobe
+flatpak run com.belmoussaoui.snowglobe
+flatpak search zed
+flatpak install dev.zed.Zed
+nvim .config/zed/settings.json
+F
+cat /sys/class/power_supply/BAT0/capacity
+dockler
+docker
+flatpak search docker
+xdg-screensaver lock
+xdg-screensaver suspend
+xdg-screensaver suspend 2
+xdg-screensaver --help
+xdg-screensaver status
+update
+alsamixer
+nvim .config/zsh/aliases
+nvim .config/zsh/history
+flatpak search vsco
+flatpak search codiu
+flatpak uninstall com.belmoussaoui.snowglobe
+flatpak run org.fedoraproject.Platform
+flatpak list
+flatpak run org.winehq.Wine.mono
+flatpak run org.freedesktop.Sdk
+flatpak update
+dnf list | grep pyth
+dnf list | grep python3
+cat .local/bin/rofi-power-menu
+.local/bin/rofi-power-menu
+fzf
+clear
+zsh
+eit
+powerprofilesctl
+loginctl
+loginctl --all
+loginctl --full
+ls /etc/login.defs
+dbus-send
+dbus-send -h
+dbus-send /
+dbus-daemon
+dbus
+systemctl status loginctl
+systemctl status systemd-logind
+dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 'org.freedesktop.login1.Manager.TerminateSession' string:c2
+dbus-send --session --type=method_call --print-reply --dest=org.gnome.SessionManager /org/gnome/SessionManager org.gnome.SessionManager.Logout uint32:1
+logout
+man hyprctl
+gdm
+sudo gdm
+gdmflexiserver
+sudo dnf upgrade --refresh
+hyprctl devices
+nvim .local/bin/rofi-power-menu
+git status
+git commit .config/rofi/config.rasi
+git commit .local/share/rofi/themes/ --amend
+git commit .local/bin/rofi-power-menu .config/hypr/binds
+nvim .config/hypr/binds
+git commit .config/zsh/ .
+nvim .zshrc
+git diff .zshrc
 exit
-: 1722185388:0;git status
-: 1722185436:0;git commit .config/ -m "better configurability"
+: 1722704620:0;git commit .config/zsh/ .zshrc
+: 1722704649:0;git commit .config/zsh/ .zshrc --amend

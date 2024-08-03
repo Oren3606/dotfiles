@@ -20,9 +20,9 @@ export VISUAL="/usr/bin/nvim"
 # Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(zoxide init zsh --cmd cd)
 source <(fzf --zsh)
 source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
-eval "$(zoxide init zsh --cmd cd)"
 
 # History
 HISTSIZE=10000
@@ -41,7 +41,8 @@ export TODO="
 	3. waybar setup
 	4. nvim setup
 	5. a script which converts selected text between key layouts
-	6. builtin fzf complete: FZF_COMPLETION_TRIGGER=''
+	6. builtin fzf complete: FZF_COMPLETION_TRIGGER=''... ?
 	7. switch git to dnf package when exists
+	8. rofi theme and config
 	"
 
