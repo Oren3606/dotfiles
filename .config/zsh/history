@@ -1373,7 +1373,6 @@ cd downloads
 nvim tdl.scmsg
 cd config nvim
 nvim init.lua
-nvim
 sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg
 sudo cd /etc/grub.d/
 sudo ls /etc/grub.d/
@@ -2097,7 +2096,6 @@ nvim TDL.txt
 ip addr
 dnf autoremove
 sudo dnf autoremove
-nvim .config/waybar/config.json
 zenity
 zenity --help
 zenity --help-all
@@ -2258,7 +2256,6 @@ cd hypr
 echo 'hi'
 /etc
 bindkey
-..
 man gencat
 _fzf_setup_completion
 git | grep _fzf
@@ -2280,14 +2277,12 @@ top
 kill $(pgrep java)
 git
 ezit
-\:q
 nwg-panel
 nwg-panel-config
 rofi -v
 git add .local/share/rofi/
 git add .config/rofi/
 ./rofi-bluetooth
-nvim .
 git add .local/share/wayland-sessions
 git commit .zshrc .config/zsh
 git commit .config/rofi/ .local/share/rofi/
@@ -2321,7 +2316,6 @@ cd config zsh
 nvim .local/share/wayland-sessions
 nvim .config/hypr/hyprpaper.conf
 git commit .config/ -m "better configurability"
-git push
 nvim {} | fzf
 ds
 fzf | nvim {}
@@ -2377,10 +2371,8 @@ sudo rm google-chrome.repo
 sudo dnf remove $(dnf list installed | grep fedora-cisco-openh264 | awk '{ print $1 }')
 cat fedora-cisco-openh264.repo
 sudo dnf remove $(dnf list installed | grep fedora-source | awk '{ print $1 }')
-ls
 cat fedora.repo
 /etc/yum.repos.d/
-ls -lac
 dnf repolist --all
 echo $XDG_SESSION_ID
 loginctl lock-session self
@@ -2422,7 +2414,6 @@ xdg-screensaver suspend 2
 xdg-screensaver --help
 xdg-screensaver status
 update
-alsamixer
 nvim .config/zsh/aliases
 nvim .config/zsh/history
 flatpak search vsco
@@ -2438,7 +2429,6 @@ dnf list | grep python3
 cat .local/bin/rofi-power-menu
 .local/bin/rofi-power-menu
 fzf
-clear
 zsh
 eit
 powerprofilesctl
@@ -2460,10 +2450,8 @@ man hyprctl
 gdm
 sudo gdm
 gdmflexiserver
-sudo dnf upgrade --refresh
 hyprctl devices
 nvim .local/bin/rofi-power-menu
-git status
 git commit .config/rofi/config.rasi
 git commit .local/share/rofi/themes/ --amend
 git commit .local/bin/rofi-power-menu .config/hypr/binds
@@ -2471,6 +2459,57 @@ nvim .config/hypr/binds
 git commit .config/zsh/ .
 nvim .zshrc
 git diff .zshrc
+git commit .config/zsh/ .zshrc
+git commit .config/zsh/ .zshrc --amend
+git push
+seahorse
+nvim .config/waybar/TDL.txt
+nvim .config/waybar/config.json
+alsamixer
+git clone https://github.com/LazyVim/starter.git
+./starter
+rm .git
+rm -r .git
+ls -lac
+cat .gitignore
+..
+nvim .
+rm init.lua
+mv -r starter/* .
+mv starter/* .
+ls
+\:q
+nvim .config/nvim
+nvim 
+dnf search luarocks
+sudo dnf install luarocks
+dnf search lua
+.config/nvim/
+git clone https://github.com/LazyVim/starter.git .
+nvim
+cd ~
+git add .config/nvim/
+git status
+git commit .config/nvim/
+flatpak search 7z
+gnome-tweak-tool
+sudo dnf upgrade --refresh
+clear
+nvim Localizable.strings
+fc-cache -h
+fc-cache
+fc-cache -v
 exit
-: 1722704620:0;git commit .config/zsh/ .zshrc
-: 1722704649:0;git commit .config/zsh/ .zshrc --amend
+: 1722892277:0;fc-cache -v
+: 1722892280:0;ext
+: 1722892286:0;git status
+: 1722892309:0;git add .local/share/fonts/
+: 1722892321:0;git status
+: 1722892391:0;fc-cache -v
+: 1722892394:0;git status
+: 1722892405:0;git add .local/share/fonts/
+: 1722892407:0;git status
+: 1722892448:0;git commit .local/share/fonts/
+: 1722892465:0;git commit --amend .local/share/fonts/
+: 1722892581:0;git status
+: 1722892633:0;git commit --amend -a
