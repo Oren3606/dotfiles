@@ -26,4 +26,3 @@ PS1="${username_prompt}${at_prompt}${hostname_prompt} ${time_prompt} ${directory
 
 # Export the PS1 variable
 export PS1
-
