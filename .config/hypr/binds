@@ -11,8 +11,6 @@ bind = SUPER, S, exec, $HOME/.local/bin/grimblast copy area
 bindr = SUPER, SUPER_L, exec, rofi -show drun
 bindr = SUPER, SUPER_R, exec, rofi -show drun
 bind = SUPER, T, exec, alacritty
-bind = SUPER, Q, exec, firefox
-bind = SUPER SHIFT, Q, exec, firefox --private-window
 bind = SUPER, E, exec, nautilus
 
 # Media
