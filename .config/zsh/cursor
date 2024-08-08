@@ -5,4 +5,3 @@ cursor() {
 
 # Execute after each command
 precmd_functions+=(cursor)
-
