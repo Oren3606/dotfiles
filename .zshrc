@@ -13,7 +13,8 @@ source ~/.config/zsh/bindings
 # Setup
 autoload -U compinit && compinit
 setopt AUTO_CD
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+export WORDCHARS=""
+zstyle ":completion:*" matcher-list "m:{[:lower:][:upper:]}={[:upper:][:lower:]}"
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
 

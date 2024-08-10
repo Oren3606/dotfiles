@@ -17,7 +17,7 @@ bindkey "^[[5C" forward-word
 # Delete
 bindkey "^[[3~" delete-char
 
-# Backspace (redundant)
+# Backspace
 bindkey "^?" backward-delete-char
 
 # Ctrl+Delete
