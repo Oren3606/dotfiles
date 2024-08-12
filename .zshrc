@@ -37,13 +37,11 @@ setopt hist_find_no_dups
 setopt hist_ignore_space
 
 export TODO="
-	1. try nwg-panel
-	2. transient zsh prompt
-	3. waybar setup
-	4. nvim setup
-	5. a script which converts selected text between key layouts
-	6. builtin fzf complete: FZF_COMPLETION_TRIGGER=''... ?
-	7. switch git to dnf package when exists
-	8. rofi theme and config
+	1. transient zsh prompt?
+	2. Customize waybar
+	3. A script which converts selected text between key layouts
+	4. builtin fzf complete: FZF_COMPLETION_TRIGGER=''... ?
+	5. switch git to dnf package when exists
+	6. rofi theme and config- remove description
 	"
 
