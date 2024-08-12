@@ -1372,7 +1372,6 @@ echo $VISUAL
 cd downloads
 nvim tdl.scmsg
 cd config nvim
-nvim init.lua
 sudo awk -F\' '/^menuentry / {print $2}' /boot/grub2/grub.cfg
 sudo cd /etc/grub.d/
 sudo ls /etc/grub.d/
@@ -1815,7 +1814,6 @@ git add .config/nautilus/
 git add .config/zsh/prompt
 cat .gitconfig
 git add .local/share/applications/Bluetooth\ Menu.desktop
-git add .local/share/fonts/
 ip
 sudo lsof -iTCP -sTCP:LISTEN -P | grep ":<port_number>"\
 
@@ -1976,7 +1974,6 @@ commit
 git commit .gitignore
 git commit main.py
 git commit --amend .gitignore
-git log
 git commit --amend main.py
 git add .local/share/applications/
 gnome-shell
@@ -2007,7 +2004,6 @@ git branch -a
 flatpak search discord
 flatpak install com.discordapp.Discord
 wev
-git commit .config/hypr/binds
 git commit --amend .config/hypr/binds
 nvim Downloads/TDL_KUBE.txt
 nvim Downloads/TDL_KUBE.md
@@ -2265,7 +2261,6 @@ cat .zshrc | grep "auto"
 cat ~/.zshrc | grep "auto"
 cat ~/.zshrc | grep "source"
 nvim .config/zsh/bindings
-nvim ~/.config/zsh/bindings
 ../.config/zsh/
 git clone https://github.com/aloxaf/fzf-tab
 
@@ -2281,7 +2276,6 @@ nwg-panel
 nwg-panel-config
 rofi -v
 git add .local/share/rofi/
-git add .config/rofi/
 ./rofi-bluetooth
 git add .local/share/wayland-sessions
 git commit .zshrc .config/zsh
@@ -2296,8 +2290,6 @@ git commit .config/zed/
 zinit light Aloxaf/fzf-tab
 source "/home/oren/Downloads/networksockets/venv/bin/activate"
 git add .config/zed/
-git commit
-nvim ~/.zshrc
 exirt
 dnf search docker
 v
@@ -2420,13 +2412,10 @@ flatpak search vsco
 flatpak search codiu
 flatpak uninstall com.belmoussaoui.snowglobe
 flatpak run org.fedoraproject.Platform
-flatpak list
 flatpak run org.winehq.Wine.mono
 flatpak run org.freedesktop.Sdk
-flatpak update
 dnf list | grep pyth
 dnf list | grep python3
-cat .local/bin/rofi-power-menu
 .local/bin/rofi-power-menu
 fzf
 zsh
@@ -2455,9 +2444,7 @@ nvim .local/bin/rofi-power-menu
 git commit .config/rofi/config.rasi
 git commit .local/share/rofi/themes/ --amend
 git commit .local/bin/rofi-power-menu .config/hypr/binds
-nvim .config/hypr/binds
 git commit .config/zsh/ .
-nvim .zshrc
 git diff .zshrc
 git commit .config/zsh/ .zshrc
 git commit .config/zsh/ .zshrc --amend
@@ -2465,51 +2452,114 @@ git push
 seahorse
 nvim .config/waybar/TDL.txt
 nvim .config/waybar/config.json
-alsamixer
 git clone https://github.com/LazyVim/starter.git
 ./starter
 rm .git
 rm -r .git
 ls -lac
 cat .gitignore
-..
-nvim .
 rm init.lua
 mv -r starter/* .
 mv starter/* .
-ls
-\:q
-nvim .config/nvim
 nvim 
 dnf search luarocks
 sudo dnf install luarocks
 dnf search lua
-.config/nvim/
-git clone https://github.com/LazyVim/starter.git .
-nvim
 cd ~
 git add .config/nvim/
-git status
-git commit .config/nvim/
 flatpak search 7z
 gnome-tweak-tool
-sudo dnf upgrade --refresh
-clear
 nvim Localizable.strings
 fc-cache -h
 fc-cache
+ext
+git add .local/share/fonts/
+git commit .local/share/fonts/
+git commit --amend .local/share/fonts/
+git commit --amend -a
 fc-cache -v
+ex
+vi
+git commit .config/nvim/
+nvim .config/nvim
+git clone https://github.com/LazyVim/starter.git .
+rm -rf .git
+cat .local/bin/rofi-power-menu
+clear
+nvim ~/.config/nvim/
+nvim .config/hypr/binds
+flatpak list
+cat .config/nvim/init.lua
+nvim botstrapper.lua
+git add .config/nvim/bootstrap.lua
+git log
+git add .config/nvim/init.lua
+git commit --amend .config/nvim/
+exi
+git commit .config/zsh/cursor .config/zsh/prompt
+git commit .config/hypr/binds
+nvim .config/nvim/init.lua
+nvim .config/nvim/lua/plugins/oxocarbon.lua
+exitr
+nvim ./plugins.lua
+ls
+touch lazy.lua
+touch plugins.lua
+nvim init.lua
+.config/nvim/
+nvim lua/plugins/meson.lua
+nvim lua/plugins/oxocarbon.lua
+nvim ~/.config/nvim/init.lua
+mv lua/plugins/mason.lua lua/plugins/mason-nvim.lua
+nvim lua/plugins/mason-lspconfig
+nvim .
+..
+alacritty
+\:q
+nvim ./alacritty.toml
+nvim ~/.config/nvim~
+alsamixer
+nvim ~/.config/nvim
+nvim ~/.config/nvim/lua/plugins/none-ls
+nvim ~/.config/nvim/lua/plugins/none-ls.lua
+#nvim ~/.config/nvim/lua/plugins/plenary.lua
+nvim ~/.config/nvim/lua/plugins/plenary.lua
+nvim ~/.config/nvim/lua/plugins/nvim-tree.lua
+A
+enrgowerng
+nvim ~/.config/zsh/bindings
+nvim ~/.config/zsh/
+git diff .config/zsh/bindings
+git commit .config/zsh/bindings .zshrc
+nvim ~/.zshrc
+git commit --amend .config/zsh/bindings .zshrc
+nvim
+flatpak update
+sudo dnf upgrade --refresh
+sudo dnf upgrade --refresh -y
+nvim .zshrc
+nvim ~/.config/nvim/lua/plugins/
+git status
+git diff .config/alacritty.toml
+git commit .config/alacritty.toml
+git add .config/rofi/
+git status\\
+
+git commit
 exit
-: 1722892277:0;fc-cache -v
-: 1722892280:0;ext
-: 1722892286:0;git status
-: 1722892309:0;git add .local/share/fonts/
-: 1722892321:0;git status
-: 1722892391:0;fc-cache -v
-: 1722892394:0;git status
-: 1722892405:0;git add .local/share/fonts/
-: 1722892407:0;git status
-: 1722892448:0;git commit .local/share/fonts/
-: 1722892465:0;git commit --amend .local/share/fonts/
-: 1722892581:0;git status
-: 1722892633:0;git commit --amend -a
+: 1723397754:0;nvim ~/.config/nvim/lua/plugins/
+: 1723415013:0;alsamixer
+: 1723461720:0;nvim ~/.config/nvim/lua/plugins/
+: 1723491833:0;sudo dnf upgrade --refresh -y
+: 1723492545:0;flatpak update
+: 1723492572:0;sudo dnf upgrade --refresh -y && flatpak update
+: 1723493175:0;nvim ~/.config/nvim/lua/plugins/
+: 1723493277:0;git status
+: 1723493280:0;..
+: 1723493284:0;~
+: 1723493353:0;git add .config/nvim/
+: 1723493357:0;git status
+: 1723493716:0;git commit
+: 1723494106:0;git commit]
+: 1723494109:0;git commit
+: 1723494126:0;git commit .zshrc .config/zsh/history
