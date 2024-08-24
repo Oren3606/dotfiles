@@ -1,24 +1,25 @@
 # Shortcuts
-bind = SUPER, ESCAPE, exec, rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu
+bind = SUPER, ESCAPE, killactive
+bind = CONTROL SHIFT, ESCAPE, exec, rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu #temp until waybar is figured out
 bind = SUPER, L, exec, gdmflexiserver
-bind = SUPER, W, killactive
-bind = CONTROL, ESCAPE, killactive
 bind = SUPER, F, fullscreen
 bind = SUPER, A, togglefloating
 bind = SUPER, S, exec, $HOME/.local/bin/grimblast copy area
 
 # Apps
-bindr = SUPER, SUPER_L, exec, rofi -show drun
-bindr = SUPER, SUPER_R, exec, rofi -show drun
+bind = SUPER, SUPER_L, exec, rofi -show drun
+bind = SUPER, SUPER_R, exec, rofi -show drun
 bind = SUPER, T, exec, alacritty
 bind = SUPER, E, exec, nautilus
+bind = SUPER, R, exec, firefox
+bind = SUPER SHIFT, R, exec, firefox --private-window
 
 # Media
 bind = , XF86AudioPrev, exec, playerctl previous
 bind = , XF86AudioNext, exec, playerctl next
 bind = , XF86AudioPlay, exec, playerctl play-pause
 
-# Workspaces
+# Move to workspace
 bind = SUPER, 1, workspace, 1
 bind = SUPER, 2, workspace, 2
 bind = SUPER, 3, workspace, 3
@@ -29,6 +30,18 @@ bind = SUPER, 7, workspace, 7
 bind = SUPER, 8, workspace, 8
 bind = SUPER, 9, workspace, 9
 bind = SUPER, 0, workspace, 10
+
+# Move active window to workspace
+bind = SUPER SHIFT, 1, movetoworkspace, 1
+bind = SUPER SHIFT, 2, movetoworkspace, 2
+bind = SUPER SHIFT, 3, movetoworkspace, 3
+bind = SUPER SHIFT, 4, movetoworkspace, 4
+bind = SUPER SHIFT, 5, movetoworkspace, 5
+bind = SUPER SHIFT, 6, movetoworkspace, 6
+bind = SUPER SHIFT, 7, movetoworkspace, 7
+bind = SUPER SHIFT, 8, movetoworkspace, 8
+bind = SUPER SHIFT, 9, movetoworkspace, 9
+bind = SUPER SHIFT, 0, movetoworkspace, 10
 
 # Move to relative right or left workspace
 bind = SUPER, LEFT, workspace, r-1
@@ -43,7 +56,13 @@ bind = SUPER, TAB, exec, rofi -show window
 bind = ALT, TAB, cyclenext,
 bind = ALT, TAB, bringactivetotop,
 
+# Minimize or maximize active window
+bind = SUPER, DOWN, togglespecialworkspace, magic
+bind = SUPER, DOWN, movetoworkspace, +0
+bind = SUPER, DOWN, togglespecialworkspace, magic
+bind = SUPER, DOWN, movetoworkspace, special:magic
+bind = SUPER, DOWN, togglespecialworkspace, magic
+
 # Move and resize windows
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
-
