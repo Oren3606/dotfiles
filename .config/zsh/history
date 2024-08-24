@@ -1286,7 +1286,6 @@ sudo mv /usr/local/share/applications/lpf-spotify-client.desktop /home/oren/.loc
 sudo mv /usr/local/share/applications/nwg-panel-config.desktop /home/oren/.local/share/applications
 git  status'\
 '
-git init
 git add alacritty.toml
 git add hypr/ nvim/ rofi/ waybar/ zsh/
 ../fzf
@@ -1689,7 +1688,6 @@ sudo btrfs subvolume list
 man btrfs
 git switch feature/IP
 git branch feature/connect-over-IP
-git switch feature/connect-over-IP
 git push -u
 git push -u origin feature/connect-over-IP
 man PS1
@@ -1850,7 +1848,6 @@ dnf search spotify-clent
 dnf install spotify-client
 sudo dnf install spotify-client
 kill $(pgrep firefox)
-Downloads/Secure.MSG
 git log origin
 echo $XDG_SESSION_TYPE
 /etc/grub.d
@@ -1937,7 +1934,6 @@ python main.py -t 1.1.1.1:4 -n Test
 python main.py -t "" -n Test
 git gui
 update && alsamixer
-alsa
 python main.py -t ":" -n Test
 python main.py -t fg -n Test
 python main.py -t fg ew -n Test
@@ -1945,7 +1941,6 @@ flatpak uninstall com.jetbrains.IntelliJ-IDEA-Community
 flatpak uninstall com.sublimetext.three
 flatpak uninstall org.gnome.Platfor
 flatpak uninstall org.gnome.Platform
-exiy
 sudo update-alternatives --config x-terminal-emulator\
 
 sudo update-alternatives
@@ -1979,7 +1974,6 @@ git add .local/share/applications/
 gnome-shell
 git switch dev
 git merge master
-git commit -a
 git commit -a --amend
 git switch master
 git merge dev
@@ -2003,7 +1997,6 @@ git branch
 git branch -a
 flatpak search discord
 flatpak install com.discordapp.Discord
-wev
 git commit --amend .config/hypr/binds
 nvim Downloads/TDL_KUBE.txt
 nvim Downloads/TDL_KUBE.md
@@ -2176,7 +2169,6 @@ git commit .config/zsh/* --amend
 find ./ -name '.git'
 .config/zsh/fzf
 git rm --cached angulartest -f
-~
 git add .config/zsh --amend
 git add .config/zsh
 git commit .config/zsh --amend
@@ -2206,7 +2198,6 @@ dnf log
 sha256sum shitty\ auto\ settings
 ip link
 poweroff
-lpf-gui
 cat .zshrc
 ./fzf
 ../fzf-tab
@@ -2268,7 +2259,6 @@ pkill idea
 kill $(pgrep idea)
 kill idea
 kill $(pgrep jetbrains-idea-ce)
-top
 kill $(pgrep java)
 git
 ezit
@@ -2317,7 +2307,6 @@ rofi -h
 rofi -config ~/.config/rofi/config.rasi -drun
 rofi -config ~/.config/rofi/config.rasi -show drun
 nvim .config/hypr/hyprland.config
-nvim .config/hypr/hyprland.conf
 rofi -show ssh
 rofi -show drun
 fc-list | grep sf
@@ -2418,7 +2407,6 @@ dnf list | grep pyth
 dnf list | grep python3
 .local/bin/rofi-power-menu
 fzf
-zsh
 eit
 powerprofilesctl
 loginctl
@@ -2448,7 +2436,6 @@ git commit .config/zsh/ .
 git diff .zshrc
 git commit .config/zsh/ .zshrc
 git commit .config/zsh/ .zshrc --amend
-git push
 seahorse
 nvim .config/waybar/TDL.txt
 nvim .config/waybar/config.json
@@ -2466,7 +2453,6 @@ dnf search luarocks
 sudo dnf install luarocks
 dnf search lua
 cd ~
-git add .config/nvim/
 flatpak search 7z
 gnome-tweak-tool
 nvim Localizable.strings
@@ -2487,8 +2473,6 @@ rm -rf .git
 cat .local/bin/rofi-power-menu
 clear
 nvim ~/.config/nvim/
-nvim .config/hypr/binds
-flatpak list
 cat .config/nvim/init.lua
 nvim botstrapper.lua
 git add .config/nvim/bootstrap.lua
@@ -2502,7 +2486,6 @@ nvim .config/nvim/init.lua
 nvim .config/nvim/lua/plugins/oxocarbon.lua
 exitr
 nvim ./plugins.lua
-ls
 touch lazy.lua
 touch plugins.lua
 nvim init.lua
@@ -2512,13 +2495,9 @@ nvim lua/plugins/oxocarbon.lua
 nvim ~/.config/nvim/init.lua
 mv lua/plugins/mason.lua lua/plugins/mason-nvim.lua
 nvim lua/plugins/mason-lspconfig
-nvim .
-..
 alacritty
-\:q
 nvim ./alacritty.toml
 nvim ~/.config/nvim~
-alsamixer
 nvim ~/.config/nvim
 nvim ~/.config/nvim/lua/plugins/none-ls
 nvim ~/.config/nvim/lua/plugins/none-ls.lua
@@ -2527,39 +2506,98 @@ nvim ~/.config/nvim/lua/plugins/plenary.lua
 nvim ~/.config/nvim/lua/plugins/nvim-tree.lua
 A
 enrgowerng
-nvim ~/.config/zsh/bindings
 nvim ~/.config/zsh/
 git diff .config/zsh/bindings
 git commit .config/zsh/bindings .zshrc
 nvim ~/.zshrc
 git commit --amend .config/zsh/bindings .zshrc
 nvim
-flatpak update
 sudo dnf upgrade --refresh
-sudo dnf upgrade --refresh -y
-nvim .zshrc
-nvim ~/.config/nvim/lua/plugins/
-git status
 git diff .config/alacritty.toml
 git commit .config/alacritty.toml
 git add .config/rofi/
 git status\\
 
+sudo dnf upgrade --refresh -y
+flatpak update
+..
+~
+git add .config/nvim/
+git commit]
 git commit
+git commit .zshrc .config/zsh/history
+git push
+pkill minecraft-launcher
+pkill minecraft-launc
+sudo dnf upgrade --refresh -y && flatpak update
+sudo dnf upgrade --refresh -y && echo "================================" && flatpak update
+node -v
+nvim .config/hypr/hyprland.conf
+minikube
+flatpak list
+flatpak list | grep "steam"
+flatpak list | grep "Steam"
+nvim Downloads/TDL_SHCHRR
+nvim Downloads/TDL_SHCHRR.md
+nvim Downloads/tdl.scmsg
+*exit
+ping www.google.com
+nvim .config/hypr/binds
+alsa
+git init
+touch .gitignore
+touch README.md
+sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update
+lpf-gui
+git remote show origin
+Downloads/Zed-Theme
+git remote add origin git@github.com:Oren3606/zed-monokai-night.git
+git add themes/ extension.toml README.md
+git commit -a
+nvim ~/.config/nvim/lua/plugins/
+nvim ~/.config/nvim/lua/
+flatpak search idea
+flatpak install jetbrains.IntelliJ-IDEA-Community
+flatpak install com.jetbrains.IntelliJ-IDEA-Community
+git commit .local/share/applications/idea.desktop
+rm ~/.config/nvim/lua/plugins/monokai.lua
+wev
+nvim ~/.config/hypr/binds
+nvim .
+ls
+nvim ~/.config/nvim/lua/plugins
+python -m venv venv2
+top
+sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
+flatpak info --show-runtime com.jetbrains.IntelliJ-IDEA-Community
+flatpak info --show-location com.jetbrains.IntelliJ-IDEA-Community
+flatpak info --show-permissions com.jetbrains.IntelliJ-IDEA-Community
+python -m venv --copies venv2
+Downloads/Secure.MSG
+python -m venv --copies venv
+git status
+git switch feature/connect-over-IP
+python -m venv venv
+exiy
+exity
+source /home/oren/Downloads/Secure.MSG/venv/bin/activate
+nano
+nvim .zshrc
+exti
+touch ~/.config/zed/tasks.json
+alsamixer
+nvim ~/.config/zsh/bindings
+zsh
+\:q
+nvim ~/.config/zsh/aliases
 exit
-: 1723397754:0;nvim ~/.config/nvim/lua/plugins/
-: 1723415013:0;alsamixer
-: 1723461720:0;nvim ~/.config/nvim/lua/plugins/
-: 1723491833:0;sudo dnf upgrade --refresh -y
-: 1723492545:0;flatpak update
-: 1723492572:0;sudo dnf upgrade --refresh -y && flatpak update
-: 1723493175:0;nvim ~/.config/nvim/lua/plugins/
-: 1723493277:0;git status
-: 1723493280:0;..
-: 1723493284:0;~
-: 1723493353:0;git add .config/nvim/
-: 1723493357:0;git status
-: 1723493716:0;git commit
-: 1723494106:0;git commit]
-: 1723494109:0;git commit
-: 1723494126:0;git commit .zshrc .config/zsh/history
+: 1724518275:0;git status
+: 1724518560:0;git commit .config/nvim/
+: 1724518596:0;git diff .config/hypr/binds
+: 1724518610:0;nvim .config/hypr/binds
+: 1724518721:0;alsa
+: 1724518725:0;alsamixer
+: 1724518992:0;git commit .config/hypr/binds
+: 1724519041:0;git commit .config/zsh/aliases
+: 1724519076:0;git status
+: 1724519090:0;git commit .config/zsh/history
