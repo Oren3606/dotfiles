@@ -1,0 +1,164 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      //"shift shift": "file_finder::Toggle",
+      "ctrl-t": "workspace::NewTerminal",
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {}
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-t": "pane::CloseActiveItem",
+      "escape": ["terminal::SendKeystroke", "escape"]
+    }
+  }
+  /*
+  {
+ // "context": "Global",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Menu",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Assistant",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "ProjectSearch",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "BufferSearch",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Search",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "EmptyPane",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "SharedScreen",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "Search",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == replace",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == operator",
+    "bindings": {
+      "escape": []
+    }
+  },
+  {
+    "context": "vim_mode == waiting",
+    "bindings": {
+      "escape": []
+    }
+  } */
+]

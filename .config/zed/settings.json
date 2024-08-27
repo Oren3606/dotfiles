@@ -4,17 +4,19 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
 {
   "features": {
-    "inline_completion_provider": "none"
+    "inline_completion_provider": "none",
+    "copilot": false
   },
-  "ui_font_size": 16,
+  "chat_panel": {
+    "button": false
+  },
+  "theme": "One Dark Pro",
+  "ui_font_size": 18,
+  "ui_font_family": "SF Pro Display",
   "buffer_font_size": 16,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
-  }
+  "buffer_font_family": "JetBrains Mono"
 }
