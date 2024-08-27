@@ -508,7 +508,6 @@ z zsh config
 dnf check-update\
 
 git clone https://github.com/Aloxaf/fzf-tab.git
-hello
 cd 
 nvim powerlevel10k/powerlevel10k.zsh-theme
 nvim powerlevel10k/p10k.zsh
@@ -1003,7 +1002,6 @@ show_last_command() {\
 show_last_command\
 \
 \
-:q\
 \
 "\
 `
@@ -1708,7 +1706,6 @@ emacs
 y
 flatpak search emacs
 hostnamectl hostname
-nvim .config/zsh/prompt
 echo $PROMPT
 $green
 echo $green
@@ -1722,7 +1719,6 @@ prompt -l
 prompt bart
 prompt adam1
 prompt adam2
-.config
 prompt bigfade
 prompt clint
 prompt default
@@ -1831,7 +1827,6 @@ pgrep waybar\
 
 kill 4172
 kill $(pgrep waybar)
-su
 cd config waybar
 nvim config
 nvim ../../.zshconfig
@@ -1920,7 +1915,6 @@ git add .config/hypr/binds
 git add .config/hypr/startup
 git commit .config/hypr
 nviim .
-nvim .config/hypr/
 for
 for:
 man gnome-control-center
@@ -2241,7 +2235,6 @@ nvim functions
 dnf search zsh-autoco
 cd hypr
 echo 'hi'
-/etc
 bindkey
 man gencat
 _fzf_setup_completion
@@ -2251,7 +2244,6 @@ Downloads
 cat .zshrc | grep "auto"
 cat ~/.zshrc | grep "auto"
 cat ~/.zshrc | grep "source"
-nvim .config/zsh/bindings
 ../.config/zsh/
 git clone https://github.com/aloxaf/fzf-tab
 
@@ -2276,7 +2268,6 @@ git diff .config/hypr/
 git diff .config/hypr/hyprland_desktop.config
 git commit .config/hypr/
 nvim .config/hypr/hyprland_desktop.config
-git commit .config/zed/
 zinit light Aloxaf/fzf-tab
 source "/home/oren/Downloads/networksockets/venv/bin/activate"
 git add .config/zed/
@@ -2424,7 +2415,6 @@ dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/
 dbus-send --session --type=method_call --print-reply --dest=org.gnome.SessionManager /org/gnome/SessionManager org.gnome.SessionManager.Logout uint32:1
 logout
 man hyprctl
-gdm
 sudo gdm
 gdmflexiserver
 hyprctl devices
@@ -2443,7 +2433,6 @@ git clone https://github.com/LazyVim/starter.git
 ./starter
 rm .git
 rm -r .git
-ls -lac
 cat .gitignore
 rm init.lua
 mv -r starter/* .
@@ -2466,7 +2455,6 @@ git commit --amend -a
 fc-cache -v
 ex
 vi
-git commit .config/nvim/
 nvim .config/nvim
 git clone https://github.com/LazyVim/starter.git .
 rm -rf .git
@@ -2481,7 +2469,6 @@ git add .config/nvim/init.lua
 git commit --amend .config/nvim/
 exi
 git commit .config/zsh/cursor .config/zsh/prompt
-git commit .config/hypr/binds
 nvim .config/nvim/init.lua
 nvim .config/nvim/lua/plugins/oxocarbon.lua
 exitr
@@ -2522,17 +2509,14 @@ sudo dnf upgrade --refresh -y
 flatpak update
 ..
 ~
-git add .config/nvim/
 git commit]
 git commit
 git commit .zshrc .config/zsh/history
-git push
 pkill minecraft-launcher
 pkill minecraft-launc
 sudo dnf upgrade --refresh -y && flatpak update
 sudo dnf upgrade --refresh -y && echo "================================" && flatpak update
 node -v
-nvim .config/hypr/hyprland.conf
 minikube
 flatpak list
 flatpak list | grep "steam"
@@ -2542,8 +2526,6 @@ nvim Downloads/TDL_SHCHRR.md
 nvim Downloads/tdl.scmsg
 *exit
 ping www.google.com
-nvim .config/hypr/binds
-alsa
 git init
 touch .gitignore
 touch README.md
@@ -2563,41 +2545,73 @@ git commit .local/share/applications/idea.desktop
 rm ~/.config/nvim/lua/plugins/monokai.lua
 wev
 nvim ~/.config/hypr/binds
-nvim .
-ls
 nvim ~/.config/nvim/lua/plugins
 python -m venv venv2
 top
-sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
 flatpak info --show-runtime com.jetbrains.IntelliJ-IDEA-Community
 flatpak info --show-location com.jetbrains.IntelliJ-IDEA-Community
 flatpak info --show-permissions com.jetbrains.IntelliJ-IDEA-Community
 python -m venv --copies venv2
 Downloads/Secure.MSG
 python -m venv --copies venv
-git status
 git switch feature/connect-over-IP
 python -m venv venv
-exiy
 exity
 source /home/oren/Downloads/Secure.MSG/venv/bin/activate
 nano
 nvim .zshrc
 exti
 touch ~/.config/zed/tasks.json
-alsamixer
 nvim ~/.config/zsh/bindings
-zsh
-\:q
 nvim ~/.config/zsh/aliases
+git commit .config/nvim/
+git diff .config/hypr/binds
+nvim .config/hypr/binds
+alsa
+git commit .config/hypr/binds
+git commit .config/zsh/aliases
+git commit .config/zsh/history
+nvim .config/zsh/bindings
+git add .config/nvim/
+git commit .config/nvim/lua/plugins/one-dark.lua
+git add .config/zed
+git commit .config/zed/
+git status
+git push
+nvim .config/waybar
+env GTK_DEBUG=interactive waybar
+flatpak uninstall com.github.tchx84.Flatseal
+exiy
+.config
+ls 
+/ETC
+/etc
+gdm
+cd gdm
+ls -lac
+nvim .
+nvim Downloads/LONDON.txt
+nvim .config/hypr/
+\:q
+ls
+hello
+echo wfwqgmqg
+echo w[fwqgmq[g
+nvim .config/hypr/hyprland.conf
+su
+sudo su
+nvim .config
+nvim .config/zsh
+zsh
+sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
+jobs
+alsamixer
+alsamixer && exit
+kubectl 
+nvim .config/zsh/prompt
 exit
-: 1724518275:0;git status
-: 1724518560:0;git commit .config/nvim/
-: 1724518596:0;git diff .config/hypr/binds
-: 1724518610:0;nvim .config/hypr/binds
-: 1724518721:0;alsa
-: 1724518725:0;alsamixer
-: 1724518992:0;git commit .config/hypr/binds
-: 1724519041:0;git commit .config/zsh/aliases
-: 1724519076:0;git status
-: 1724519090:0;git commit .config/zsh/history
+: 1724764097:0;git status
+: 1724764118:0;git diff .config/zsh/cursor
+: 1724764134:0;git commit .config/zsh/cursor
+: 1724764179:0;git commit .config/zsh/
+: 1724764193:0;git commit .config/zsh/history
