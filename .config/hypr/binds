@@ -18,6 +18,10 @@ bind = SUPER SHIFT, R, exec, firefox --private-window
 bind = , XF86AudioPrev, exec, playerctl previous
 bind = , XF86AudioNext, exec, playerctl next
 bind = , XF86AudioPlay, exec, playerctl play-pause
+bind = SUPER, bracketleft, exec, playerctl previous
+bind = SUPER, bracketright, exec, playerctl next
+bind = SUPER, equal, exec, playerctl play-pause
+
 
 # Move to workspace
 bind = SUPER, 1, workspace, 1
