@@ -1,5 +1,6 @@
 # Prompt components and colors (https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)
 #transient_element=$'\e[2A\e[K\b\e[3~\e[2B' # TODO...
+transient_element=$''
 username=$'\e[38;5;2m%n\e[0m'
 at=$'\e[38;5;2m@\e[0m'
 hostname=$'\e[38;5;2m%m\e[0m'
@@ -9,7 +10,7 @@ privileges=$'\e[38;5;15m$\e[0m'
 newline=$'\n'
 
 # Combine
-PROMPT="${transient_element}${username}${at}${hostname} ${time} ${directory}${newline}${privileges} ${%f%k}"
+PROMPT="${transient_element}${username}${at}${hostname} ${time} ${directory}${newline}${privileges} "
 
 # Export $PROMPT variable
 export PROMPT
