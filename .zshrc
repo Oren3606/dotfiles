@@ -37,11 +37,11 @@ setopt hist_find_no_dups
 setopt hist_ignore_space
 
 export TODO="
-	1. transient zsh prompt?
-	2. Customize waybar
-	3. A script which converts selected text between key layouts
-	4. builtin fzf complete: FZF_COMPLETION_TRIGGER=''... ?
-	5. switch git to dnf package when exists
-	6. rofi theme and config- remove description
-	"
+    1. Transient zsh prompt?
+    2. Customize waybar
+    3. A script which converts selected text between key layouts
+    4. Switch git to dnf package when exists
+    5. Rofi theme and config- remove description
+    6. Hyprland config- monitor = , highres OR highrr, auto, 1
+    "
 

@@ -12,7 +12,7 @@
 
 # Shortcuts
 bind = SUPER, ESCAPE, killactive
-bind = CONTROL SHIFT, ESCAPE, exec, rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu #temp until waybar is figured out
+bind = CONTROL SHIFT, ESCAPE, exec, ~/.config/waybar/power.sh
 bind = SUPER, L, exec, gdmflexiserver
 bind = SUPER, F, fullscreen
 bind = SUPER, D, togglefloating
@@ -27,8 +27,8 @@ bind = SUPER, R, exec, firefox
 bind = SUPER SHIFT, R, exec, firefox --private-window
 
 # Media
-binde = SUPER, minus, exec, wpctl set-volume @DEFAULT_SINK@ 0.05-
-binde = SUPER, equal, exec, wpctl set-volume @DEFAULT_SINK@ 0.05+
+binde = SUPER, minus, exec, wpctl set-volume --limit 0 @DEFAULT_SINK@ 0.05-
+binde = SUPER, equal, exec, wpctl set-volume --limit 1 @DEFAULT_SINK@ 0.05+
 bind = , XF86AudioPrev, exec, playerctl previous
 bind = , XF86AudioNext, exec, playerctl next
 bind = , XF86AudioPlay, exec, playerctl play-pause

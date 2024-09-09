@@ -507,7 +507,6 @@ z zsh conf
 z zsh config
 dnf check-update\
 
-git clone https://github.com/Aloxaf/fzf-tab.git
 cd 
 nvim powerlevel10k/powerlevel10k.zsh-theme
 nvim powerlevel10k/p10k.zsh
@@ -631,7 +630,6 @@ dnf search hello
 nvim lpf-spotify-client.desktop
 sudo nvim lpf-spotify-client.desktop
 nvim .z
-./Downloads
 echo "\
 \
 \
@@ -647,7 +645,6 @@ nvim newfile.d
 rm newfile.d
 cp /usr/share/applications/nwg-panel-config.desktop /usr/local/share/applications
 sudo cp /usr/share/applications/nwg-panel-config.desktop /usr/local/share/applications
-sudo nvim .
 sudo echo $ndis >> /usr/share/applications/nwg-panel-config.desktop
 sudo echo ($ndis) >> /usr/share/applications/nwg-panel-config.desktop
 sudo cp /usr/share/applications/nwg-panel-settings.desktop /usr/local/share/applications
@@ -1088,7 +1085,6 @@ Downloads/Pull\ All\ Changes\ In\ Directoryeee
 nvim Downloads/Pull\ All\ Changes\ In\ Directoryeee
 git diff ./Downloads/
 git diff ./Downloads/Pull\ All\ Changes\ In\ Directory ./Downloads/Pull\ All\ Changes\ In\ Directoryeee
-git diff
 nvim Downloads\ All\ Changes\ In\ Directoryeee
 Downloads/ Pull\ All\ Changes\ In\ Directoryeee
 chmod +x Downloads/ Pull\ All\ Changes\ In\ Directoryeee
@@ -1171,7 +1167,6 @@ nvim ~/Downloads/pkgs.d
 bluemoon help
 man bluemoon
 help bluemoon
-bluemoon
 dnf history 3
 echo "$(dnf history 3)"
 dnf history 3 > ~/Downloads/er
@@ -1344,7 +1339,6 @@ dnf install nouveau
 sudo dnf install nouveau
 dnf list installed xorg-x11-drv-nouveau
 sudo dnf install xorg-x11-drv-nouveau
-dnf history
 dnf history info 62
 dnf history info 64
 dnf history info 63
@@ -1774,14 +1768,12 @@ dnf search blueman
 flatpak search blueman
 dnf install blueman
 suudo dnf install blueman
-sudo dnf install blueman
 flatpak search overstrike
 flatpak search overst
 flatpak search org.gnome.Platform//45
 flatpak search blueberry
 dnf search blueberry
 sudo dnf revome blueman
-sudo dnf remove blueman
 git clone git@github.com:ClydeDroid/rofi-bluetooth.git
 cd rofi-bluetooth
 rofi-bluetooth
@@ -1816,8 +1808,6 @@ sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5003"\
 sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5007"
 sudo lsof -iTCP -sTCP:LISTEN -P | grep ":5050"
 sudo lsof -iTCP -sTCP:LISTEN -P
-bluetoothctl devices
-bluetoothctl list
 bluetoothctl quit
 top -i
 kill waybar
@@ -1835,9 +1825,6 @@ Downloads/networksockets
 python server.py
 python client.py
 python
-bluetoothctl scan on
-bluetoothctl scan
-bluetoothctl scan le
 dnf search spotify
 dnf search spotify-clent
 dnf install spotify-client
@@ -1880,8 +1867,6 @@ sudo umount
 sudo umount devpts /dev/sda3
 sudo umount devpts /dev/sda3 -f
 sudo mount /dev/sda3 /mnt/tmpfs
-bluetoothctl
-bluetoothctl connect B8:81:FA:7F:25:53 && exit
 pwd
 update 
 dnf search efiboot
@@ -1889,7 +1874,6 @@ dnf search efibootmgr
 kill
 kill $(pgrep idea-ce)
 kill 6511
-lsblk
 sudo mount /dev/sdb1 /mnt/Game\ Library/
 dnf info hyprland
 dnf deplist hyprland
@@ -1901,7 +1885,6 @@ dnf install qt6ct
 sudo dnf install qt6ct
 sudo dnf install qt5ct
 nvim .config/hypr/animations
-nvim .config/hypr/startup
 echo $XDG_BACKEND
 echo $GDM_LANG
 nvim .config/hypr
@@ -2001,7 +1984,6 @@ sudo dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 dnf search containerd.io
 dnf search docker-buildx-plugin
-reboot
 echo $TODO
 cd config/waybar
 mkdir modules
@@ -2035,7 +2017,6 @@ echo $SDL_VIDEODRIVER=wayland
 export QT_QPA_PLATFORM=wayland
 echo $SDL_VIDEODRIVER
 waybar -c ~/Downloads/waybar\ confs/waybar-config/.config
-waybar -h
 waybar -c ~/Downloads/waybar\ confs/waybar/config -s ~/Downloads/waybar\ confs/waybar/style.css
 waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style-dracula.css
 waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/style-joachim.css
@@ -2055,10 +2036,8 @@ cls
 rm media_module.py
 rm player
 mv config config.json
-waybar
 nvim ../hypr/startup
 [200~waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
-waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
 .config/wayba
 nmcli radio wifi on
 nmcli device wifi rescan
@@ -2069,7 +2048,6 @@ nmcli device wifi connect "Oren's iPhone" password "Oren3606"
 nmcli device wifi connect "AA:52:1A:F5:4C:C8" password "Oren3606"
 nvim ~/Downloads/waybar\ confs/waybar-config/.config
 nvim ~/Downloads/waybar\ confs/wb/config
-mpd
 dm
 nmcli device wifi list
 nmcli device wifi connect "Orenâ€ƒ¹s iPhone" password "Oren3606"
@@ -2078,7 +2056,6 @@ waybar -c ~/Downloads/waybar\ confs/wb/config -s ~/Downloads/waybar\ confs/wb/st
 nvim TDL.txt
 ip addr
 dnf autoremove
-sudo dnf autoremove
 zenity
 zenity --help
 zenity --help-all
@@ -2166,7 +2143,6 @@ git rm --cached angulartest -f
 git add .config/zsh --amend
 git add .config/zsh
 git commit .config/zsh --amend
-git add .config/waybar/
 git commit .config/waybar/
 git commit .config/hypr/startup --amend
 brightnessctl
@@ -2188,11 +2164,9 @@ sudo dnf install python3-wheel
 python3 -m pip install --upgrade pip setuptools wheel
 nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
 sudo nvim /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js
-dnf log
 sha256sum shitty\ auto\ settings
 ip link
 poweroff
-cat .zshrc
 ./fzf
 ../fzf-tab
 git add .
@@ -2246,13 +2220,11 @@ cat ~/.zshrc | grep "auto"
 cat ~/.zshrc | grep "source"
 ../.config/zsh/
 git clone https://github.com/aloxaf/fzf-tab
-
 pkill idea
 kill $(pgrep idea)
 kill idea
 kill $(pgrep jetbrains-idea-ce)
 kill $(pgrep java)
-git
 ezit
 nwg-panel
 nwg-panel-config
@@ -2264,10 +2236,7 @@ git commit .zshrc .config/zsh
 git commit .config/rofi/ .local/share/rofi/
 git commit .local/share/fonts/ -m "Add fonts"
 git add .config/hypr/
-git diff .config/hypr/
 git diff .config/hypr/hyprland_desktop.config
-git commit .config/hypr/
-nvim .config/hypr/hyprland_desktop.config
 zinit light Aloxaf/fzf-tab
 source "/home/oren/Downloads/networksockets/venv/bin/activate"
 git add .config/zed/
@@ -2437,7 +2406,6 @@ cat .gitignore
 rm init.lua
 mv -r starter/* .
 mv starter/* .
-nvim 
 dnf search luarocks
 sudo dnf install luarocks
 dnf search lua
@@ -2448,23 +2416,18 @@ nvim Localizable.strings
 fc-cache -h
 fc-cache
 ext
-git add .local/share/fonts/
-git commit .local/share/fonts/
 git commit --amend .local/share/fonts/
 git commit --amend -a
-fc-cache -v
 ex
 vi
 nvim .config/nvim
 git clone https://github.com/LazyVim/starter.git .
 rm -rf .git
 cat .local/bin/rofi-power-menu
-clear
 nvim ~/.config/nvim/
 cat .config/nvim/init.lua
 nvim botstrapper.lua
 git add .config/nvim/bootstrap.lua
-git log
 git add .config/nvim/init.lua
 git commit --amend .config/nvim/
 exi
@@ -2496,18 +2459,14 @@ enrgowerng
 nvim ~/.config/zsh/
 git diff .config/zsh/bindings
 git commit .config/zsh/bindings .zshrc
-nvim ~/.zshrc
 git commit --amend .config/zsh/bindings .zshrc
 nvim
 sudo dnf upgrade --refresh
 git diff .config/alacritty.toml
 git commit .config/alacritty.toml
 git add .config/rofi/
-git status\\
-
 sudo dnf upgrade --refresh -y
 flatpak update
-..
 ~
 git commit]
 git commit
@@ -2518,7 +2477,6 @@ sudo dnf upgrade --refresh -y && flatpak update
 sudo dnf upgrade --refresh -y && echo "================================" && flatpak update
 node -v
 minikube
-flatpak list
 flatpak list | grep "steam"
 flatpak list | grep "Steam"
 nvim Downloads/TDL_SHCHRR
@@ -2543,11 +2501,9 @@ flatpak install jetbrains.IntelliJ-IDEA-Community
 flatpak install com.jetbrains.IntelliJ-IDEA-Community
 git commit .local/share/applications/idea.desktop
 rm ~/.config/nvim/lua/plugins/monokai.lua
-wev
 nvim ~/.config/hypr/binds
 nvim ~/.config/nvim/lua/plugins
 python -m venv venv2
-top
 flatpak info --show-runtime com.jetbrains.IntelliJ-IDEA-Community
 flatpak info --show-location com.jetbrains.IntelliJ-IDEA-Community
 flatpak info --show-permissions com.jetbrains.IntelliJ-IDEA-Community
@@ -2555,63 +2511,471 @@ python -m venv --copies venv2
 Downloads/Secure.MSG
 python -m venv --copies venv
 git switch feature/connect-over-IP
-python -m venv venv
-exity
 source /home/oren/Downloads/Secure.MSG/venv/bin/activate
 nano
-nvim .zshrc
 exti
 touch ~/.config/zed/tasks.json
 nvim ~/.config/zsh/bindings
 nvim ~/.config/zsh/aliases
-git commit .config/nvim/
 git diff .config/hypr/binds
-nvim .config/hypr/binds
 alsa
-git commit .config/hypr/binds
 git commit .config/zsh/aliases
-git commit .config/zsh/history
 nvim .config/zsh/bindings
 git add .config/nvim/
 git commit .config/nvim/lua/plugins/one-dark.lua
 git add .config/zed
-git commit .config/zed/
-git status
-git push
-nvim .config/waybar
 env GTK_DEBUG=interactive waybar
 flatpak uninstall com.github.tchx84.Flatseal
-exiy
 .config
 ls 
 /ETC
 /etc
 gdm
 cd gdm
-ls -lac
-nvim .
-nvim Downloads/LONDON.txt
-nvim .config/hypr/
-\:q
-ls
 hello
 echo wfwqgmqg
 echo w[fwqgmq[g
-nvim .config/hypr/hyprland.conf
 su
-sudo su
 nvim .config
 nvim .config/zsh
 zsh
-sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
 jobs
 alsamixer
-alsamixer && exit
 kubectl 
+git diff .config/zsh/cursor
+git commit .config/zsh/cursor
+git commit .config/zsh/history
+git commit .config/zed/
+git commit .config/nvim/
+flatpak search spotify
+flatpak install com.spotify.Client
+sudo dnf remove rhythmbox
+git commit .config/hypr/binds
+git comm
+wpctl
+wpctl get-volume
+wpctl set-volume @DEFAULT_SINK@
+wpctl set-volume @DEFAULT_SINK@ 3+
+wpctl set-volume @DEFAULT_SINK@ 3-
+wpctl set-volume @DEFAULT_SINK@ 0.3+
+wpctl set-volume @DEFAULT_SINK@ 0.03+
+git commit .config/nvim/lazy-lock.json
+git diff .config/hypr/hyprland.conf
+git commit .config/hypr/hyprland.conf .config/hypr/hyprland.conf .config/hypr/hyprland_desktop.config 
+mkdir  ~/.config/tmux/
+touch ~/.config/tmux/tmux.conf
+git add .config/tmux/
+exiy
+nvim ..
+nvim 
+rm Downloads/tmp.txt
+mkdir ~/.config/alsa
+nvim ~/.config/alsa
+nvim ~/.config/alsa/pipewire.conf
+[200~systemctl --user restart pipewire
+~systemctl --user restart pipewire
+systemctl --user restart pipewire
+pw-cli dump | grep 'rate'
+pw-cli | grep 'rate'
+pw-cli info | grep 'rate'
+pw-cli info all | grep 'rate'
+rm -r ~/.config/alsa/
+ls .config
+ls -lac .config
+dnf remove spotify
+sudo dnf remove spotify
+dnf remove lpf
+sudo dnf remove lpf
+sudo dnf autoremove
+..
+cp tdl.scmsg Secure.MSG
+rm tdl.scmsg
+alsamixer && exit
+fedpkg
+nvim .config/hypr/binds
+nvim .config/waybar
+echo (wpctl get-volume @DEFAULT_SINK@)*100
+echo $(wpctl get-volume @DEFAULT_SINK@)*100
+echo "($(wpctl get-volume @DEFAULT_SINK@)*100)"
+echo "$((wpctl get-volume @DEFAULT_SINK@)*100)"
+echo $(wpctl get-volume @DEFAULT_SINK@)\*100
+echo "($(wpctl get-volume @DEFAULT_SINK@)\*100)"
+echo "$((wpctl get-volume @DEFAULT_SINK@)\*100)"
+echo "$($(wpctl get-volume @DEFAULT_SINK@)*100)"
+echo "$($(wpctl get-volume @DEFAULT_SINK@)\*100)"
+echo "$((wpctl get-volume @DEFAULT_SINK@\*100))"
+echo "$((wpctl get-volume @DEFAULT_SINK@*100))"
+echo $($("wpctl get-volume @DEFAULT_SINK@"*100))
+$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
+echo $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
+echo $(wpctl get-volume @DEFAULT_AUDIO_SINK@ * 100| bc)
+echo $(wpctl get-volume @DEFAULT_AUDIO_SINK@) * 100 | bc
+echo "$(wpctl get-volume @DEFAULT_AUDIO_SINK@) * 100 | bc"
+echo "$($(wpctl get-volume @DEFAULT_AUDIO_SINK@) * 100 | bc")
+echo "$($(wpctl get-volume @DEFAULT_AUDIO_SINK@) * 100 | bc)"
+/home/oren/.config/waybar/scripts
+./power_menu.sh
+stat status.sh
+./volume.sh
+./volume.sh down
+volume=$(echo "${volume##* }" | awk '{print $1 * 100}' | cut -d'.' -f1)
 nvim .config/zsh/prompt
+echo $(wpctl status | grep -oP '(?<=Volume: )\d+')
+wpctl status | grep -oP '(?<=Volume: )\d+'
+wpctl status | awk -F 'Volume: ' '/Default Sink/ {getline; print $2}' | awk '{print int($1)}'\
+
+nvim ~/.config/zsh/prompt
+wpctl status | awk -F 'Volume: ' '/Default Sink/ {getline; print $2}' | awk '{print int($1)}'
+wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}'
+tmux
+wpctl info @DEFAULT_AUDIO_SINK@ | grep 'Mute' | awk '{print $2}'
+wpctl status @DEFAULT_AUDIO_SINK@ | grep 'Mute' | awk '{print $2}'
+wpctl info @DEFAULT_AUDIO_SINK@ | grep 'Mute'
+wpctl info @DEFAULT_AUDIO_SINK@
+wpctl ststus @DEFAULT_AUDIO_SINK@
+wpctl status @DEFAULT_AUDIO_SINK@ | grep 'Mute'
+wpctl status @DEFAULT_AUDIO_SINK@ | grep 'mute'
+wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q "Muted: yes" && echo 1 || echo 0
+wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '/Muted/ {print ($3 == "yes" ? 1 : 0)}'
+wpctl set-mute @DEFAULT_SINK@ 0
+wpctl set-mute @DEFAULT_SINK@ 1
+wpctl set-mute @DEFAULT_SINK@ toggle
+waybar -c ~/.config/waybar/config.json -s ~/.config/waybar/style.css
+/bin/bash /home/oren/.config/waybar/modules/get_volume.sh
+git diff
+git status\\
+
+git
+git commit .config/tmux/
+git commit .config/hypr/
+git commit .config/zsh/prompt
+git add .config/waybar/
+git rm --cached .config/waybar/.idea/
+git rm -r --cached .config/waybar/.idea/
+git log
+git clone https://github.com/Aloxaf/fzf-tab.git
+perl -C -pe 's/([^a-zA-Z])/sprintf("U+%04X", ord($1))/ge'
+perl -C -pe 's/([^a-zA-Z])/sprintf("U+%04X", ord($1))/ge' $(cat .config/waybar/config.jsonc)
+cat .config/waybar/config.jsonc | perl -C -pe 's/([^a-zA-Z])/sprintf("U+%04X", ord($1))/ge'
+nvim .config/hypr/startup
+git commit .config/hypr/startup -m "change waybar launch options"
+git push
+pkill waybar
+git sta
+git rm -r --cached .config/zsh/fzf-tab
+git commit .config/zsh/fzf-tab
+git commit .config/zsh/
+wpctl get-volume @DEFAULT_SINK@
+wpctl set-volume @DEFAULT_SINK@ .5
+waybar -h
+pkill alacritty && alacritty --command=waybar
+pkill waybar && waybar
+pkill waybar || :
+/usr/bin/flatpak-spawn --host --env=TERM=alacritty zsh -s pkill waybar || :
+waybar -exitr
+waybar -exit
+exit\\
+
+nvim .config/hypr/hyprland.conf
+wlr-randr --prefered
+wlr-randr --preferred
+nvim .config/hypr/hyprland_desktop.config
+nvim .config/hypr/hyprland_desktop.conf
+wlr-randr -h
+wlr-randr --adaptive-sync enabled
+wlr-randr DP-1 --adaptive-sync enabled
+wlr-randr --output
+wlr-randr --output eDP
+wlr-randr --output DP-1 --adaptive-sync enabled
+hyprctl 
+hyprctl configerrors
+hyprctl co
+hyprctl workspace
+hyprctl workspaces
+hyprctl workspaces -h
+hyprctl workspaces -j
+nvim ~/.zshrc
+reboot
+nvim .
+sudo nvim .
+nvim .config/hypr/\
+
+nvim /etc/alsa
+dmesg | grep -i alsa\
+
+sudo dmesg | grep -i alsa
+journalctl -xe | grep -i alsa
+sudo nvim /etc/alsa/conf.d/50-pipewire.conf
+sudo nvim /etc/alsa/conf.d
+sudo nvim /etc/asound.conf
+sudo nvim /etc/zshrc
+cp .zshrc .config/zsh/zshrc
+ls .config/zsh/
+hyprctl monitors
+wlr-randr --output DP-1
+wlr-randr --output DP-1 --mode 3440x2560@100
+wlr-randr --output DP-1 --mode --on 3440x2560@100
+wlr-randr --output DP-1 --mode 3440 2560 100
+wlr-randr --output DP-1 --mode 3440, 2560, 100
+wlr-randr --output DP-1 --mode 2560, 100
+wlr-randr --output DP-1 --mode 3440x1440@100
+wlr-randr --output DP-1 --mode preferred
+wlr-randr --output DP-1 --mode 3440x1440@164.998993
+sudo mount "/dev/sdb1" "/mnt/Game\ Library/"
+sudo mount "/dev/sdb1" "/mnt/Game Library"
+pkill steam
+wlr-randr --output DP-1 --mode 3440x1440@99.982002
+\:q
+bluetoothctl power off
+bluetoothctl list
+bluetoothctl scan le
+bluetoothctl connect B8:81:FA:7F:25:53 && exit
+bluetoothctl
+sudo rm -r /var/lib/bluetooth
+bluetoothctl menu
+bluetoothctl remove
+bluetoothctl scan
+bluetoothctl show
+sudo ls /var/bluetoorh
+sudo ls /var/bluetooth
+sudo ls /var/lib/bluetooth
+sudo rm -r /var/lib/bluetooth/*
+sudo ls
+bluemoon
+
+bluetoothctl power on
+bluetoothctl scan on
+bluetoothctl devices
+dnf log
+dnf history list
+dnf history info
+dnf history
+blueman
+sudo dnf install blueman
+sudo dnf remove blueman
+wev
+wifi
+wifictl
+networkctl status
+nvim .config/hypr/
+git diff .config/hypr/
+nmcli
+nmcli connection
+dd -h
+dd --help
+dd if=/home/oren/Downloads/Fedora-Everything-netinst-x86_64-40-1.14.iso of /dev
+dd if=/home/oren/Downloads/Fedora-Everything-netinst-x86_64-40-1.14.iso of=/dev
+dd if=/home/oren/Downloads/Fedora-Everything-netinst-x86_64-40-1.14.iso of=/dev/sd
+dd if=/home/oren/Downloads/Fedora-Everything-netinst-x86_64-40-1.14.iso of=/dev/sdb
+dd if=/home/oren/Downloads/Fedora-Everything-netinst-x86_64-40-1.14.iso of=/dev/sdb1
+lsblk
+flatpak run sudo -i org.fedoraproject.MediaWriter
+flatpak sudo -i run org.fedoraproject.MediaWriter
+flatpak sudo -i
+sudo -i flatpak run org.fedoraproject.MediaWriter
+flatpak search iso
+flatpak install com.poweriso.PowerISO
+flatpak list
+flatpak uninstall org.fedoraproject.MediaWriter
+wpctl status
+wpctl status @DEFAULT_AUDIO_SINK@
+bluez
+alsactl -h
+clear
+wpctl inspect
+wpctl inspect @DEFAULT_ACTIVE_SINK@
+wpctl inspect node.description @DEFAULT_AUDIO_SINK@
+wpctl inspect -r node.description @DEFAULT_AUDIO_SINK@
+wpctl inspect @DEFAULT_AUDIO_SINK@ -r node.description
+wpctl inspect @DEFAULT_AUDIO_SINK@ node.description
+wpctl inspect -r @DEFAULT_AUDIO_SINK@ node.description
+flatpak install org.fedoraproject.MediaWriter
+flatpak run org.fedoraproject.MediaWriter
+gnome-disk-utility
+sudo su
+nvim Downloads/LONDON.txt
+git status]
+git add .local/share/fonts/
+git status
+git commit .local/share/fonts/
+sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
+wlr-randr
+./Downloads
+git clone https://github.com/ckb-next/ckb-next.git
+./ckb-next
+ls -lac
+flatpak install org.openrgb.OpenRGB
+sudo mount /dev/sda3 '/mnt/Game\ Library/'
+sudo mount /dev/sda3 '/mnt/Game Library/'
+\cat .zshrc
+nvim .zshrc
+cat .zshrc
+/bin/bash /home/oren/.config/waybar/waybar\ confs/wb/modules/kbd_indicator
+/bin/bash /home/oren/.config/waybar/modules/status.sh
+exity
+top 
+top -O
+top -b
+top
+top bn1
+top -bn1
+top -b -n=3
+top -h
+top -1
+top -b -n=1
+wpctl inspect -r @DEFAULT_AUDIO_SINK@
+wpctl inspect @DEFAULT_AUDIO_SINK@
+playerctl -h
+playerctl -l
+playerctl -a
+playerctl -f
+playerctl -hf
+playerctl metadata -F
+playerctl metadata -F --format
+playerctl metadata -F --format json
+playerctl metadata -F --format json{}
+playerctl metadata -F --format {}
+playerctl metadata -F --format playerName
+playerctl metadata -F --format {playerName
+playerctl metadata -F --format {playerName}
+playerctl metadata -F --format {"player": "{{playerName}}"}
+playerctl metadata -F --format { \"player\": \"{{playerName}}\" }
+playerctl metadata -F --format { \"player\": "{{playerName}}" }
+playerctl metadata -F --format { "player": \"{{playerName}}\" }
+playerctl metadata -F --format "player": \"{{playerName}}\"
+playerctl metadata -F --format "player": "{{playerName}}"
+playerctl metadata -F --format "player": {{playerName}}
+playerctl metadata -F --format {{playerName}}
+playerctl metadata -F --format {{playerName}} -f {{position}}
+playerctl metadata -F --format {{playerName}}{{position}}
+playerctl metadata -F --format {{playerName}} {{position}}
+playerctl metadata -F --format {{playerName}}, {{position}}
+playerctl metadata -F --format '{{playerName}} {{position}}'
+playerctl metadata --follow --format '{{playerName}} {{position}}'
+playerctl metadata --follow --format '{{playerName}} {{position}} {{status}} {{volume}}'
+playerctl metadata --follow --format '{{playerName}} {{position}} {{status}} {{volume}} {{album}}'
+playerctl metadata --follow --format '{{playerName}} {{position}} {{status}} {{volume}} {{album}} {{artist}} {{title}}'
+playerctl metadata --follow --format "{{playerName}} {{position}} {{status}} {{volume}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{playerName}} {{position}} {{status}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "\{{{playerName}}\} {{duration(position)}} {{status}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{emoji(playerName)}} {{duration(position)}} {{status}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{playerName}} {{duration(position)}} {{status}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{playerName}} {{duration(position)}} {{emoji(status)}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{duration(position)}} {{emoji(status)}} {{playerName}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{emoji(status)}} {{duration(position)}} {{playerName}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{album}} {{artist}} {{title}}"
+playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | jq
+playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | jq {}
+$(playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | jq --args
+playerctl metadata --follow --format "{"{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | jq --args\
+"
+playerctl metadata --follow --format "{"{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"}" | jq --args
+playerctl metadata --follow --format \"{\"{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}\"}\" | jq --args
+(playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+echo $(playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+echo $(playerctl metadata --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+jq $(playerctl metadata --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+jq $(playerctl metadata --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | echo)
+jq $(playerctl metadata --format "\"playerName\": {{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}" | )
+playerctl metadata --format "\"playerName\": {{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"
+jq $(playerctl metadata --format "{\"playerName\": {{playerName}}} {\"status\": {{emoji(status)}}} {{duration(position)}} {{title}} {{artist}} {{album}}")
+jq $(playerctl metadata --format "{\"playerName\": {{playerName}}} {\"status\": {{emoji(status)}}} {\"duration\": {{duration(position)}}} {\"title\": {{title}}} {\"artist\": {{artist}}} {\"album\": {{album}}}")
+playerctl metadata --format "{\"playerName\": {{playerName}}} {\"status\": {{emoji(status)}}} {\"duration\": {{duration(position)}}} {\"title\": {{title}}} {\"artist\": {{artist}}} {\"album\": {{album}}}"
+playerctl metadata --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}"
+jq $(playerctl metadata --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}")
+jq --args $(playerctl metadata --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}")
+jq --jsonargs $(playerctl metadata --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}")
+jq -h
+playerctl metadata --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": {{album}}}" | jq
+playerctl metadata -F --format "{\\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\\\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\"playerName\": \"{{playerName}}\", \"status\": \"{{emoji(status)}}\", \"duration\": \"{{duration(position)}}\", \"title\": \"{{title}}\", \"artist\": \"{{artist}}\", \"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\
+"
+playerctl metadata -F --format \n"{\
+\"playerName\": \"{{playerName}}\",\
+\"status\": \"{{emoji(status)}}\",\
+\"duration\": \"{{duration(position)}}\",\
+\"title\": \"{{title}}\",\
+\"artist\": \"{{artist}}\",\
+\"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\
+\"playerName\": \"{{playerName}}\",\
+\"status\": \"{{emoji(status)}}\",\
+\"duration\": \"{{duration(position)}}\",\
+\"title\": \"{{title}}\",\
+\"artist\": \"{{artist}}\",\
+\"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format "{\
+\"playerName\": \"{{playerName}}\",\
+\"status\": \"{{emoji(status)}}\",\
+\"duration\": \"{{duration(position)}}\",\
+\"title\": \"{{title}}\",\
+\"artist\": \"{{artist}}\",\
+\"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format \\
+"{\
+\"playerName\": \"{{playerName}}\",\
+\"status\": \"{{emoji(status)}}\",\
+\"duration\": \"{{duration(position)}}\",\
+\"title\": \"{{title}}\",\
+\"artist\": \"{{artist}}\",\
+\"album\": \"{{album}}\"}" | jq
+playerctl metadata -F --format \\
+"{\
+\"playerName\": \"{{playerName}}\",\
+\"status\": \"{{emoji(status)}}\",\
+\"duration\": \"{{duration(position)}}\",\
+\"title\": \"{{title}}\",\
+\"artist\": \"{{artist}}\",\
+\"album\": \"{{album}}\"\
+}" \\
+| jq
+playerctl metada "{{playerName}}{{emoji(status)}}{{duration(position)}}{{title}}{{artist}},{{album}}"
+playerctl metadata "{{playerName}}{{emoji(status)}}{{duration(position)}}{{title}}{{artist}},{{album}}"
+playerctl metadata "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"
+playerctl metadata --follow --format "{{playerName}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"
+playerctl metadata --follow --format "{{emoji(playerName)}} {{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"
+playerctl metadata --follow --format "{{emoji(status)}} {{duration(position)}} {{title}} {{artist}} {{album}}"
+playerctl metadata --follow --format "{{emoji(status)}}{{duration(position)}} {{title}} {{artist}} {{album}}"
+playerctl metadata --follow --format "{{emoji(status)}} {{title}} -- {{artist}}, {{album}}"
+/bin/bash /home/oren/.config/waybar/modules/power_menu.sh
+playerctl metadata --follow --format "{{emoji(status)}} {{title}} - {{artist}}, {{album}}"
+mpd
+bin/bash /home/oren/.config/waybar/media.sh
+playerctl metadata
+man playerctl
+chmod +x media.sh
+chmod +x power.sh
+/bin/bash /home/oren/.config/waybar/media.sh
+fontforge --script ./font-patcher --complete ocr-a-std.ttf
+ls
+python -m venv venv
+source ./venv/bin/activate
+python -m font-patcher
+python font-patcher
+./font-patcher
+pip install sys re os argparse errno subprocess json enum loggingpsMat fontforge
+pip loggingpsMat fontforge
+pip logging psMat fontforge
+pip psMat fontforge
+pip install psMat fontforge
+pip install fontforge
+pip search
+pip search tg
+pip install python-fontforge
+f0004
+echo -e \u1f50a
+printf \u1f50a
+./FontForge-2019-08-01-ac635b8-x86_64.AppImage -script $PWD/font-patcher $PWD/BaseFont.ttf -out /tmp
+chmod +x./FontForge-2019-08-01-ac635b8-x86_64.AppImage
+chmod +x FontForge-2019-08-01-ac635b8-x86_64.AppImage
+./FontForge-2019-08-01-ac635b8-x86_64.AppImage -script FontPatcher/font-patcher OCR-A/ocr-a-std.ttf -out /tmp
+waybar
+ex[A
+fc-cache -v
 exit
-: 1724764097:0;git status
-: 1724764118:0;git diff .config/zsh/cursor
-: 1724764134:0;git commit .config/zsh/cursor
-: 1724764179:0;git commit .config/zsh/
-: 1724764193:0;git commit .config/zsh/history
+: 1725923713:0;git status
+: 1725923974:0;git commit .config/zsh/ .zshrc .local/bin/rofi-power-menu .config/hypr/ 
