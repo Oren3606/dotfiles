@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Hyprland (Desktop)
-Comment=An intelligent dynamic tiling Wayland compositor
-Exec=Hyprland --config /home/oren/.config/hypr/hyprland_desktop.config
-Type=Application
