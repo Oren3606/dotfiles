@@ -1,5 +1,12 @@
-# Prompt
-source ~/.config/zsh/prompt
+# Powerlevel10k
+# Instant prompt
+# Initialization code that may require console input (password prompts, [y/n], confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.config/zsh/powerlevel10k/.p10k.zsh ]] || source ~/.config/zsh/powerlevel10k/.p10k.zsh
 
 # Cursor
 source ~/.config/zsh/cursor
@@ -11,37 +18,8 @@ source ~/.config/zsh/aliases
 source ~/.config/zsh/bindings
 
 # Setup
-autoload -U compinit && compinit
-setopt AUTO_CD
-export WORDCHARS=""
-zstyle ":completion:*" matcher-list "m:{[:lower:][:upper:]}={[:upper:][:lower:]}"
-export EDITOR="/usr/bin/nvim"
-export VISUAL="/usr/bin/nvim"
+source ~/.config/zsh/setup
 
 # Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source <(zoxide init zsh --cmd cd)
-source <(fzf --zsh)
-source ~/.config/zsh/fzf-tab/fzf-tab.plugin.zsh
-
-# History
-HISTSIZE=10000
-HISTFILE=~/.config/zsh/history
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
-setopt appendhistory
-setopt sharehistory
-setopt hist_ignore_all_dups
-setopt hist_find_no_dups
-setopt hist_ignore_space
-
-export TODO="
-    1. Transient zsh prompt?
-    2. Customize waybar
-    3. A script which converts selected text between key layouts
-    4. Switch git to dnf package when exists
-    5. Rofi theme and config- remove description
-    6. Hyprland config- monitor = , highres OR highrr, auto, 1
-    "
+source ~/.config/zsh/plugins
 
