@@ -1,0 +1,31 @@
+# History
+HISTSIZE=10000
+HISTFILE=~/.config/zsh/history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+setopt hist_ignore_space
+
+# Env
+
+autoload -U compinit && compinit
+setopt AUTO_CD
+export WORDCHARS=""
+zstyle ":completion:*" matcher-list "m:{[:lower:][:upper:]}={[:upper:][:lower:]}"
+export EDITOR="/usr/bin/nvim"
+export VISUAL="/usr/bin/nvim"
+export RUSTUP_HOME="/home/oren/.local/share/rustup"
+export CARGO_HOME="/home/oren/.local/share/cargo"
+
+export TODO="
+    Move over to Starship.rs
+    Customize waybar
+    A script which converts selected text between key layouts
+    Switch git to dnf package when exists
+    Keymap to minimize windows and then amother minimap for rofi to choose which to maximize
+    Configure secure boot
+    "
+
