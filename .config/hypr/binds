@@ -23,8 +23,7 @@ bind = SUPER, SUPER_L, exec, rofi -show drun
 bind = SUPER, SUPER_R, exec, rofi -show drun
 bind = SUPER, T, exec, alacritty
 bind = SUPER, E, exec, nautilus
-bind = SUPER, R, exec, firefox
-bind = SUPER SHIFT, R, exec, firefox --private-window
+bind = SUPER, R, exec, flatpak run org.mozilla.firefox
 
 # Media
 binde = SUPER, minus, exec, wpctl set-volume --limit 0 @DEFAULT_SINK@ 0.05-
