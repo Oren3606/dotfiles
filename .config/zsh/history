@@ -479,8 +479,6 @@ nvim ./install
 echo "Last command: $(fc -ln)"
 z zsh conf
 z zsh config
-dnf check-update\
-
 cd 
 nvim powerlevel10k/powerlevel10k.zsh-theme
 nvim powerlevel10k/p10k.zsh
@@ -559,37 +557,6 @@ lspci -k | grep -A 2 -E "(VGA|3D|Displaysfdg)"
 sudo dnf install mesa
 sudo dnf search mesa
 sudo dnf install mesa-dri-drivers.x86_64
-        rise, particularly with new kernel versions or after system updates.\
-\
-Recent Developments:\
-\
-    NVIDIA: NVIDIA has started to take ste
-echo "Hold onto your hats, folks! You're about to discover the identity of the one and only, the absolutely incredible, the user who is currently logged in"\
-echo "Drumroll, please..."\
-sleep 2\
-echo "ÉøÉ¨Éø‚Éº®ÉøÉÆÉ© The current logged-in user is: $USER ÉøÉÆÉ©‚Éº®ÉøÉ¨Éø"\
-echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!"\
-\
-\
-"\
-"
-echo "Hold onto your hats, folks! You're about to discover the identity of the one and only, the absolutely incredible, the user who is currently logged in"\
-echo "Drumroll, please..."\
-sleep 2\
-echo "ÉøÉ¨Éø‚Éº®ÉøÉÆÉ© The current logged-in user is: $USER ÉøÉÆÉ©‚Éº®ÉøÉ¨Éø"\
-echo "Thank you for your patience. We hope you enjoyed this spectacular reveal\!"
-echo "Brace yourself for the earth-shattering revelation of your own username."\
-sleep 1\
-echo "Hold on, this is going to be big..."\
-sleep 1\
-echo "Seriously, do you even remember who you are? Okay, here goes nothing."\
-sleep 1\
-echo "ÉøÉ¨Éø‚Éº®ÉøÉÆÉ© It's you, genius: $USER ÉøÉÆÉ©‚Éº®ÉøÉ¨Éø"\
-echo "There you have it. Don't forget it this time."
-echo "Let's find out how long this poor machine has been suffering under your 'expert' care."sleep 2# Output the system uptime with maximum snarkuptime_output=$(uptime)echo "Wow, look at that! The system has been up for: $uptime_output"echo "Impressive, isn't it? Just like your procrastination skills."# Just in case you need it spelled outecho "In case you were wondering, this is the system uptime. It's not like you could've just typed 'uptime' in the terminal yourself."# And a final sarcastic send-offecho "Congratulations on wasting more time running this script. Have a fantastic day\
-"
-echo "Let's find out how long this poor machine has been suffering under your 'expert' care." && sleep 2 && uptime_output=$(uptime) && echo "Wow, look at that! The system has been up for: $uptime_output" && echo "Impressive, isn't it? Just like your procrastination skills." && echo "In case you were wondering, this is the system uptime. It's not like you could've just typed 'uptime' in the terminal yourself." && echo "Congratulations on wasting more time running this script. Have a fantastic day\
-"
 chmod +x tr.d
 ./tr.d
 nvim tr.d
@@ -1010,7 +977,6 @@ ls ;6m/.local/lib/python3.12/site-packages/
 python -m site\
 
 py
-./
 python -c "import platform; print(platform.architecture())"
 echo 
 echo
@@ -1167,12 +1133,6 @@ systemctl status hyprpaper
 cd /sys/class/thermal/\
 
 cat thermal_zone0/temp
- for zone in /sys/class/thermal/thermal_zone*/temp; do\
-    zone_name=$(basename $(dirname $zone))\
-    temp=$(cat $zone)\
-    echo "$zone_name: $(echo "scale=1; $temp / 1000" | bc)¬∞C"\
-done\
-
 journalctl
 sudo journalctl -b -1\
 
@@ -1218,14 +1178,12 @@ nvim /etc/grub2.cfg
 nvim /etc/grub2-efi.cfg
 nvim /boot/grub2
 grub
-update && echo "◊ß◊Éµ◊®◊Éµ◊™ ◊É∑◊Éπ◊Éπ◊ÉΩ"
 ◊É≤◊Éæ◊Éª ◊É≥◊ß◊©◊®◊É±◊Éπ ◊©◊®◊Éø◊©◊É∫
 dnf search arial
 dnf search roboto
 dnf install google-roboto-fonts-2.138-17.fc40.noarch
 sudo dnf install google-roboto-fonts-2.138-17.fc40.noarch
 dnf search aleph
- dnf search heebo
 "mount /dev/\
 :\
 "
@@ -1291,7 +1249,6 @@ ls /usr/bin/nvim
 /usr/bin/nvim
 git remote add git@github.com:Oren3606/dotfiles.git
 git remote add origin git@github.com:Oren3606/dotfiles.git
-git push -u origin master
 mnt gl
 mntgl
 sudo umount /dev/sda3 /mnt/Game\ Library/
@@ -1805,7 +1762,6 @@ echo $XDG_SESSION_TYPE
 sudo /etc/grub.d
 sudo cd /etc/grub.d
 sudo ls /etc/grub.d
-sudo update-grub
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 lsmod | grep -iE
 lsmod
@@ -1879,7 +1835,6 @@ git config --list | grep credential.helper
 python main.py -t 1.1.1.1:4 -n Test
 python main.py -t "" -n Test
 git gui
-update && alsamixer
 python main.py -t ":" -n Test
 python main.py -t fg -n Test
 flatpak uninstall com.jetbrains.IntelliJ-IDEA-Community
@@ -2312,9 +2267,7 @@ xdg-screensaver suspend
 xdg-screensaver suspend 2
 xdg-screensaver --help
 xdg-screensaver status
-update
 nvim .config/zsh/aliases
-nvim .config/zsh/history
 flatpak search vsco
 flatpak search codiu
 flatpak uninstall com.belmoussaoui.snowglobe
@@ -2420,14 +2373,9 @@ git diff .config/alacritty.toml
 git commit .config/alacritty.toml
 git add .config/rofi/
 sudo dnf upgrade --refresh -y
-flatpak update
-~
-git commit]
 git commit .zshrc .config/zsh/history
 pkill minecraft-launcher
 pkill minecraft-launc
-sudo dnf upgrade --refresh -y && flatpak update
-sudo dnf upgrade --refresh -y && echo "================================" && flatpak update
 node -v
 minikube
 flatpak list | grep "steam"
@@ -2437,9 +2385,7 @@ nvim Downloads/TDL_SHCHRR.md
 nvim Downloads/tdl.scmsg
 *exit
 ping www.google.com
-touch .gitignore
 touch README.md
-sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update
 lpf-gui
 git remote show origin
 Downloads/Zed-Theme
@@ -2479,7 +2425,6 @@ git add .config/zed
 env GTK_DEBUG=interactive waybar
 flatpak uninstall com.github.tchx84.Flatseal
 .config
-ls 
 /ETC
 /etc
 gdm
@@ -2490,7 +2435,6 @@ echo w[fwqgmq[g
 su
 nvim .config
 nvim .config/zsh
-zsh
 jobs
 alsamixer
 kubectl 
@@ -2502,7 +2446,6 @@ git commit .config/nvim/
 flatpak search spotify
 flatpak install com.spotify.Client
 sudo dnf remove rhythmbox
-git commit .config/hypr/binds
 git comm
 wpctl
 wpctl get-volume
@@ -2685,7 +2628,6 @@ sudo ls /var/lib/bluetooth
 sudo rm -r /var/lib/bluetooth/*
 sudo ls
 bluemoon
-
 bluetoothctl power on
 bluetoothctl scan on
 bluetoothctl devices
@@ -2699,7 +2641,6 @@ sudo dnf remove blueman
 wifi
 wifictl
 networkctl status
-git diff .config/hypr/
 nmcli
 nmcli connection
 dd -h
@@ -2738,7 +2679,6 @@ wlr-randr
 ./Downloads
 git clone https://github.com/ckb-next/ckb-next.git
 ./ckb-next
-ls -lac
 flatpak install org.openrgb.OpenRGB
 sudo mount /dev/sda3 '/mnt/Game\ Library/'
 sudo mount /dev/sda3 '/mnt/Game Library/'
@@ -2899,7 +2839,6 @@ chmod +x./FontForge-2019-08-01-ac635b8-x86_64.AppImage
 chmod +x FontForge-2019-08-01-ac635b8-x86_64.AppImage
 ./FontForge-2019-08-01-ac635b8-x86_64.AppImage -script FontPatcher/font-patcher OCR-A/ocr-a-std.ttf -out /tmp
 ex[A
-fc-cache -v
 git commit .config/zsh/ .zshrc .local/bin/rofi-power-menu .config/hypr/ 
 git commit --amend .config/hypr/
 git commit .config/hypr/
@@ -2909,10 +2848,8 @@ sudo nvim ./.local/share/wayland-sessions/hyprland-desktop.desktop
 sudo nvim ./.local/share/wayland-sessions/hyprland.desktop
 sudo nvim /usr/share/wayland-sessions/hyprland.desktop
 git commit .local/share/wayland-sessions/hyprland-desktop.desktop
-git push
 git pull
 git push --force
-git log
 man jq
 jq
 jq -n
@@ -2953,9 +2890,6 @@ echo hi
 nvim Downloads/update-repos/update.sh
 Downloads/update-repos
 git branch
-git add .
-git commit
-waybar
 \:q
 flatpak install com.vscodium.codium
 python -v
@@ -3049,18 +2983,14 @@ dnf
 cls
 wev
 flatpak listr
-flatpak list
 flatpak uninstall com.vscodium.codium
-exity
 ;6m/Downloads/Projects/Secure.MSG/venv/bin/python ;6m/Downloads/Projects/Secure.MSG/main.py
 flatpak install com.discordapp.Discord
 sudo dnf remove discord
 git mv main.py clinpy
 git mv main.py cli.py
 ◊É±◊É∫◊ß◊©◊®
-clear
 python main.py -s
-nvim
 nvim .config/hypr/
 systemctl status polkit.service
 git clone https://github.com/zbaylin/rofi-wifi-menu.git
@@ -3071,17 +3001,13 @@ sudo dnf install kubernetes
 top
 flatpak remove --unused
 rm ./initiator.py main.py
-sudo dnf upgrade --refresh -y && echo "================================================================" && flatpak update -y
 git add secmsg_utils.py
-.config/zsh
-ls
 ls ./powerlevel10k
 nvim .zshrc
 sudo dnf install starship
 sudo dnf install rustup
 rustup
 rustup-init -h
-nvim ~/.zshrc
 echo $TODO
 rustup-init
 nvim ;6m/.config/rust/cargo.
@@ -3089,56 +3015,159 @@ nvim ;6m/.config/rust/cargo
 cargo
 ;6m/Downloads/Projects/Secure.MSG/venv/bin/python ;6m/Downloads/Projects/Secure.MSG/conn_mgr.py
 source ;6m/Downloads/Projects/Secure.MSG/venv/bin/activate
-exiy
 python cli.py -s
-git remote get-url --all
 git remote --all
 git remote -v
-git branch -m master
 exit && zsh
-git branch -a
-git diff
 pip install pytorch -t ~/Downloads/Projects/ReWord/venv/lib/python3.12/site-packages
 pip install torch -t ~/Downloads/Projects/ReWord/venv/lib/python3.12/site-packages
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu -t ~/Downloads/Projects/ReWord/venv/lib/python3.12/site-packages
 cd ~
 deactivate
-pip install --upgrade pip
-git status
 git commit .gitignore
 which pip
 which python
-pip install torchtext -t ~/Downloads/Projects/ReWord/venv/lib/python3.12/site-packages
 source ;6m/Downloads/Projects/ReWord/venv/bin/activate
 ;6m/Downloads/Projects/ReWord/venv/bin/python ;6m/Downloads/Projects/ReWord/main.py
-nvim ~/.config/zsh/
 echo $DISPLAY
 mypy
+git commit .
+.config/zsh
+git add plugins setup powerlevel10k/
+git rm --cached powerlevel10k
+git rm -f --cached powerlevel10k
+git restore --staged plugins setup
+git commit plugins setup
+git add plugins setup
+git commit history plugins setup
+nvim ~/.zshrc
+nvim ~/.config/zsh/
+~/.config/zsh/
+git commit history plugins setup ../../.zshrc
+../waybar
+~
+nvim ~/.config/hy
+rm .python_history
+fc-cache -v
+pip install torchtext -t ~/Downloads/Projects/ReWord/venv/lib/python3.12/site-packages
+pip list
 /home/oren/Downloads/Projects/ReWord/venv/bin/python /home/oren/Downloads/Projects/ReWord/main.py
+git add .
+git remote add origin git@github.com:Oren3606/Kube-Access.git
+git branch -m master
+git branch -M master
+touch .gitignore
+git add .gitignore README.md
+git commit
+git branch -a
+pip install --upgrade pip
+clear
+sudo dnf remove firefox.x86_64
+sudo dnf remove firefox
+sudo  dnf --refresh remove firefox.x86_64 firefox-langpacks.x86_64 firefox-pkcs11-loader.x86_64
+dnf list | grep firefox
+dnf clean
+dnf clean all
+flatpak list
+git diff .config/hypr/
+git commit .config/hypr/hyprland.conf
+git commit .config/hypr/binds
+zsh
 source /home/oren/Downloads/Projects/ReWord/venv/bin/activate
+wev -h
+git add visual_plan.pptx
+git commit visual_plan.pptx
+git push
+git remote get-url --all
+git remote get-url
+git remote get-url origin
+Downloads/Projects/Kube\ Access
+git push -u origin master
+git log
+git diff
+git diff .
+git diff 1bb19ca
+npm help
+exiy
+playerctl metadata --follow --format '{"text": "", "playerName": "{{playerName}}", "position": "{{duration(position)}}", "status": "{{status}}", "album": "{{album}}", "artist": "{{artist}}", "title": "{{title}}", "status_icons": { "Playing": "ÔÅÉ´", "Paused": "ÔÅÉ¨", "Stopped": "ÔÅÉ≠", "None": "" }}' | jq
+ls
+ls 
+ls -lac
+
+nvim .config/zsh/history
+sudo dnf upgrade --refresh --assumeyes && echo "================================================================" && flatpak update --assumeyes
+sudo dnf upgrade --refresh --assumeyes && sudo dnf autoremove && flatpak update --assumeyes
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm list
+hyprpm enable hyprexpo
+hyprpm reload
+hyprexpo
+nvim ~/.config/hypr
+hyprctl plugin list
+flatpak install com.stremio.Stremio
+[A
+nvim
+git status
+./
+./media.sh
+playerctl play-pause
+exity
+waybar
+sudo dnf upgrade --refresh --assumeyes && sudo dnf autoremove --assumeyes && flatpak update --assumeyes
+source /home/oren/Downloads/Projects/Secure.MSG/venv/bin/activate
 exit
-: 1728946520:0;nvim ~/.config/zsh/
-: 1728947045:0;nvim ~/.zshrc
-: 1728947049:0;nvim ~/.config/zsh/
-: 1728947339:0;git status
-: 1728947357:0;git commit .
-: 1728947379:0;.config/zsh
-: 1728947433:0;git add plugins setup powerlevel10k/
-: 1728947454:0;git rm --cached powerlevel10k
-: 1728947464:0;git rm -f --cached powerlevel10k
-: 1728947470:0;nvim ~/.config/zsh/
-: 1728947488:0;git commit
-: 1728947503:0;git status
-: 1728947565:0;git restore --staged plugins setup
-: 1728947588:0;git commit plugins setup
-: 1728947594:0;git add plugins setup
-: 1728947613:0;git status
-: 1728947647:0;git commit history plugins setup
-: 1728947672:0;nvim ~/.config/zsh/
-: 1728947763:0;nvim ~/.zshrc
-: 1728947815:0;nvim ~/.config/zsh/
-: 1728947857:0;git status
-: 1728947911:0;nvim ~/.config/zsh/
-: 1728947915:0;~/.config/zsh/
-: 1728947944:0;git status
-: 1728947992:0;git commit history plugins setup ../../.zshrc
+: 1731247431:0;nvim .config/zsh/
+: 1731248445:0;nvim .config/zsh/prompt
+: 1731248958:0;werg
+: 1731249550:0;er
+: 1731249584:0;ewqwt
+: 1731250063:0;nvim .config/zsh/
+: 1731250076:0;nvim .zsh
+: 1731250080:0;nvim .zshrc
+: 1731250102:0;nvim .config/zsh/
+: 1731250272:0;rm .config/zsh/plugins.bak
+: 1731250290:0;nvim .zshrc
+: 1731250372:0;nvim .config/zsh/
+: 1731250408:0;mv -r .config/zsh/powerlevel10k Downloads
+: 1731250417:0;mv .config/zsh/powerlevel10k Downloads/t
+: 1731250438:0;clear
+: 1731250459:0;cat .config/zsh/aliases
+: 1731250497:0;rm .config/zsh/aliases
+: 1731250505:0;nvim .zshrc
+: 1731250522:0;nvim .config/zsh/
+: 1731250541:0;cat .zshrc
+: 1731250596:0;nvim .zshrc
+: 1731250720:0;nvim .config/zsh/
+: 1731251013:0;erb
+: 1731251218:0;nvim .config/zsh/
+: 1731251713:0;git status
+: 1731252047:0;git commit .config/zsh/aliases .config/zsh/plugins
+: 1731252131:0;git commit --amend .config/zsh/setup
+: 1731252199:0;git commit .config/zsh/prompt
+: 1731252250:0;git diff .zshrc
+: 1731252260:0;nvim .zshrc
+: 1731252287:0;git commit --amend .zshrc
+: 1731252338:0;git status
+: 1731252385:0;echo $DISPLAY
+: 1731254099:0;source /home/oren/Downloads/Projects/Secure.MSG/venv/bin/activate
+: 1731254100:0;/home/oren/Downloads/Projects/Secure.MSG/venv/bin/python /home/oren/Downloads/Projects/Secure.MSG/conn_mgr.py
+: 1731254107:0;source /home/oren/Downloads/Projects/Secure.MSG/venv/bin/activate
+: 1731254246:0;git status
+: 1731254264:0;git diff .config/hypr/
+: 1731254307:0;git status
+: 1731254352:0;git restore --staged .config/waybar/
+: 1731254355:0;git status
+: 1731254371:0;git add .config/hypr/
+: 1731254375:0;git status
+: 1731254400:0;git diff .config/hypr/
+: 1731254406:0;git diff .config/hypr
+: 1731254525:0;nvim .zshrc
+: 1731254536:0;nvim ~/.config/hypr
+: 1731254997:0;hyprpm enable hyprexpo
+: 1731255253:0;hyprpm list
+: 1731255272:0;hyprpm update
+: 1731255318:0;nvim ~/.config/hypr
+: 1731256414:0;git status
+: 1731257921:0;nvim ~/.config/hypr
+: 1731258220:0;git status
+: 1731258246:0;git commit .config/zsh/history
