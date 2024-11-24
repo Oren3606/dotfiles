@@ -12,7 +12,7 @@
 
 # Shortcuts
 bind = SUPER, ESCAPE, killactive
-bind = CONTROL SHIFT, ESCAPE, exec, ~/.config/waybar/power.sh
+bind = CONTROL SHIFT, ESCAPE, exec, ~/.config/waybar/modules/power.sh
 bind = SUPER, L, exec, gdmflexiserver
 bind = SUPER, F, fullscreen
 bind = SUPER, D, togglefloating
@@ -68,7 +68,7 @@ bind = SUPER SHIFT, LEFT, movetoworkspace, r-1
 bind = SUPER SHIFT, RIGHT, movetoworkspace, r+1
 
 # Switch windows in current workspace
-bind = SUPER, TAB, exec, rofi -show window
+bind = SUPER, TAB, hyprexpo:expo, toggle
 bind = ALT, TAB, cyclenext,
 bind = ALT, TAB, bringactivetotop,
 

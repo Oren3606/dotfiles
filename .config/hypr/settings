@@ -1,0 +1,79 @@
+# Display
+monitor = , preferred, auto, 1
+
+# General Settings
+input {
+    kb_layout = us,il
+    kb_options = grp:win_space_toggle
+    #kb_variant =
+    #kb_model =
+    #kb_rules =
+
+    #follow_mouse = 0 # dont make window active on mouseover
+    sensitivity = 0 #-1.0 - 1.0, 0 means no modification
+
+    numlock_by_default = true
+
+    touchpad {
+        natural_scroll = yes
+    }
+}
+
+general {
+    layout = master
+    gaps_in = 0
+    gaps_out = 0
+    border_size = 0
+    #cursor_inactive_timeout = 0
+    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+    allow_tearing = false
+    resize_on_border = true
+}
+
+master {
+    #new_is_master = false
+    # 8:9 (L) + 8:9 (R) split for 16:9 monitor
+	mfact = 0.5
+}
+
+decoration {
+    rounding = 0
+    drop_shadow = no
+    dim_inactive = true
+    dim_strength = 0.15
+
+    blur {
+        enabled = false
+        new_optimizations = true
+        size = 8
+        passes = 1
+    }
+}
+
+gestures {
+    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+    workspace_swipe = on
+    workspace_swipe_fingers = 3
+}
+
+misc {
+    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+    force_default_wallpaper = 0
+    splash_font_family = "Comic Sans MS"
+    vrr = 1
+    focus_on_activate = true
+}
+
+plugin {
+    hyprexpo {
+        columns = 3
+        gap_size = 1
+        bg_col = rgb(111111)
+        workspace_method = center current # [center/first] [workspace] e.g. first 1 or center m+1
+
+        enable_gesture = true # laptop touchpad
+        gesture_fingers = 4  # 3 or 4
+        gesture_distance = 100 # how far is the "max"
+        gesture_positive = false # positive = swipe down. Negative = swipe up.
+    }
+}
