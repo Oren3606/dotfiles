@@ -1,3 +1,0 @@
-1. Playing status module- 
-	1.1. scrolling will control volume.
-	1.2. hover will trigger a popup with all media players and an option to pause them (maybe also control their volume?)
